@@ -51,7 +51,20 @@ That creates the following HTML:
 <img alt="my pointer diagram" src="pointerDiagramExample.png">
 ```
 
+What you want want to do is make h01.md under _hwk contain, at the top, the "front matter" that is necessary for the system to work... that looks something like this:
 
+```
+---
+num: "h00"
+desc: "Linear Search"
+ready: true
+assigned: 2017-04-13 09:30:00.00-7:00
+due: 2017-04-18 09:30:00.00-7:00
+---
+```
+
+You want to have this at the top of your `h01.md`, but you want to change `h00` to `h01`, change the other fields as needed.
+The `ready` field should be `false` until you are ready for the assignment to go live.
 
 # Mediawiki to Markdown
 
