@@ -5,10 +5,10 @@ desc: "What to do when it doesn't seem to be working"
 
 Suppose you are trying to follow the processes described on this website for updating the course materials in a site such as:
 
-* http://ucsb-cs16-sp17.github.io (Diba Mirza)
-* http://ucsb-cs16-s17.github.io (Ziad Matni)
-* http://ucsb-cs24-sp17.github.io (Diba Mirza)
-* http://ucsb-cs32-s17.github.io (Andrew Duncan)
+* <http://ucsb-cs16-sp17.github.io> (CS16, S17, Diba Mirza)
+* <http://ucsb-cs16-s17.github.io> (CS16, S17, Ziad Matni)
+* <http://ucsb-cs24-sp17.github.io> (CS24, S17, Diba Mirza)
+* <http://ucsb-cs32-s17.github.io> (CS32 ,S17, Andrew Duncan)
 * etc.
 
 And further suppose that you keep making edits, and yet the changes don't seem to be taking effect.  What should you do?
@@ -33,8 +33,15 @@ Here's how to do it:
 
     `rvm` is the "Ruby Version Manager".  It is a small utility that simply installs various versions 
      of Ruby (and associated Ruby modules/packages, called "gems") and keeps track, for any given directory, of which version of Ruby you need for that project.  (It is similar to the role that `virtualenv` plays in the Python ecosystem, or `nvm` for the node.js JavaScript environment.) 
+     
+     For installing on mac, you may need gpg first.  Here is a site that tells you how to install homebrew, then gpg
+     
+     <http://blog.ghostinthemachines.com/2015/03/01/how-to-use-gpg-command-line/>
 
-2.  Run the ./setup.sh script in the repo.   That should be a one-time thing per repo.
+2.  In each of the repos that contains one of these course websites, there is a `./setup.sh` 
+    script that installs the correct version of Ruby and all of the necessary gems to run Jekyll 
+    (the software that is the basis of github pages).
+    That should be a one-time thing per repo.
 
 3.  Run ./jekyll.sh whenever you want to check for syntax errors, and 
     then temporarily launch a private local web server on http://localhost:4000 where you can preview your site.
