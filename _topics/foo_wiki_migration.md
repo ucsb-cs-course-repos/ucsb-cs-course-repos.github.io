@@ -33,11 +33,24 @@ In one window, have the Mediawiki page open, for example:
 
 In another window, open up an example of a similar assignment that already exists on the existing Jekyll/Github pages based website, e.g. H00, here: <https://ucsb-cs32-s17.github.io/hwk/h00/>.   We'll be using H00 as a template for creating H01.
 
-The way you create a new Homework assignment is to add a few file into the `_hwk` directory of the github repo.
+The way you create a new Homework assignment is to add a new file into the `_hwk` directory of the github repo.
 
 For example, under this directory for CS16 for Winter 2017, you can see files h00.md, h01.md, etc.
 
 <https://github.com/ucsb-cs16-wi17/ucsb-cs16-wi17.github.io/tree/master/_hwk>   
+
+When you see a folder in a directory such as the `h14` folder in the directory above, it signifies that the `h14.md` may refer to some embedded images.   The images, e.g. [pointerDiagramExample.png](https://github.com/ucsb-cs16-wi17/ucsb-cs16-wi17.github.io/blob/master/_hwk/h14/pointerDiagramExample.png) are located in a folder with the same name as the `.md` file that refers to them.   That way, inside the `.md` file, you can use a relative link such as:
+
+```
+![my pointer diagram](pointerDiagramExample.png)
+```
+
+That creates the following HTML:
+
+```
+<img alt="my pointer diagram" src="pointerDiagramExample.png">
+```
+
 
 
 # Mediawiki to Markdown
