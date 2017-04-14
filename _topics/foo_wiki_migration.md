@@ -17,13 +17,27 @@ A similar process would apply to any of the other courses on that site.
 
 We are migrating from <http://foo.cs.ucsb.edu/32wiki>.  
 
-Go to that site, and find the homework assignment or lab that you want to migrate.
+We are migrating to TWO sites:
 
-Then, you need to decide whether to do a hand conversion from Mediawiki format to Markdown, or whether to do that with software.   
+* Homework, Labs, Exams, Lecture Notes and other material that is specific to a particular INSTANCE of the course with a certain professor in a certain quarter, goes here: <https://github.com/ucsb-cs32-s17.github.io> 
+* Material that is generic, and reusable, such as tutorials about topics, goes here: <https://github.com/ucsb-cs32.github.io>.
+* It is a best practice to factor out anything that can be factored out, so that it can be maintained on the site that is the reusable materials site (i.e. ucsb-cs32.github.io, instead of ucsb-cs32-s17.github.io).
+
+# How to convert a homework or lab
+
+Go to <http://foo.cs.ucsb.edu/32wiki> and find the homework assignment or lab that you want to migrate.
+
+You'll be migrating it into <https://github.com/ucsb-cs32-s17.github.io> and putting it either under `_hwk` or `_lab` in a file such as `h00.md` or `lab00.md`.
+
+# Manual or Auto conversion?
+
+You need to decide whether to do a hand conversion from Mediawiki format to Markdown, or whether to do that with software.   
 
 If you do it by hand, you'll want to consult the handy table of "Mediawiki to Markdown" syntax chart below.
 
 If you do it with software, the software you want is called `pandoc`.  It is available on CSIL (I think), or you can install it on your mac with `homebrew`.
+
+Even if you use pandoc, there is still some hand editing you'll have to do.
 
 # How
 
