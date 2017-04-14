@@ -29,6 +29,14 @@ get previews of edits before they go live, with no delay at all.
 
 Here's how to do it:
 
+1.  As a one-time step (for all time), install rvm on your machine.  Visit <https://rvm.io/rvm/install> for information for your particular OS.
 
+    `rvm` is the "Ruby Version Manager".  It is a small utility that simply installs various versions 
+     of Ruby (and associated Ruby modules/packages, called "gems") and keeps track, for any given directory, of which version of Ruby you need for that project.  (It is similar to the role that `virtualenv` plays in the Python ecosystem, or `nvm` for the node.js JavaScript environment.) 
+
+2.  Run the ./setup.sh script in the repo.   That should be a one-time thing per repo.
+
+3.  Run ./jekyll.sh whenever you want to check for syntax errors, and 
+    then temporarily launch a private local web server on http://localhost:4000 where you can preview your site.
 
 
