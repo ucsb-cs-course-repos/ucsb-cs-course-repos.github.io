@@ -23,6 +23,8 @@ Then, you need to decide whether to do a hand conversion from Mediawiki format t
 
 If you do it by hand, you'll want to consult the handy table of "Mediawiki to Markdown" syntax chart below.
 
+If you do it with software, the software you want is called `pandoc`.  It is available on CSIL (I think), or you can install it on your mac with `homebrew`.
+
 
 # Mediawiki to Markdown
 
