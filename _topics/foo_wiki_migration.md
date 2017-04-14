@@ -28,4 +28,4 @@ If you do it by hand, you'll want to consult the handy table of "Mediawiki to Ma
 
 | Mediawiki | Markdown|  HTML  |
 | ----------|---------|--------|
-| `== Topic == ` | `## Topic` | ` <h2>Topic</h2> |
+| `== Topic == ` | `## Topic` | `<h2>Topic</h2>` |
