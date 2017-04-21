@@ -19,13 +19,13 @@ $( document ).ready(function() {
 });
 ```
 
-That DOES NOT DO WHAT YOU WANT when doing JQuery mobile.   The reason is that JQuery mobile tries to optimize page loading through AJAX&mdash;if the browser
+That DOES NOT NECESSARILY DO WHAT YOU WANT when doing JQuery mobile.   The reason is that JQuery mobile tries to optimize page loading through AJAX&mdash;if the browser
 tries to navigate to another page on the same website, instead of doing a full page refresh and rebuild, it tries to just swap out the content of the page, leaving the old
 page cached in the browser.    This is a nice feature, but has some consequences.
 
 1.  Always put trailing slashes on internal links to pages.  Navigate to `[H04](/hwk/h04/)` with a trailing slash, NOT to  `[H04](/hwk/h04)` without a trailing slash.
 
-2.  When using JQuery features, use the following idiom instead of `$( document ).ready(...`
+2.  If you want some JavaScript to run on EVERY PAGE LOAD and not just on the first page load, use the following idiom instead of `$( document ).ready(...`.   This is the remedy for things that "work on the first page you navigate to, but not subsequent page", or that "fix themselves" on a page refresh, for example.
 
    ```javascript
    <script>
