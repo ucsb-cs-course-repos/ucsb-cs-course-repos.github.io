@@ -44,5 +44,5 @@ TODO: Suggest workarounds
 
 * https://www.mathjax.org/
 * https://www.w3.org/Math/MJ/Overview.html
-
+* https://www.checkmyworking.com/2012/01/how-to-get-beautifully-typeset-maths-on-your-blog/
 
