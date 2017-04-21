@@ -32,7 +32,6 @@ page cached in the browser.    This is a nice feature, but has some consequences
       $(document).on("pageshow",function(){
          console.log("pageshow event");
          /* DO THE THINGS... */
-       }
       });
    </script>
    ```
