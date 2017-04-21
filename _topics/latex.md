@@ -11,34 +11,27 @@ MathJaX (references for MathJaX are listed below.)
 
 # How to enable it
 
-1.  Be sure that this line appears in `_config.yml`
-    ```
-    TODO: Fill this in
-    ```
 
-2.  Be sure that the following JavaScript file is loaded somewhere in your layouts:
-
-   ```html
-   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-   ```
+1.  Be sure that the following JavaScript file is loaded somewhere in your layouts.  Typically, this goes in `_includes/head.html`
+    ```html
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    ```
+    See: https://jekyllrb.com/docs/extras/
     
+2.  Be sure that you are using `kramdown` as your markup parser.   This is currently the default, so you probably don't need to specify it,
+    but just in case, this is how you do in `_config.yml`
+    ```
+    markdown: kramdown
+    ```
+    See: https://jekyllrb.com/docs/configuration/
+
 
 # How to use it
 
-To put LaTeX notation in your files use the `$$ latex notation here $$` syntax, for example:
+For examples of putting LaTeX notation in your markdown files, see:
 
-```
-FILL THIS IN
-```
-
-
-TODO: fill this in
-
-# Troubleshooting
-
-It may happen that the LaTeX notation doesn't appear on first appearance of a page, but only on a refresh.  This is a side-effect of the way that JQueryMobile loads pages.
-
-TODO: Suggest workarounds
+* https://kramdown.gettalong.org/syntax.html#math-blocks
+* https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
 
 # MathJaX references
 
