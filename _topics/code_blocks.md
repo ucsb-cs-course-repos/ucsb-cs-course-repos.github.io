@@ -47,3 +47,17 @@ print ("Hello, World")
 
 A list of supported languages is here: <https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers>
 
+# Syntax Highlighting with Line Numbers
+{% raw %}
+{% highlight python linenos %}
+def hello():
+   print ("Hello, World!")
+{% endhighlight %}
+{% endraw %}
+
+Gives:
+
+{% highlight python linenos %}
+def hello():
+   print ("Hello, World!")
+{% endhighlight %}
