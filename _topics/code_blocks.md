@@ -10,12 +10,10 @@ If you put code inside a block starting and ending with {% raw %}```{% endraw %}
 
 You write:
 
-{% raw %}
-```
+{% raw %}```{% endraw %}
 # This is Python code
 print ("Hello, World")
-```
-{% endraw %}
+{% raw %}```{% endraw %}
 
 You get:
 
