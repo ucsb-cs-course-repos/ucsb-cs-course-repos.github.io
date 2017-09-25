@@ -10,10 +10,13 @@ If you put code inside a block starting and ending with {% raw %}```{% endraw %}
 
 You write:
 
-{% raw %}```{% endraw %}
+
+<pre>
+```
 # This is Python code
 print ("Hello, World")
-{% raw %}```{% endraw %}
+```
+</pre>
 
 You get:
 
@@ -29,12 +32,12 @@ and so forth.
 
 You write:
 
-{% raw %}
+<pre>
 ```python
 # This is Python code
 print ("Hello, World")
 ```
-{% endraw %}
+</pre>
 
 You get:
 
@@ -47,12 +50,12 @@ A list of supported languages is here: <https://github.com/jneen/rouge/wiki/List
 
 # Syntax Highlighting with Line Numbers
 
-```
-{% raw %}{%{% endraw %} highlight python linenos {% raw %}%}{% endraw %}
+<pre>
+{% raw %}{% highlight python linenos %}{% endraw %}
 def hello():
    print ("Hello, World!")
-{% raw %}{%{% endraw %} endhighlight {% raw %}%}{% endraw %}
-```
+{% raw %}{% endhighlight %}{% endraw %}
+</pre>
 
 Gives:
 
