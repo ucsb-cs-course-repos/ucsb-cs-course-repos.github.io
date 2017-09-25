@@ -11,6 +11,5 @@ desc: "How to run Jekyll on localhost on a Mac (install rvm, etc.)"
 
 # Slightly longer version of step 1 above.
 
-1. Install homebrew (needed to install gpg)
 1. Install gpg (needed to install rvm)
-1. Install rvm (needed for running Jekyll)
+1. Install rvm (needed for running Jekyll) (This installs Homebrew too if you don't already have it.)
