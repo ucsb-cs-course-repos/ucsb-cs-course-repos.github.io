@@ -13,3 +13,9 @@ desc: "How to run Jekyll on localhost on a Mac (install rvm, etc.)"
 
 1. Install gpg (needed to install rvm)
 1. Install rvm (needed for running Jekyll) (This installs Homebrew too if you don't already have it.)
+
+# Troubleshooting
+
+1. If you get `bundle: command not found`, try this:
+   * `sudo gem install bundler` 
+   
