@@ -48,12 +48,13 @@ print ("Hello, World")
 A list of supported languages is here: <https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers>
 
 # Syntax Highlighting with Line Numbers
-{% raw %}
-{% highlight python linenos %}
+
+```
+{% raw %}{%{% endraw %} highlight python linenos {% raw %}%}{% endraw %}
 def hello():
    print ("Hello, World!")
-{% endhighlight %}
-{% endraw %}
+{% raw %}{%{% endraw %} endhighlight {% raw %}%}{% endraw %}
+```
 
 Gives:
 
