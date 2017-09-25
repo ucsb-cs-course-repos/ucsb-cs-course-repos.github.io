@@ -20,3 +20,5 @@ desc: "How to run Jekyll on localhost on a Mac (install rvm, etc.)"
 1. If you get `bundle: command not found`, try this:
    * `sudo gem install bundler` 
    
+1. If you have trouble, consider removing the directory `vendor/bundle` before retrying the `./setup.sh` step.  This forces a refresh of all the Ruby gems (i.e. the dependencies), which sometimes helps when things get stuck.
+
