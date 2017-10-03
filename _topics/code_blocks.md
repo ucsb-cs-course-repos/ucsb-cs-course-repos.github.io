@@ -39,6 +39,11 @@ print ("Hello, World")
 ```
 </pre>
 
+
+# See also
+
+* <https://www.minh.io/blog/2015/06/28/jekyll-line-numbers/>
+
 You get:
 
 ```python
