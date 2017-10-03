@@ -40,9 +40,6 @@ print ("Hello, World")
 </pre>
 
 
-# See also
-
-* <https://www.minh.io/blog/2015/06/28/jekyll-line-numbers/>
 
 You get:
 
@@ -68,3 +65,9 @@ Gives:
 def hello():
    print ("Hello, World!")
 {% endhighlight %}
+
+
+# See also
+
+* <https://www.minh.io/blog/2015/06/28/jekyll-line-numbers/>
+* <https://drewsilcock.co.uk/proper-linenumbers>
