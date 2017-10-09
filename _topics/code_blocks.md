@@ -39,6 +39,7 @@ print ("Hello, World")
 ```
 </pre>
 
+A list of supported languages appears here: <https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers>
 
 
 You get:
