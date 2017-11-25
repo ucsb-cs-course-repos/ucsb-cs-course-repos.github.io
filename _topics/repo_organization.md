@@ -3,14 +3,15 @@ topic: "repo organization"
 desc: "the basic files that you need in the repo to set up a course website"
 ---
 
-# The basic plumbing
+# The basic plumbing for a minimal site
 
 | Filename | Purpose |
 |-----------|---------|
 | `Gemfile` | Stores a list of the gems needed to run a Ruby application, in this case Jekyll |
 | `setup.sh` | A custom script that can be helpful for setting up Jekyll to run on localhost for testing |
 | `jekyll.sh` | A custom script used to run Jekyll on localhost for testing |
-
+| `_config.yml` | The central file (in YaML syntax) when you configure everything for your Jekyll site |
+| `index.md` | The home page of the site |
 
 ## A few more details about some of these.
 
