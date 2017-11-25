@@ -8,6 +8,7 @@ desc: "the basic files that you need in the repo to set up a course website"
 | Filename | Purpose |
 |-----------|---------|
 | `Gemfile` | Stores a list of the gems needed to run a Ruby application, in this case Jekyll |
+| `Gemfile.lock` | Stores a list of the specific versions of gems in the current bundle.  (You typically do not need to know what this file does.)|
 | `_config.yml` | The central file (in YaML syntax) when you configure everything for your Jekyll site |
 | `index.md` | The home page of the site |
 
