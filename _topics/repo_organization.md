@@ -103,3 +103,13 @@ The calculation of the calendar happens in three phases.
 * Phase one: Create JavaScript objects for each Collection
 * Phase two: Iterate through those objects, and populate an object indexed by dates.
 * Phase three: Use JQuery rules to add custom content to each date for the things that should appears on that date.
+
+
+# Other extras
+
+In the root directory:
+
+| File or Directory Name | Purpose |
+|------------------------|----------|
+| `flipclock.js` | For a Solari Board style flip clock to be used during exams |
+| `flipclock.css` | For a Solari Board style flip clock to be used during exams |
