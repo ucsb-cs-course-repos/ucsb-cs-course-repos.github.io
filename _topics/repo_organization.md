@@ -26,5 +26,13 @@ desc: "the basic files that you need in the repo to set up a course website"
 
 | Filename | Purpose |
 |-----------|---------|
-| `_includes` | Stores files that can be included (via `include` directives) into any `.md` file on the site |
+| `_includes` | Stores files that can be included (via `include` directives) into any other content file |
 
+## A few more details about some of these.
+
+* `_includes`
+    * Include directives have the following syntax
+    ```
+    {% include asn_table_header_row.html %}
+    ```
+    
