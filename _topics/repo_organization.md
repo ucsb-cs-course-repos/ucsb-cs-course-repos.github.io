@@ -84,12 +84,22 @@ as a model.
 A calendar of course events can be calculated automatically from dates in the front matter of various collections
 through some custom Javascript code.    This is definitely the part of the system most in need of some "refactoring love"&mdash;it is a bit of a hack, albeit an extraordinarily useful one.
 
-The calendar itself is produced by a single file, `_info/calendar.md` which contains almost nothing; the entirety of the file is:
+The calendar itself is produced by a single file, `_info/calendar.md` which contains almost nothing; the entirety of the file is typically as follows:
 
-{% highlight linenos %}
+{% highlight markdown linenos %}
+---
+title: Calendar
+layout: calendar
+---
 
+<div id='calendar' class='calendar'></div>
 
 {% endhighlight %}
 
+The layout file `_layouts/calendar.html` specifies, indirectly, that some extra javascript should be included from a few third party libraries (mostly for date handling) as well as, crucially, `calendar.js`, which where most of the work is done to calculate the calendar.
 
+The calculation of the calendar happens in three phases.   
 
+* Phase one: Create JavaScript objects for each Collection
+* Phase two: Iterate through those objects, and populate an object indexed by dates.
+* Phase three: Use JQuery rules to add custom content to each date for the things that should appears on that date.
