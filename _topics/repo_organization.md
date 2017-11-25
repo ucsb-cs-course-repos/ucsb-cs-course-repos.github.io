@@ -25,7 +25,7 @@ desc: "the basic files that you need in the repo to set up a course website"
 
 These special subdirectories are a part of any typical Jekyll setup. 
 
-| Filename | Purpose |
+| Directory | Purpose |
 |-----------|---------|
 | `_includes` | Stores files that can be included (via `include` directives) into any other content file |
 | `_layouts` | Allows user to define standard layouts for various kinds of content (e.g. hwk, lab, exam, handout.) |
@@ -59,4 +59,20 @@ These scripts are not part of a standard Jekyll setup, but rather were added for
 |-----------|---------|
 | `setup.sh` | A custom script that can be helpful for setting up Jekyll to run on localhost for testing |
 | `jekyll.sh` | A custom script used to run Jekyll on localhost for testing |
+
+# User Defined Collections
+
+The "collections" for a site are user defined, and are configured in the `_config.yml` file.    Typical collections for a course site include these:
+
+| Directory | Purpose |
+|-----------|---------|
+| `_hwk`  | Homework Assignments |
+| `_lab`  | Lab Assignment |
+| `_exam` | Exams |
+| `_lecture` | Lecture Notes |
+
+It is possible to define additional collections, or remove any of these at will.   
+
+Collections are not automatically indexed on the main `index.md` page; since the way in which each collection is listed may vary according to user preferences, the user must edit the `index.md` page to add code to customized the listing. Fortunately, this is straightforward&mdash;the examples already present for the collections `hwk`, `lab` etc. should serve
+as a model.
 
