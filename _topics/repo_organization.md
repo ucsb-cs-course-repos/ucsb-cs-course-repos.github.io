@@ -79,3 +79,17 @@ It is possible to define additional collections, or remove any of these at will.
 Collections are not automatically indexed on the main `index.md` page; since the way in which each collection is listed may vary according to user preferences, the user must edit the `index.md` page to add code to customized the listing. Fortunately, this is straightforward&mdash;the examples already present for the collections `hwk`, `lab` etc. should serve
 as a model.
 
+# Calendar System
+
+A calendar of course events can be calculated automatically from dates in the front matter of various collections
+through some custom Javascript code.    This is definitely the part of the system most in need of some "refactoring love"&mdash;it is a bit of a hack, albeit an extraordinarily useful one.
+
+The calendar itself is produced by a single file, `_info/calendar.md` which contains almost nothing; the entirety of the file is:
+
+{% highlight linenos %}
+
+
+{% endhighlight %}
+
+
+
