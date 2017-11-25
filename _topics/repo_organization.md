@@ -79,6 +79,17 @@ It is possible to define additional collections, or remove any of these at will.
 Collections are not automatically indexed on the main `index.md` page; since the way in which each collection is listed may vary according to user preferences, the user must edit the `index.md` page to add code to customized the listing. Fortunately, this is straightforward&mdash;the examples already present for the collections `hwk`, `lab` etc. should serve
 as a model.
 
+# Other directories
+
+
+| Directory | Purpose |
+|-----------|---------|
+| static    | for static assets |
+
+If there are static assets that you want to include in your site, you can put them in a directory called `static`.
+
+For example, the file `static/gradescope.pdf` might contain a PDF supplied by [Gradescope](https://gradescope.com) with instructions for submitting work via Gradescope.  That can then be linked to with internal site links.
+
 # Calendar System
 
 A calendar of course events can be calculated automatically from dates in the front matter of various collections
