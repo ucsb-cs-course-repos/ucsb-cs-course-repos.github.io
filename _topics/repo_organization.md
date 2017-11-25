@@ -31,8 +31,9 @@ desc: "the basic files that you need in the repo to set up a course website"
 ## A few more details about some of these.
 
 * `_includes`
-    * Include directives have the following syntax
-    ```
-    {% include asn_table_header_row.html %}
-    ```
+    * Include directives have the following syntax (where `asn_table.html`
+       is the name of the file you want to include, and which should live
+       inside the `_includes` directory.)
     
+    `{``% include asn_table.html %``}`
+
