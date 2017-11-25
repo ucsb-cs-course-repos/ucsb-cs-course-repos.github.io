@@ -62,14 +62,14 @@ These scripts are not part of a standard Jekyll setup, but rather were added for
 
 # User Defined Collections
 
-The "collections" for a site are user defined, and are configured in the `_config.yml` file.    Typical collections for a course site include these:
+The "collections" for a site are user defined, and are configured in the `_config.yml` file.    Typical collections for a course site include these.  Note that the directory *must* start with an underscore (e.g. `_lab`) while the variable used in scripts that denotes the collection does *not* have the underscore (e.g. `for h in hwk`).
 
-| Directory | Purpose |
-|-----------|---------|
-| `_hwk`  | Homework Assignments |
-| `_lab`  | Lab Assignment |
-| `_exam` | Exams |
-| `_lecture` | Lecture Notes |
+| Directory | Purpose | Collection Name  |
+|-----------|---------|------------------|
+| `_hwk`  | Homework Assignments | `hwk` |
+| `_lab`  | Lab Assignment | `lab` |
+| `_exam` | Exams | `exam` |
+| `_lecture` | Lecture Notes | `lecture` |
 
 It is possible to define additional collections, or remove any of these at will.   
 
