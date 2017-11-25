@@ -21,3 +21,10 @@ desc: "the basic files that you need in the repo to set up a course website"
     * This file is not used by github pages, and so it is only needed 
        when when generating the site on localhost 
        or a cloud computing provider such as Heroku
+
+# The main subdirectories
+
+| Filename | Purpose |
+|-----------|---------|
+| `_includes` | Stores files that can be included (via `include` directives) into any `.md` file on the site |
+
