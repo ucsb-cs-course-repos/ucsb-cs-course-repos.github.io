@@ -97,17 +97,10 @@ through some custom Javascript code.    This is definitely the part of the syste
 
 The files needed for the calendar system include these (paths relative to root)
 
+{% include calendar_files.md %}
 
-| File | Purpose |
-|------|------------|
-| `calendar.css` | CSS style for calendar entries |
-| `info/calendar.md` | The calendar itself |
-| `_layouts/calendar.html` | The calendar layout |
-| `_includes/head_calendar.html` | The libraries that get pulled in for the calendar layout |
-| `jquery-dateFormat.js` | A JQuery plugin for formatting dates |
-| `_includes/moment.min.js` | The moment library for doing date calculations |
-| `_includes/calendar.js` | **Most of the custom code for creating the calendar is in this file** |
 
+A further discussion of the calendar can be found on a separate page: [Course Calendar](/topics/course_calendar/)
 
 The calendar itself is produced by a single file, `_info/calendar.md` which contains almost nothing; the entirety of the file is typically as follows:
 
@@ -120,6 +113,8 @@ layout: calendar
 <div id='calendar' class='calendar'></div>
 
 {% endhighlight %}
+
+
 
 The layout file `_layouts/calendar.html` specifies, indirectly, that some extra javascript should be included from a few third party libraries (mostly for date handling) as well as, crucially, `calendar.js`, which where most of the work is done to calculate the calendar.
 
