@@ -102,29 +102,6 @@ The files needed for the calendar system include these (paths relative to root)
 
 A further discussion of the calendar can be found on a separate page: [Course Calendar](/topics/course_calendar/)
 
-The calendar itself is produced by a single file, `_info/calendar.md` which contains almost nothing; the entirety of the file is typically as follows:
-
-{% highlight markdown linenos %}
----
-title: Calendar
-layout: calendar
----
-
-<div id='calendar' class='calendar'></div>
-
-{% endhighlight %}
-
-
-
-The layout file `_layouts/calendar.html` specifies, indirectly, that some extra javascript should be included from a few third party libraries (mostly for date handling) as well as, crucially, `calendar.js`, which where most of the work is done to calculate the calendar.
-
-The bulk of the code that produces the calendar is in the file `_includes/calendar.js`, which together with `calendar.css` is the place that, if you need to make changes, you'll want to consult.
-
-The calculation of the calendar happens in three phases.   
-
-* Phase 1: Create JavaScript objects for each Collection
-* Phase 2: Iterate through those objects, and populate an object indexed by dates.
-* Phase 3: Use JQuery rules to add custom content to each date for the things that should appears on that date.
 
 
 # Other extras

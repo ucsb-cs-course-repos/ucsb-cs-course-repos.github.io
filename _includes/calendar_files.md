@@ -1,7 +1,3 @@
----
-layout: default
----
-
 | File | Purpose |
 |------|------------|
 | `_config.yml` | A few lines in the `_config.yml` set up the start and end dates of the calendar, as well as holidays, etc.  |
