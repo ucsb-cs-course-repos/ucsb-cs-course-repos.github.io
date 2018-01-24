@@ -18,7 +18,7 @@ The software being github pages is Jekyll.  In the source files for a Jekyll sit
    * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * You'll also see plain old HTML and CSS where Markdown is not expressive enough.
    * [W3 Schools](https://www.w3schools.com) is one of the best references for 
-   [HTML](https://www.w3schools.com)/html/) and [CSS](https://www.w3schools.com)/css/)
+   [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/)
 * Liquid Syntax is an open source Ruby package used by Jekyll. It was created and is maintained by a 
    company known as "Shopify".   It is typically used to insert values from the front matter (e.g. constants that you define at 
     the top of the page)
