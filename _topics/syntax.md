@@ -1,5 +1,5 @@
 ---
-topic: "Syntax"
+topic: "syntax"
 desc: "The various flavors (Markdown, HTML, Liquid, etc.) and where they are used"
 ---
 
