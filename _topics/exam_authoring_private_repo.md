@@ -27,3 +27,20 @@ To author an exam within the UCSB CS Course repo github pages framework, you can
     do a `git pull` from the public repo, then a `git push` to the public repo.  
     
    
+```bash
+Phillips-Mac-mini:ucsb-cs56-w18 pconrad$ git clone git@github.com:pconrad/ucsb-cs56-w18-exams.git
+Cloning into 'ucsb-cs56-w18-exams'...
+warning: You appear to have cloned an empty repository.
+Phillips-Mac-mini:ucsb-cs56-w18 pconrad$ cd ucsb-cs56-w18-exams/
+Phillips-Mac-mini:ucsb-cs56-w18-exams pconrad$ git remote add w18 git@github.com:ucsb-cs56-w18/ucsb-cs56-w18.github.io.git
+Phillips-Mac-mini:ucsb-cs56-w18-exams pconrad$ git pull --allow-unrelated-histories w18 master
+From github.com:ucsb-cs56-w18/ucsb-cs56-w18.github.io
+ * branch            master     -> FETCH_HEAD
+Phillips-Mac-mini:ucsb-cs56-w18-exams pconrad$ ls
+Gemfile			_hwkWIP			calendar.css		hwk.css			moment.min.js
+Gemfile.lock		_includes		exam.css		hwk.js			setup.sh
+_config.yml		_info			exam.js			index.md		site.css
+_exam			_lab			flipclock.css		jekyll.sh		site.js
+_hwk			_layouts		flipclock.js		jquery-dateFormat.js	static
+Phillips-Mac-mini:ucsb-cs56-w18-exams pconrad$ 
+```
