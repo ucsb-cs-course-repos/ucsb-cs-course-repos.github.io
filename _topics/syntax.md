@@ -35,3 +35,17 @@ And, if your particular course repo is configured for it:
 
 Each of these has its own documentation and is used in various contexts.  This page tries to help
 you find when you use what, and how to learn about each of the options.
+
+# Quick Tips
+
+This syntax can be useful for setting custom class, id, and attribute values on a Markdown element
+
+```
+[link text](https://example.org){: .customClass #custom_id attribute='value' }
+```
+
+It is most often used to deal with links where we need to make sure a full page refresh is done so that the appropriate CSS is loaded:
+
+```
+[Exam 1](/exam/e01){: data-ajax='false' }
+```
