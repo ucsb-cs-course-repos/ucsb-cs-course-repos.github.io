@@ -73,9 +73,9 @@ If syntax highlighting with colors is not working, make sure that:
 
 * The file `jekyll-github.css` should appear in the `_includes` directory.  You can find a copy here: [jekyll-github.css](https://github.com/ucsb-cs8-s18/ucsb-cs8-s18.github.io/blob/master/_includes/jekyll-github.css)
 * That file should be included by `site.css` like this:
-   ```
-   {% include jekyll-github.css %}
-   ```
+   <pre>
+   &#123;% include jekyll-github.css %}
+   </pre>
  * You may also have to do this in `homework.css`, `exam.css`, etc. if you have alternative css files for various layouts.
 
 
