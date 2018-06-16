@@ -20,3 +20,9 @@ rvm install ruby-2.4.2
 rvm use	2.4.2
 ```
 
+And in `jekyll.sh` in this line of code:
+
+```
+rvm use ruby-2.4.2
+```
+
