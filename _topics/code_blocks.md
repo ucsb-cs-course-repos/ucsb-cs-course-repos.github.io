@@ -71,7 +71,7 @@ def hello():
 
 If syntax highlighting with colors is not working, make sure that:
 
-* The file `jekyll-github.css` should appear in the `_includes` directory.  You can find a copy here: [jekyll-github.css](https://github.com/ucsb-cs8-s18/ucsb-cs8-s18.github.io/blob/master/_includes/jekyll-github.css)
+* The file `jekyll-github.css` should appear in the `_includes` directory.  You can find a copy here: [jekyll-github.css](https://github.com/ucsb-cs-course-repos/ucsb-cs-course-repos.github.io/blob/master/_includes/jekyll-github.css)
 * That file should be included by `site.css` like this:
    <pre>
    &#123;% include jekyll-github.css %}
