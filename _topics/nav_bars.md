@@ -1,4 +1,6 @@
 ---
+topic: "Nav Bars"
+desc: "Information about the navigation bars at top and bottom of pages"
 ---
 
 # Context
