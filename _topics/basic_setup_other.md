@@ -6,13 +6,25 @@ indent: true
 
 # Checklist
 
-## Gradescope 
+* Gauchospace
+* Gradescope (homework and/or exams)
+* Gradescope (autograded programming assignments)
+* Github
+* Piazza
+
+# Gauchospace
+
+# Gradescope: Homework and Exams (scanned paper)
 
 * If you don't want "negative" scoring as default, change default in course settings to "positive"
 * If you are reusing materials from an instructor that taught the course before, ask them to make you a TA or instructor
    on their old course so that you have the option to copy over rubrics.
+ 
+# Gradescope: Autograding Programming assignments
 
-## github
+
+
+# Github
 
 * Choose whether to use github.ucsb.edu or github.com.  There are compelling arguments pro/con for each.
    * TODO: Make a list of the pros/cons.  For now, ask Phill.
@@ -28,5 +40,9 @@ indent: true
 * Consider using <https://ucsb-cs-github-linker.herokuapp.com/> as a way of allowing students on your course roster
    to self-enroll in a github organization.
    
+# Piazza
+
+* Anonymity: yes or no? 
+   * Consider whether or not to turn off the ability for students to be anonymous *before* you upload the roster.
 
 
