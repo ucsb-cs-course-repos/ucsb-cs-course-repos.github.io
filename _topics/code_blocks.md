@@ -78,6 +78,17 @@ If syntax highlighting with colors is not working, make sure that:
    </pre>
  * You may also have to do this in `homework.css`, `exam.css`, etc. if you have alternative css files for various layouts.
 
+# What if my code block contains stuff that is meaningful to liquid syntax?
+
+Use raw
+
+
+{% raw %}
+{% raw %}
+  In Handlebars, {{ this }} will be HTML-escaped, but
+  {{{ that }}} will not.
+{% endraw %}
+{% endraw %}
 
 # See also
 
