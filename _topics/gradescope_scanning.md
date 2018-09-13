@@ -17,7 +17,8 @@ perhaps because the student wrote too light, here's how you can fix it.
 Note: you MUST have access to the original paper submissions.
 
 1.  Locate the original paper submission for that student.
-2.  Make a copy of that submission using the "Faint" setting.  You should see the contrast improve greatly.
+2.  Make a copy of that submission using the "Pale" setting (look for it at the left hand side of the CS Dept. Copier menu.)
+   You should see the contrast improve greatly.
    * Repeat this process if needed;on this setting, for really light pencil, 
      a copy of a copy often looks *better* than the original.
 3.  Scan THAT new copy to a pdf
