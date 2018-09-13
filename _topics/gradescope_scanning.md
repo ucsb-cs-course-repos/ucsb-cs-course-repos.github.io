@@ -24,9 +24,10 @@ Note: you MUST have access to the original paper submissions.
 3.  Scan THAT new copy to a pdf
    * you want this pdf to be only for ONE student's submission
    * you can just email it to yourself since it's just one submission
-4. Go to Manage Submissions in Gradescope.
-5. Locate the student's submisson, and find the place where it says "Replace PDF".
-   * Don't worry: none of the grading you've done so far will be lost.  You'll just get a clearer
+4. Go to Manage Submissions in Gradescope.  Locate the student's submisson (you can search by name).
+5. On that student's submission, click "show details" and find the place where it says "Replace PDF".
+   * Upload the new PDF.
+   * Don't worry: none of the grading you've done so far will be lost.  You'll just get clearer images.
 
 
 
