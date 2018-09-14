@@ -80,15 +80,34 @@ If syntax highlighting with colors is not working, make sure that:
 
 # What if my code block contains stuff that is meaningful to liquid syntax?
 
-Use raw
+If you have characters such as `{% raw %}{{ this }}{% endraw %}` that would
+normally be meaningful to liquid syntax, and therefore are not showing
+up properly inside code blocks, you can use these special markers to indicate
+that liquid should NOT do any processing of that input:
+
+* `{% raw %}{% raw %}{% endraw %}`
+* `{% raw %}{% end{% endraw %}{% raw %}raw %}{% endraw %}`
+
+For example, to get:
+
+```
+In Handlebars, {% raw %}{{ this }}{% endraw %} will be HTML-escaped, but
+{% raw %}{{{ that }}}{% endraw %} will not.
+```
+
+Use:
 
 
-{% raw %}
-{% raw %}
-  In Handlebars, {{ this }} will be HTML-escaped, but
-  {{{ that }}} will not.
-{% endraw %}
-{% endraw %}
+<pre>
+{% raw %}```{% endraw %}
+In Handlebars, {% raw %}{% raw %}{% endraw %}{% raw %}{{ this }}{% endraw %}{% raw %}{% end{% endraw %}{% raw %}raw %}{% endraw %} will be HTML-escaped, but
+{% raw %}{% raw %}{% endraw %}{% raw %}{{{ that }}}{% endraw %}{% raw %}{% end{% endraw %}{% raw %}raw %}{% endraw %}  will not.
+{% raw %}```{% endraw %}
+</pre>
+
+If you are trying to reproduce `{% raw %}{% raw %}{% endraw %}`
+and `{% raw %}{% end{% endraw %}{% raw %}raw %}{% endraw %}` themselves
+inside a code block, see the markdown source for this page.
 
 # See also
 
