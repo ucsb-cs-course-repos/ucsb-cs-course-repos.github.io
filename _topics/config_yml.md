@@ -65,4 +65,55 @@ collections:
     permalink: /lectures/:path/
  ```
  
+# The `defaults` section
  
+In the `defaults` section, we specify the mapping between the path in our repo,  the type of each collection,
+and what the default layout for that collection should be.
+
+To be honest, the code below could probably be made much cleaner and more efficient with some refactoring.
+We went with simple examples, and some copying/pasting, and what you see below is the result.
+ 
+``` 
+ defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: hwk
+    values:
+      layout: hwk
+  -
+    scope:
+      path: ""
+      type: lab
+    values:
+      layout: lab
+  -
+    scope:
+      path: ""
+      type: exam
+    values:
+      layout: exam_info
+  -
+    scope:
+      path: ""
+      type: info
+    values:
+      layout: info
+  -
+    scope:
+      path: ""
+      type: lectures
+    values:
+      layout: lecture
+  -
+    scope:
+      path: "syllabus.md"
+      type: info
+    values:
+      layout: handout
+```
