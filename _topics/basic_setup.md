@@ -22,6 +22,13 @@ If there are multiple instructors teaching multiple instances of a particular co
 * ucsb-cs16-f18-mirza
 * ucsb-cs16-f18-nichols
 
+After creating the organizations, create repos with these names:
+
+| Inside this org | Create this repo |
+|-|-|
+| `ucsb-int5` | `ucsb-int5.github.io` |
+| `ucsb-int5` | `ucsb-int5-f18.github.io` |
+
 
 # Setting up the website for the quarter
 
