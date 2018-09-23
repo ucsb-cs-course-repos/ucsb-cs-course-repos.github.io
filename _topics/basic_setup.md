@@ -46,6 +46,11 @@ quarter: "Fall 2017"
 ...
 ```
 
+## Set up the layout for the site
+
+More info is here: [/topics/layouts_and_includes/](/topics/layouts_and_includes)
+
+
 # Setting up directories
 
 One of the basic parts of setup is to set up the collections you'll want.
