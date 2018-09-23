@@ -44,7 +44,25 @@ piazza_url: https://piazza.com/class/j80k1o0zsxg1j7
 gauchospace_course_page: https://gauchospace.ucsb.edu/courses/course/view.php?id=19139
 ```
 
+# Setting up directories
+
+One of the basic parts of setup is to set up the collections you'll want.
+
+In the `ucsb-int5-f18.github.io` repo, create these directories, and in each one, put an empty file called `keep`
+as a placeholder:
+* `_hwk`
+* `_lab`
+* `_demo`
+
+We will also create the following directories which have special roles in Jekyll, the software that power Github Pages:
+
+* `_include`
+* `_layout`
+
+
 # Setting up the Gemfile and Gemfile.lock
+
+These files are typically only needed for running locally.
 
 The Gemfile and Gemfile.lock files specify what version(s) of various software components are used to process the contents of your repo into a web page.   For best results, you want those versions to be close to the ones used by Github Pages, which are specified on this website: <https://pages.github.com/versions/>.
 
