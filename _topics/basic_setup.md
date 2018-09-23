@@ -53,6 +53,8 @@ as a placeholder:
 * `_hwk`
 * `_lab`
 * `_demo`
+* `_info`
+* `_exam`
 
 We will also create the following directories which have special roles in Jekyll, the software that power Github Pages:
 
