@@ -22,15 +22,15 @@ our repo "DRY" (i.e. don't repeat yourself.)
 <html lang="en">
   <head>
   {% raw %}{% include head.html %}{% endraw %}
-  <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+  <title>{% raw %}{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}{% endraw %}</title>
   </head>
   <body id="page-top">
     <div id="container" data-role="page">
-    {% include nav.html %}
+    {% raw %}{% include nav.html %}{% endraw %}
     <div id="content"  class="ui-content">
     {{ content }}
     </div><!-- content -->
-    {% include footer.html %}
+    {% raw %}{% include footer.html %}{% endraw %}
     </div><!-- container -->
   </body>
 </html>
