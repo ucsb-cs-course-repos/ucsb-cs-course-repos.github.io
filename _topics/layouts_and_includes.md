@@ -21,7 +21,7 @@ our repo "DRY" (i.e. don't repeat yourself.)
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  {% include head.html %} 
+  {% raw %}{% include head.html %}{% endraw %}
   <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
   </head>
   <body id="page-top">
