@@ -1,6 +1,6 @@
 ---
-topic: "Layouts"
-desc: "The contents of the `_layouts` directory"
+topic: "Layouts and Includes"
+desc: "The contents of the `_layouts` and `_includes` directories"
 ---
 
 The `_layouts` directory contains templates for the various html renderings of pages on your site.
