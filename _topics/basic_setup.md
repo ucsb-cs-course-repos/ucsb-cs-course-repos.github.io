@@ -12,6 +12,17 @@ A course website in this format is really two websites in one.
 | <https://ucsb-cs8.github.io> | Material that goes with the course permanently, e.g. lessons, tutorials, etc. |
 | <https://ucsb-cs8-s18.github.io> | Material that is specific to a particular quarter and instructor, e.g. syllabus, homework assignments, labs, exams, seating charts, etc. |
 
+When setting up a brand new course for the first time, you'll create two organizations, e.g.
+
+* ucsb-int5
+* ucsb-int5-f18
+
+If there are multiple instructors teaching multiple instances of a particular course in a particular quarter, the naming convention is to add the instructor's last name, e.g.
+
+* ucsb-cs16-f18-mirza
+* ucsb-cs16-f18-nichols
+
+
 # Setting up the website for the quarter
 
 ## Configure the basic information for your course in `_config.yml`:
