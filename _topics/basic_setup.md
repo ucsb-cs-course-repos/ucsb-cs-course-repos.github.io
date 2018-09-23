@@ -56,7 +56,7 @@ bundle install --path vendor/bundle
 echo "Done."
 ```
 
-As long as `rvm` is already installed (see [Installing RVM](/topics/installing_rvm/), running the `setup.sh` script should update the gems needed to run Jekyll locally (so you can test the site before pushing it to github).
+As long as `rvm` is already installed (see [Installing RVM](/topics/rvm_installation/), running the `setup.sh` script should update the gems needed to run Jekyll locally (so you can test the site before pushing it to github).
 
 If you get errors with running `setup.sh`, these are usually from the `bundle install...` step.   The most common error is one with installing Nokogiri on MacOS; see [Nokogiri on MacOS](/topics/nokogiri/) for help with debugging that.
 
