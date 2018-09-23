@@ -32,7 +32,10 @@ After creating the organizations, create repos with these names:
 
 # Setting up the website for the quarter
 
-## Configure the basic information for your course in `_config.yml`:
+## Configure the basic information for your course in `_config.yml`
+
+Setting up the `_config.yml` is such a crucial topic, that we 
+have factored it out into its own page here: [/topics/config_yml/](/topics/config_yml)
 
 Example:
 
@@ -40,8 +43,7 @@ Example:
 course: "CS56"
 qtr: "F17"
 quarter: "Fall 2017"
-piazza_url: https://piazza.com/class/j80k1o0zsxg1j7
-gauchospace_course_page: https://gauchospace.ucsb.edu/courses/course/view.php?id=19139
+...
 ```
 
 # Setting up directories
