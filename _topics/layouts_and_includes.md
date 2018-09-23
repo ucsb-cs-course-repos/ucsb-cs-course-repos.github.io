@@ -28,7 +28,7 @@ our repo "DRY" (i.e. don't repeat yourself.)
     <div id="container" data-role="page">
     {% raw %}{% include nav.html %}{% endraw %}
     <div id="content"  class="ui-content">
-    {{ content }}
+    {% raw %}{{ content }}{% endraw %}
     </div><!-- content -->
     {% raw %}{% include footer.html %}{% endraw %}
     </div><!-- container -->
