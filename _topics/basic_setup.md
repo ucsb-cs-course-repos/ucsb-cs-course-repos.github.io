@@ -5,7 +5,7 @@ desc: "Basic Setup for a new course"
 
 # The two parts
 
-A course website in this format is really two websites in one.
+A course website in this format is typically two websites in one.
 
 | Example | Description |
 |---------|-------------|
