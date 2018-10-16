@@ -10,6 +10,7 @@ Here is an example of how that page might start:  TODO... FIX THIS UP WITH raw /
 ```
 ---
 title: "CS 16: Problem Solving with Computers -I , Spring 18, Mirza"
+layout: default
 ---
 
 # {{site.course}}, {{site.quarter}} 
