@@ -30,7 +30,7 @@ After creating the organizations, create repos with these names:
 | `ucsb-int5-f18` | `ucsb-int5-f18.github.io` |
 
 
-# Setting up the website for the quarter
+# Setting up the websites
 
 ## Configure the basic information for your course in `_config.yml`
 
@@ -76,7 +76,7 @@ More info on setting up the actual content of the `_layouts` and `_includes` dir
 
 One of the basic parts of setup is to set up the collections you'll want.
 
-In the repo for the course instance for the quarter (e.g. `ucsb-int5-f18.github.io`), create these directories, and in each one, put an empty file called `keep`
+If this is a repo for the course instance for the quarter (e.g. `ucsb-int5-f18.github.io`), create these directories, and in each one, put an empty file called `keep`
 as a placeholder, just as we did for `_layouts` and `_includes`:
 
 * `_hwk`
@@ -85,7 +85,12 @@ as a placeholder, just as we did for `_layouts` and `_includes`:
 * `_info`
 * `_exam`
 
+If this is a repo for the course "in general", or for something other than a specific course (e.g. a collection of general resources, such as this very website, [ucsb-cs-course-repos.github.io](/) then you may instead want to create directories such as these:
 
+* `_topics`
+* `_resources`
+
+These directories will correspond to the *collections* that you define in the `_config.yml` file at a later step.
 
 # Setting up the Gemfile and Gemfile.lock
 
