@@ -29,6 +29,7 @@ After creating the organizations, create repos with these names:
 | `ucsb-int5` | `ucsb-int5.github.io` |
 | `ucsb-int5-f18` | `ucsb-int5-f18.github.io` |
 
+You should add a `.gitignore` file customzied for Jekyll based on these instructions: [/topics/gitignore/](/topics/gitignore/)
 
 # Setting up the websites
 
