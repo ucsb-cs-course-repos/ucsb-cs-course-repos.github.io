@@ -46,27 +46,45 @@ quarter: "Fall 2017"
 ...
 ```
 
-## Set up the layout for the site
+## Create special directories for Jekyll
 
-More info is here: [/topics/layouts_and_includes/](/topics/layouts_and_includes)
+In the top level of the repo, we will also create the following directories which have special roles in Jekyll, the software that power Github Pages:
+
+* `_layout`, a directory that will contain the basic layout templates for the web pages on our site.
+* `_include`, a directory that will contain short segments of HTML, CSS, JavaScript or Markdown that can be included in other files, such as common headers, footers, etc.  
+
+Having these common `_layout` and `_include` files allows us to keep our course materials "DRY", i.e. we we can follow the practice "Don't Repeat Yourself".  We want avoid having to copy/paste sections of code, and then having to update these in multiple places.
+
+Temporarily, you can create each of these directories initially with a placeholder empty file called `keep`.   This is a convention used with git repos to create a directory that will contain content later (git will ignore empty directories).    The empty `keep` file can be deleted once you have content in this directory.
+
+You can do that through the web interface, or at command line with these commands:
+
+```
+mkdir _layouts
+mkdir _includes
+touch _layouts/keep
+touch _includes/keep
+git add _layouts _includes
+git commit -m "add placeholder for _layouts and _includes"
+git push origin master
+```
+
+More info on setting up the actual content of the `_layouts` and `_includes` directories is here: [/topics/layouts_and_includes/](/topics/layouts_and_includes)
 
 
-# Setting up directories
+# Setting up directories for collections
 
 One of the basic parts of setup is to set up the collections you'll want.
 
-In the `ucsb-int5-f18.github.io` repo, create these directories, and in each one, put an empty file called `keep`
-as a placeholder:
+In the repo for the course instance for the quarter (e.g. `ucsb-int-5-f18.github.io`), create these directories, and in each one, put an empty file called `keep`
+as a placeholder, just as we did for `_layouts` and `_includes`:
+
 * `_hwk`
 * `_lab`
 * `_demo`
 * `_info`
 * `_exam`
 
-We will also create the following directories which have special roles in Jekyll, the software that power Github Pages:
-
-* `_include`
-* `_layout`
 
 
 # Setting up the Gemfile and Gemfile.lock
