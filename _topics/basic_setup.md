@@ -69,7 +69,7 @@ git commit -m "add placeholder for _layouts and _includes"
 git push origin master
 ```
 
-More info on setting up the actual content of the `_layouts` and `_includes` directories is here: [/topics/layouts_and_includes/](/topics/layouts_and_includes)
+More info on setting up the actual content of the `_layouts` and `_includes` directories is here: [/topics/layouts_and_includes/](/topics/layouts_and_includes/)
 
 
 # Setting up directories for collections
