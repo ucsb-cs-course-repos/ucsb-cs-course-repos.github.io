@@ -94,7 +94,7 @@ These directories will correspond to the *collections* that you define in the `_
 
 # Setting up collections
 
-TODO: Add this in
+TODO: Add this in.   Most of it is already documented in [/topics/config_yml](/topics/config_yml/) but it could be made less confusing.
 
 # Setting up the `index.md` file
 
