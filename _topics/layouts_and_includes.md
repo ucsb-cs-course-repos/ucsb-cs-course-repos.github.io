@@ -44,9 +44,9 @@ Note that `{% raw %}` and `{% endraw %}` that are included in the example below 
 </html>
 ```
 
-# A typical `_includes/head.html`
+# A typical `_includes/head.html` (JQueryMobile)
 
-Here is a typical `_includes/head.html` and some explanation.
+Here is a typical `_includes/head.html` for sites that use JQueryMobile as the layout framework, along with some explanation.
 
 ```
 <!-- head.html; common header items for all layouts -->
