@@ -35,7 +35,7 @@ After creating the organizations, create repos with these names:
 ## Configure the basic information for your course in `_config.yml`
 
 Setting up the `_config.yml` is such a crucial topic, that we 
-have factored it out into its own page here: [/topics/config_yml/](/topics/config_yml)
+have factored it out into its own page here: [/topics/config_yml](/topics/config_yml/)
 
 Example:
 
