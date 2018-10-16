@@ -76,7 +76,7 @@ More info on setting up the actual content of the `_layouts` and `_includes` dir
 
 One of the basic parts of setup is to set up the collections you'll want.
 
-In the repo for the course instance for the quarter (e.g. `ucsb-int-5-f18.github.io`), create these directories, and in each one, put an empty file called `keep`
+In the repo for the course instance for the quarter (e.g. `ucsb-int5-f18.github.io`), create these directories, and in each one, put an empty file called `keep`
 as a placeholder, just as we did for `_layouts` and `_includes`:
 
 * `_hwk`
