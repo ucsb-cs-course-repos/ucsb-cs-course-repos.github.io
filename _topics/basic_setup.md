@@ -90,7 +90,20 @@ If this is a repo for the course "in general", or for something other than a spe
 * `_topics`
 * `_resources`
 
-These directories will correspond to the *collections* that you define in the `_config.yml` file at a later step.
+These directories will correspond to the *collections* that you define in the `_config.yml` file which is our next step.
+
+# Setting up collections
+
+TODO: Add this in
+
+# Setting up the `index.md` file
+
+The `index.md` file defines the home page for the site, and it goes in the root of the site.  It's structure will vary slightly from site to site, but we've described typical ones here:
+
+* An `index.md` for a site for a specific course in a specific quarter
+* An `index.md` for a general site for a course or a topic
+
+TODO: ADD THIS IN
 
 # Setting up the Gemfile and Gemfile.lock
 
