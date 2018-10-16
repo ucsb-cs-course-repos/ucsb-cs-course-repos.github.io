@@ -100,10 +100,10 @@ TODO: Add this in
 
 The `index.md` file defines the home page for the site, and it goes in the root of the site.  It's structure will vary slightly from site to site, but we've described typical ones here:
 
-* An `index.md` for a site for a specific course in a specific quarter
-* An `index.md` for a general site for a course or a topic
+* An `index.md` for a site for a specific course in a specific quarter  (TODO)
+* An `index.md` for a general site for a course or a topic (TODO
 
-TODO: ADD THIS IN
+TODO: ADD THIS IN.   A start is here: [/topics/index_md/](/topics/index_md/)
 
 # Setting up the Gemfile and Gemfile.lock
 
