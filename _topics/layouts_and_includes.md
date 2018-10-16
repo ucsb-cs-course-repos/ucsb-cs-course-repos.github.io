@@ -64,11 +64,11 @@ Here is a typical `_includes/head.html` for sites that use JQueryMobile as the l
    responsive for mobile platforms.  You may need to adjust this depending on whether you are using JQueryMobile,
    or Bootstrap.
 * The three lines below are part of what loads JQueryMobile into the site.  If you are using Boostrap instead,
-   you won't want these, but you'll use the Bootstrap equivalent.  Since Bootstrap typically loads only CSS
-   in the head, and JavaScript at the end of the body, you'll probably only have CSS files here.
+   you won't want these, but you'll use the Bootstrap equivalent. 
    ```
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
    ```
    
+
