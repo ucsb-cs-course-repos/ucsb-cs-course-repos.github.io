@@ -22,6 +22,26 @@ github_url: https://github.com/ucsb-cs16-f18-mirza/ucsb-cs16-f18-mirza.github.io
 The `github_url` is particularly important, since it is what makes the "Edit this Page On Github" link at the
 bottom of each page work properly.
 
+# Special Subdirectories
+
+The software we are using, Jekyll, requires two special subdirectories:
+* `_layouts`, where we store the default layout of pages on our site
+* `_includes`, where we will store partial HTML files that can be included in others, e.g. for common layout of pages (common headers, footers, etc.)
+
+For now, create these directories and put an empty file in them called `keep`.  You can do this through the github web interface, or at command line with these commands:
+
+```
+mkdir _layouts
+mkdir _includes
+touch _layouts/keep
+touch _includes/keep
+git add _layouts _includes
+git commit -m "add placeholders for _layouts and _includes"
+git push origin master
+```
+
+The empty `keep` file is just a placeholder; git ignores empty directories, so if we want the directory to exist, it needs at least one file in it.  Once we add some real content to either directory, the `keep` file may be deleted.
+
 # The collections
 
 Except for the special directories called `_layouts` and `_includes`, all of the directories we created
@@ -64,6 +84,7 @@ collections:
     output: true
     permalink: /lectures/:path/
  ```
+ 
  
 # The `defaults` section
  
