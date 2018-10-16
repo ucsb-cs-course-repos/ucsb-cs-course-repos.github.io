@@ -144,5 +144,12 @@ If you get errors with running `setup.sh`, these are usually from the `bundle in
 Once `./setup.sh` completes successfully, you should be able to create  a `./jekyll.sh` file that allows you to preview the site at <http://localhost:4000>.  A typical `jekyll.sh` file looks like this:
 
 ```
-TODO INSERT HERE
+#!/usr/bin/env bash
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s /etc/profile.d/rvm.sh" ]] && source "/etc/profile.d/rvm.sh"
+
+rvm use 2.5.1
+bundle exec jekyll serve
+
 ```
