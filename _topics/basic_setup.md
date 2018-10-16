@@ -97,7 +97,7 @@ The Gemfile specifies where to look for gems, the Ruby version, and the version 
 
 ```
 source 'https://rubygems.org'
-ruby "2.4.2"
+ruby "2.5.1"
 gem 'github-pages'
 ```
 
