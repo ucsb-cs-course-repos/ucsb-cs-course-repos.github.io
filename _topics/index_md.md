@@ -5,7 +5,7 @@ desc: "Creating the home page for the site"
 
 The `index.md` file at the top of the site creates the home page for the site.  
 
-Here is an example of how that page might start:
+Here is an example of how that page might start:  TODO... FIX THIS UP WITH raw / endraw escaping...
 
 ```
 ---
