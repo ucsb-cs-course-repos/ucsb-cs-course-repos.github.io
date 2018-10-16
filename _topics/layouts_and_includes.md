@@ -71,4 +71,26 @@ Here is a typical `_includes/head.html` for sites that use JQueryMobile as the l
    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
    ```
    
+# A typical `_includes/nav.html` (JQueryMobile)
+
+Here is a typical `_includes/nav.html` for sites that use JQueryMobile as the layout framework, along with some explanation.
+
+```
+<div data-role="header" class="header">
+  <nav data-role="navbar">
+  <ul>
+    <li><a href="/">UCSB CS Course Repos</a></li>
+    <li><a href="https://ucsb-cs-course-repos.github.io" class="ui-btn-active">{{site.course}} {{site.qtr}}</a></li>
+  </ul>
+ </nav>
+</div>
+```
+
+To make this navbar go live, you need to make sure that it is included in your layout file:
+
+```
+<body id="page-top">
+    <div id="container" data-role="page">
+    {% raw %}{% include nav.html %}{% endraw %}    ...
+```
 
