@@ -13,7 +13,7 @@ intended primarily for the browser, or to be printed.
 
 # A typical `_layouts/default.html`
 
-Note the line  `{% include head.html %}` which pulls in the contents of `_includes/head.html`.  This is how
+Note the line   {% raw %}<tt>{% include head.html %}</tt>{% endraw %} which pulls in the contents of `_includes/head.html`.  This is how
 we can factor out things that should be in the `<head></head>` element of every page on our site, and keep 
 our repo "DRY" (i.e. don't repeat yourself.)
 
