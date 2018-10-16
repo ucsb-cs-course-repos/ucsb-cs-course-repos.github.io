@@ -17,7 +17,13 @@ Note the line   {% raw %}<tt>{% include head.html %}</tt>{% endraw %} which pull
 we can factor out things that should be in the `<head></head>` element of every page on our site, and keep 
 our repo "DRY" (i.e. don't repeat yourself.)
 
-Note that `{% raw %}` and `{% endraw %}` that are included in the example below are GitHub's markers and are there to prevent GitHub from pulling-in the content of the respective files -- these are not included in the final files (e.g., `head.hmtl`), so make sure that they are not included (if you are copying from here, which you probably shouldn't do).
+<!--   ***  D A N G E R *** 
+
+IF YOU CAN SEE THIS MESSAGE, YOU ARE LOOKING AT THE RAW SOURCE FOR THE MARKDOWN OR HTML... BEWARE!!!  
+
+Note that `{% raw %}` and `{% endraw %}` that are included in the example below are GitHub's markers and are there to prevent GitHub from pulling-in the content of the respective files -- these are not included in the final files (e.g., `head.hmtl`), so make sure that they are not included (if you are copying from here, which you probably shouldn't do). 
+
+-->
 
 ```html
 <!DOCTYPE html>
