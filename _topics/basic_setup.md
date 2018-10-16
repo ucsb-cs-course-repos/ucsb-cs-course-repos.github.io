@@ -127,6 +127,10 @@ bundle install --path vendor/bundle
 echo "Done."
 ```
 
+Use the command `chmod a+x setup.sh` to make the file executable (this should be a one time thing).
+
+Then, use `./setup.sh` to execute the file.
+
 Note that one "non-DRY" aspect of our current practice is that the ruby version has to be specified in both the `Gemfile` and the `setup.sh`; be sure to edit the version of Ruby to match the one in your Gemfile.
 
 # Loading rvm as a function in `setup.sh`
@@ -158,3 +162,8 @@ rvm use 2.5.1
 bundle exec jekyll serve
 
 ```
+
+Use the command `chmod a+x jekyll.sh` to make the file executable (this should be a one time thing).
+
+Then, use `./jekyll.sh` to execute the file.
+
