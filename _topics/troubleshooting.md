@@ -47,3 +47,8 @@ Here's how to do it:
     then temporarily launch a private local web server on http://localhost:4000 where you can preview your site.
 
 
+# What if the ./setup.sh doesn't build correctly?
+
+Try deleting the directories `vendor/bundle`, `.bundle/` and the file `Gemfile.lock` (though do NOT delete `Gemfile`).
+
+Then try the `./setup.sh` again.  Sometimes this fixes things (it's similar to doing a `make clean`).
