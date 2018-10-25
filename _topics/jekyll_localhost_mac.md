@@ -15,7 +15,7 @@ See instructions at: <https://rvm.io/rvm/install>
 
 1. Install gpg (needed to install rvm)
    1.  [Install Homebrew](https://brew.sh) (needed to install gpg)
-   2.  Install gpg2 (might be brew install gpg2?)
+   2.  Install `gpg` (might be `brew install gpg`)
 1. Install rvm (needed for running Jekyll) (This installs Homebrew too if you don't already have it.)
 
 # Troubleshooting
