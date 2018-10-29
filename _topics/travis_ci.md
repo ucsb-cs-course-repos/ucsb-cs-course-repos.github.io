@@ -23,4 +23,4 @@ continuous integration for private repos.)
    
 2. Navigate to <https://travis-ci.org/> and login with your Github account.
 
-3. 
+3. To add a button in the README.md that indicates the pages status on Travis CI, see [these instructions](https://docs.travis-ci.com/user/status-images/)
