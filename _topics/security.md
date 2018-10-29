@@ -8,6 +8,8 @@ desc: "About that Github message: 'We found potential security vulnerabilities i
     color: #735c0f;
     background-color: #fffbdd;
     border-color: rgba(27,31,35,0.15);
+    max-width: 50em;
+    padding: 1em;
 }
  </style>
 
