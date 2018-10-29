@@ -3,7 +3,18 @@ topic: "Security"
 desc: "About that Github message: 'We found potential security vulnerabilities in your project' and how to fix it"
 ---
 
+<style>
+ .flash-warn {
+    color: #735c0f;
+    background-color: #fffbdd;
+    border-color: rgba(27,31,35,0.15);
+}
+ </style>
+
 You may sometimes see this message in your repo on Github:
+
+
+
 
 <div class="flash flash-warn mt-3">
  <h5 class="mb-1" style="display-inline">
