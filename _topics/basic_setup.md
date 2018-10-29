@@ -110,25 +110,18 @@ TODO: ADD THIS IN.   A start is here: [/topics/index_md/](/topics/index_md/)
 
 These files are typically only needed for running locally.
 
-The Gemfile and Gemfile.lock files specify what version(s) of various software components are used to process the contents of your repo into a web page.   For best results, you want those versions to be close to the ones used by Github Pages, which are specified on this website: <https://pages.github.com/versions/>.
-
-The Gemfile specifies where to look for gems, the Ruby version, and the version of the `github-pages` gem, for example:
-
-```
-source 'https://rubygems.org'
-ruby "2.5.1"
-gem 'github-pages'
-```
+The description of the `setup.sh` file has been moved here: [/topics/running_locally_gemfile/](/topics/running_locally_gemfile/)
 
 # The `setup.sh` file
 
 The description of the `setup.sh` file has been moved here: [/topics/running_locally_setup_sh/](/topics/running_locally_setup_sh/)
 
 
-
 # The `jekyll.sh` file
 
-Once `./setup.sh` completes successfully, you should be able to create  a `./jekyll.sh` file that allows you to preview the site at <http://localhost:4000>.  A typical `jekyll.sh` file looks like this:
+The description of the `jekyll.sh` file has been moved here: [/topics/running_locally_jekyll_sh/](/topics/running_locally_jekyll_sh/)
+
+Once `./setup.sh` completes successfully (see [/topics/running_locally_setup_sh/](/topics/running_locally_setup_sh/)) , you should be able to create  a `./jekyll.sh` file that allows you to preview the site at <http://localhost:4000>.  A typical `jekyll.sh` file looks like this:
 
 ```
 #!/usr/bin/env bash
