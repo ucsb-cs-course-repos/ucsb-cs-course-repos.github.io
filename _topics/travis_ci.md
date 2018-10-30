@@ -23,4 +23,9 @@ continuous integration for private repos.)
    
 2. Navigate to <https://travis-ci.org/> and login with your Github account.
 
-3. To add a button in the README.md that indicates the pages status on Travis CI, see [these instructions](https://docs.travis-ci.com/user/status-images/)
+3. To add a button in the README.md that indicates the pages status on Travis CI
+   * see [these instructions](https://docs.travis-ci.com/user/status-images/) for information on how to get the URL of the image.
+   * With that URL, put code such as this in the README.md file.  Adjust the URLs in example code below as needed:
+      ```
+      Jekyll status on Travis-CI: [![Build Status](https://travis-ci.org/pconrad-webapps/pconrad-webapps.github.io.svg?branch=master)](https://travis-ci.org/pconrad-webapps/pconrad-webapps.github.io)
+      ```
