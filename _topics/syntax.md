@@ -36,6 +36,11 @@ And, if your particular course repo is configured for it:
 Each of these has its own documentation and is used in various contexts.  This page tries to help
 you find when you use what, and how to learn about each of the options.
 
+# Especially useful
+
+* Replacing variables values from the yaml front matter at the top of the page via `{{ page.variable }}`
+* Using [Liquid filters](https://jekyllrb.com/docs/liquid/filters/) such as `{{page.variable | upcase }}` or `{{page.variable | downcase }}`
+
 # Quick Tips
 
 This syntax can be useful for setting custom class, id, and attribute values on a Markdown element
