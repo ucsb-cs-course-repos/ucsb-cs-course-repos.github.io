@@ -41,6 +41,10 @@ you find when you use what, and how to learn about each of the options.
 * Replacing variables values from the yaml front matter at the top of the page via `{{ page.variable }}`
 * Using [Liquid filters](https://jekyllrb.com/docs/liquid/filters/) such as `{{page.variable | upcase }}` or `{{page.variable | downcase }}`
 
+# Date formattings
+
+See: <https://learn.cloudcannon.com/jekyll/date-formatting/>
+
 # Quick Tips
 
 This syntax can be useful for setting custom class, id, and attribute values on a Markdown element
