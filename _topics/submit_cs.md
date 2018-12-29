@@ -1,9 +1,11 @@
 ---
-topic: "submit.cs tips"
-desc: "A super fast inadequate overview of submit.cs"
+topic: "setup.sh tips"
+desc: "Troubleshooting problems that can occur while running setup.sh"
 ---
 
-When reusing an old lab on submit.cs
+# Errors with setup.sh
 
-1.  Copy it into your sandbox, e.g. `SANDBOX_ANDREW`.
+If you get errors while running setup.sh, here are a few things to check.
+
+* Try deleting `Gemfile.lock` and trying again.  This often resolves problems
 
