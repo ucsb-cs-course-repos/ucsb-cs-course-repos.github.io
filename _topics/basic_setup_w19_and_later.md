@@ -9,31 +9,66 @@ indent: true
 
 A course website in this format is typically two websites in one.
 
-| Example | Description |
+| Github Repo | URL | Description |
 |---------|-------------|
-| <https://ucsb-cs8.github.io> | Material that goes with the course permanently, e.g. lessons, tutorials, etc. |
-| <https://ucsb-cs8-s18.github.io> | Material that is specific to a particular quarter and instructor, e.g. syllabus, homework assignments, labs, exams, seating charts, etc. |
+| <https://github.com/ucsb-cs56/ucsb-cs56.github.io> | <https://ucsb-cs56.github.io> |  Material that goes with the course permanently, e.g. lessons, tutorials, etc. |
+| <https://github.com/ucsb-cs56/f18> | <https://ucsb-cs56.github.io/f18> | Material that is specific to a particular quarter and instructor, e.g. syllabus, homework assignments, labs, exams, seating charts, etc. |
 
-When setting up a brand new course for the first time, you'll create two organizations, e.g.
+When transitioning to a new quarter, a new repo is created for that quarter, e.g.
 
-* ucsb-int5
-* ucsb-int5-f18
+| Github Repo | URL | Description |
+|---------|-------------|
+| <https://github.com/ucsb-cs56/ucsb-cs56.github.io> | <https://ucsb-cs56.github.io> |  Material that goes with the course permanently, e.g. lessons, tutorials, etc. |
+| <https://github.com/ucsb-cs56/f18> | <https://ucsb-cs56.github.io/f18> | Material that is specific to a particular quarter and instructor, e.g. syllabus, homework assignments, labs, exams, seating charts, etc. |
+
+When setting up a brand new course for the first time, you'll create one new github organizations, e.g.
+
+* ucsb-cs111
+
+All of the repos for websites for that course will go into this organization.  For example:
+
+* <https://github.com/ucsb-cs111/ucsb-cs111.github.io>
+* <https://github.com/ucsb-cs111/w19>
+* <https://github.com/ucsb-cs111/s19>
+* etc.
+
 
 If there are multiple instructors teaching multiple instances of a particular course in a particular quarter, the naming convention is to add the instructor's last name, e.g.
 
-* ucsb-cs16-f18-mirza
-* ucsb-cs16-f18-nichols
+* <https://github.com/ucsb-cs16/ucsb-cs16.github.io>
+* <https://github.com/ucsb-cs16/f18-mirza>
+* <https://github.com/ucsb-cs16/f18-nichols>
+* etc.
 
-After creating the organizations, create repos with these names:
 
-| Inside this org | Create this repo |
-|-|-|
-| `ucsb-int5` | `ucsb-int5.github.io` |
-| `ucsb-int5-f18` | `ucsb-int5-f18.github.io` |
+If there are multiple sections of a course with the same instructor in the same quarter, the lecture section day or time can be used to differentiate, if separate websites are desired.
+
+* <https://github.com/ucsb-cs16/ucsb-cs16.github.io>
+* <https://github.com/ucsb-cs16/w19-330> for the 3:30pm TR section
+* <https://github.com/ucsb-cs16/w19-630> for the 6:30pm TR section
+* etc.
 
 You should add a `.gitignore` file customzied for Jekyll based on these instructions: [/topics/gitignore/](/topics/gitignore/)
 
-# Setting up the websites
+# Setting up the main course website (e.g. `ucsb-cs111.github.io`)
+
+You should now have a course organization (e.g. `ucsb-cs111`) and an empty course repo (e.g. `ucsb-cs111.github.io`)
+
+You should use an exisiting course repo as a model, e.g. <https://github.com/ucsb-cs48/ucsb-cs48.github.io>
+
+We'll go over the files you need, one at a time.
+
+## Plumbing for Jekyll
+
+The following files are ones that you should copy over "as is".    They only need to be updated if/when the preferred Ruby version changes (e.g. from `2.5.1` to a later version).   While I've specified the purpose of the files below for documentation, you don't need to look into those details at this moment unless you really want to.
+
+| File to copy | Purpose |
+|--------------|---------|
+| `Gemfile`    | This is needed for any Ruby application; it specifies the version of Ruby you are using, and what Ruby gems your application depends on. |
+| `setup.sh`   | This is a shell script that does the `bundle install` step for setting up Ruby to run locally for testing purposes | 
+| `jekyll.sh`   | This is a shell script that does the `bundle exec jekyll serve` step; if you run `setup.sh` once, then you can run this script to test updates to your website locally before pushing to Github. | 
+| `.travis.yml` | Allows you to set up automated testing via <https://travis-ci.org>; this runs tests and help you find and debug configuration errors in your site as it's pushed to Github Pages. | 
+
 
 ## Configure the basic information for your course in `_config.yml`
 
