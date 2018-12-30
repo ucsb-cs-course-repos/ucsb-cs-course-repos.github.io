@@ -1,5 +1,5 @@
 ---
-topic: "Basic Setup: W19 and later"
+topic: "Basic Setup: "
 desc: "Basic Setup for a new course"
 category_prefix: "Basic Setup: "
 ---
