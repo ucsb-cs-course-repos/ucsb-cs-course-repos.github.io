@@ -5,9 +5,34 @@ category_prefix: "Basic Setup: "
 indent: true
 ---
 
-# The two parts
+# Designed for Github Pages
 
-A course website in this format is typically two websites in one.
+This format is designed to be used with Github Pages, a web publishing service integrated with Github.   
+
+Some advantages of Github pages:
+* Professionally-managed free hosting by Github
+* Changes are automatically reflected in the website shortly after you do a push your changes to the master branch of the associated repo
+
+# Do I have to use Github pages?
+
+No.  You can use the format described here, and still host the pages anywhere.  For instance, you could still host the pages on the UCSB CS department webserver.   That's also an option you can use if/when there is a (rare) github.com outage.
+
+To publish the site to, for example, `https://cs.ucsb.edu/~cs111`, you would
+* Set up your system to be able run Jekyll Locally
+* Change the site url in `_config.yml` from `https://github.com/ucsb-cs111.github.io` to `https://cs.ucsb.edu/`
+* Change the `baseurl`
+   * In the main site, from `/` to `/~cs111`
+   * In the quarter specific site from `/w19` to `/~cs111/w19`
+* Run the provided `./setup.sh` and `./jekyll.sh` scripts once in each of the two repos
+* Copy the contents of `_site` from each of the two repos to the `public_html` directories
+
+The catch is that you would then need to do this again each time you make changes to the Github repos.   That could get onerous.  It may be possible to do some automation of that step; but to be honest, that's what Github Pages has already done.  So unless there is a compelling reason to *NOT* use Github pages, that's the recommended approach.
+
+# How Github pages works
+
+
+
+A course website in this format is 
 
 | Github Repo | URL | Description |
 |---------|-------------|----|
