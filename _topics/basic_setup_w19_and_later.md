@@ -28,10 +28,26 @@ To publish the site to, for example, `https://cs.ucsb.edu/~cs111`, you would
 
 The catch is that you would then need to do this again each time you make changes to the Github repos.   That could get onerous.  It may be possible to do some automation of that step; but to be honest, that's what Github Pages has already done.  So unless there is a compelling reason to *NOT* use Github pages, that's the recommended approach.
 
-# How Github pages works
+# Organization, Main Repo, Instance Repo
 
+For each course website (e.g. `ucsb-cs8`, `ucsb-cs24`, `ucsb-cs111`, etc.), we do the following:
+* Set up a github organization for the course, e.g. `ucsb-cs111`
+* Set up a repo with exactly the name `ucsb-cs111.github.io` within that organization
+   * This is a naming convention for Github Pages; the website for a user or organization has the url `name.github.io`
+   * A repo with the name `name.github.io` is automatically published to Github Pages
+   * This repo will contain information about the course that DOES NOT VARY from quarter to quarter, e.g. explanations of course content, tutorials, useful links, etc.
+   * We'll call this the "main repo" or the "parent repo" for the course.
+* Set up a separate repo for each of the course offerings.  
+   * For example, within the `ucsb-cs111` organization, you would set up a repo simply named `w19` for the Winter 2019 offering, and a repo named `s19` for the Spring 2019 offering (naming conventions for multiple instances of a course in the same quarter are explained below.)
+   * These repos (e.g. `w19` and `s19`) are the "course offering" or "course instance" repos. 
+   * Any information that is specific to a particular course offering (e.g. assignments, syllabus, exam info, course policies, lecture notes) goes here.
+   
+# Tying it together: `_data/navigation.yml`
 
+To the end user (i.e. the student) the website appears as one seamless website.   This is accomplished by keeping the navigation consistent.   The file `_data/navigation.yml` allows the instructor to customize the global navigation for site and keep it consistent.
 
+# Summary
+   
 A course website in this format is 
 
 | Github Repo | URL | Description |
