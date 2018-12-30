@@ -1,6 +1,8 @@
 ---
-topic: "Basic Setup"
+topic: "Basic Setup: pre-W19"
 desc: "Basic Setup for a new course"
+category_prefix: "Basic Setup: "
+indent: true
 ---
 
 # The two parts
