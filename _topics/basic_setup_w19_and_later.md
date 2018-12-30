@@ -142,7 +142,7 @@ A minimal `_index.md` looks like this for a main course website:
 title: UCSB CS111
 ---
 
-# {{site.course}}&mdash;{{site.course_title}}
+# {{raw}}{{site.course}}&mdash;{{site.course_title}}{{endraw}}
 
 ```
 
