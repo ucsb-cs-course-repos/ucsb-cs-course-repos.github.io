@@ -10,14 +10,14 @@ indent: true
 A course website in this format is typically two websites in one.
 
 | Github Repo | URL | Description |
-|---------|-------------|
+|---------|-------------|----|
 | <https://github.com/ucsb-cs56/ucsb-cs56.github.io> | <https://ucsb-cs56.github.io> |  Material that goes with the course permanently, e.g. lessons, tutorials, etc. |
 | <https://github.com/ucsb-cs56/f18> | <https://ucsb-cs56.github.io/f18> | Material that is specific to a particular quarter and instructor, e.g. syllabus, homework assignments, labs, exams, seating charts, etc. |
 
 When transitioning to a new quarter, a new repo is created for that quarter, e.g.
 
 | Github Repo | URL | Description |
-|---------|-------------|
+|---------|-------------|---|
 | <https://github.com/ucsb-cs56/ucsb-cs56.github.io> | <https://ucsb-cs56.github.io> |  Material that goes with the course permanently, e.g. lessons, tutorials, etc. |
 | <https://github.com/ucsb-cs56/f18> | <https://ucsb-cs56.github.io/f18> | Material that is specific to a particular quarter and instructor, e.g. syllabus, homework assignments, labs, exams, seating charts, etc. |
 
