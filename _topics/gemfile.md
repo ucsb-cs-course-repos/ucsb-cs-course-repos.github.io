@@ -1,4 +1,6 @@
 ---
+topic: "Gemfile"
+desc: "Where the Ruby version and gem dependencies are specified"
 ---
 
 The recommended content of your Gemfile is:
