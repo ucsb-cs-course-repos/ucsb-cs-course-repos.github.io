@@ -5,7 +5,9 @@ desc: "Creating the home page for the site"
 
 The `index.md` file at the top of the site creates the home page for the site.  
 
-Here is an example of how that page might start:  TODO... FIX THIS UP WITH raw / endraw escaping...
+Here is an example of how that page might start:  
+
+
 
 ```
 ---
@@ -15,13 +17,10 @@ layout: default
 
 # {% raw %}{{site.course}}, {{site.quarter}}{% endraw %}
 
-
-<div id="info" data-role="collapsible" data-collapsed="false">
-<h2>Course Information</h2>
-<ul>
-{% raw %}{% for item in site.info %}{% endraw %}
-<li><a href="{%raw%}{{item.url}}{%endraw%}"  data-ajax="false">{%endraw%}{{item.title }}{%endraw%}</a></li>
-{%raw%}{% endfor %}{%endraw%}
-</ul>
+{% raw %}{% include collapse-button.html label="Information" id="info-list" %}{% endraw %}
+<div class="collapse" id="info-list">
+ <div class="card card-body">
+   {% raw %}{% include info_list.html %}{% endraw %}
+ </div>
 </div>
 ```

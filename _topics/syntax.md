@@ -58,3 +58,7 @@ It is most often used to deal with links where we need to make sure a full page 
 ```
 [Exam 1](/exam/e01){: data-ajax='false' }
 ```
+
+# Raw
+
+* <https://tosbourn.com/liquid-raw-syntax/>

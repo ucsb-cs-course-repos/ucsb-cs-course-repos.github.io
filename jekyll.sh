@@ -4,5 +4,5 @@
 [[ -s "/etc/profile.d/rvm.sh" ]] && source "/etc/profile.d/rvm.sh"
 
 rvm use 2.5.1
-bundle exec jekyll serve
+bundle exec jekyll serve $@
 
