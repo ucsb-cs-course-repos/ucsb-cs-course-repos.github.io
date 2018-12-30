@@ -1,3 +1,10 @@
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
+
+
 title: "UCSB CS Course Repos"
 github_url: "https://github.com/ucsb-cs-course-repos/ucsb-cs-course-repos.github.io"
 
@@ -28,7 +35,7 @@ defaults:
       path: ""
       type: topics
     values:
-      layout: topic
+      layout: default
 
   - scope:
       path: ""
