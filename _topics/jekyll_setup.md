@@ -29,4 +29,9 @@ rvm use ruby-2.4.2
 ```
 
 
+And in the `.travis.yml` file as well:
 
+```yml
+rvm:
+  - 2.5.1
+```
