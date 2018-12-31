@@ -27,5 +27,8 @@ head_scripts:
 For best results, use JQuery syntax to indicate scripts that should be run when the page is loaded.  For example:
 
 ```javascript
-// Put example here
+$( document ).ready(function() {
+    console.log( "cs111_head.js" );
+});
 ```
+
