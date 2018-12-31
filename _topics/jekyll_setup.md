@@ -1,6 +1,8 @@
 ---
-topic: "Jekyll Setup"
+topic: "Jekyll: Setup"
 desc: "Dealing with Jekyll versions, Ruby Versions, etc."
+category_prefix: "Jekyll: "
+indent: true
 ---
 
 In the `Gemfile` of each course repo, there is a line like this:
