@@ -1,6 +1,8 @@
 ---
-topic: "Jekyll on localhost: MacOS"
+topic: "Jekyll: Running on localhost for MacOS"
 desc: "How to run Jekyll on localhost on a Mac (install rvm, etc.)"
+category_prefix: "Jekyll: "
+indent: true
 ---
 
 # Short version 
