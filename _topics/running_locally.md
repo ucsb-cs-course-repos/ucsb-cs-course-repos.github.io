@@ -1,5 +1,5 @@
 ---
-topic: "Running Locally"
+topic: "Running Locally: "
 desc: "Running jekyll/github-pages on your own machine (Windows, Mac, Linux) to see errors, test, and stage a website"
 category_prefix: "Running Locally: "
 ---
