@@ -28,9 +28,5 @@ And in `jekyll.sh` in this line of code:
 rvm use ruby-2.4.2
 ```
 
-Even better, just specify the following to automatically choose the Ruby version from the Gemfile.
 
-```
-rvm use
-``` 
 
