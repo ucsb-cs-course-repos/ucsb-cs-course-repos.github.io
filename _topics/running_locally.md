@@ -1,7 +1,7 @@
 ---
 topic: "Running Locally"
 desc: "Running jekyll/github-pages on your own machine (Windows, Mac, Linux) to see errors, test, and stage a website"
-prefix: "Running Locally: "
+category_prefix: "Running Locally: "
 ---
 
 To run locally, you need to:
