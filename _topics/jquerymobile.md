@@ -3,6 +3,8 @@ topic: JQueryMobile
 desc: Oddities of working with JQueryMobile
 ---
 
+NOTE: This page only applies to pre-w19 course repos.  The w19 and later format uses Bootstrap instead of JQuery Mobile.
+
 JQueryMobile is used on all of these sites in order to provide "responsiveness", i.e. making the site look good and perform well across web browsers on many different platforms 
 (cell phones, iPads, desktops).
 
