@@ -52,3 +52,7 @@ Here's how to do it:
 Try deleting the directories `vendor/bundle`, `.bundle/` and the file `Gemfile.lock` (though do NOT delete `Gemfile`).
 
 Then try the `./setup.sh` again.  Sometimes this fixes things (it's similar to doing a `make clean`).
+
+On Mac, if you get advised to try doing a `gem install` and you get a Permisssions error, try the solution
+at [this link](https://stackoverflow.com/questions/14607193/installing-gem-or-updating-rubygems-fails-with-permissions-error)
+
