@@ -103,6 +103,15 @@ We'll go over the files you need, one at a time.
 
 The following files are ones that you should copy over "as is".    They only need to be updated if/when the preferred Ruby version changes (e.g. from `2.5.1` to a later version).   While I've specified the purpose of the files below for documentation, you don't need to look into those details at this moment unless you really want to.
 
+<style>
+div.table-first-col-wide td:first-of-type { 
+  width: 15em; 
+}
+
+</style>
+
+<div class="table-first-col-wide">
+
 | File to copy | Purpose |
 |--------------|---------|
 | `Gemfile`    | This is needed for any Ruby application; it specifies the version of Ruby you are using, and what Ruby gems your application depends on. |
@@ -116,6 +125,7 @@ The following additional file are needed only for running locally, and/or testin
 | `jekyll.sh`   | This is a shell script that does the `bundle exec jekyll serve` step; if you run `setup.sh` once, then you can run this script to test updates to your website locally before pushing to Github. | 
 | `.travis.yml` | Allows you to set up automated testing via <https://travis-ci.org>; this runs tests and help you find and debug configuration errors in your site as it's pushed to Github Pages. | 
 
+</div>
 
 ## Configure the basic information for your course in `_config.yml`
 
