@@ -2,7 +2,10 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
-remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
+remote_theme: 'ucsb-cs-course-repos/course-repo-jekyll-theme@develop'
+
+url: https://ucsb-cs-course-repos.github.io # the base hostname & protocol for your site
+baseurl: "/"  # the subpath of your site, e.g. "/blog"
 
 
 title: "UCSB CS Course Repos"
@@ -12,6 +15,7 @@ github_url: "https://github.com/ucsb-cs-course-repos/ucsb-cs-course-repos.github
 #  parse_block_html: true
 
 exclude: ['vendor', 'setup.sh', 'jekyll.sh']
+include: ['_pages']
 
 timezone: America/Los_Angeles
 
@@ -20,9 +24,17 @@ collections:
     output: true
     permalink: /topics/:path/
 
+  old:
+    output: true
+    permalink: /old/:path/
+
   resources:
     output: true
     permalink: /resources/:path/
+
+  courses:
+    output: true
+    permalink: /courses/:path/
 
 defaults:
   -
@@ -39,6 +51,22 @@ defaults:
 
   - scope:
       path: ""
+      type: old
+    values:
+      layout: default
+
+
+  - scope:
+      path: ""
       type: resources
     values:
-      layout: topic
+      layout: default
+
+  - scope:
+      path: ""
+      type: courses
+    values:
+      layout: default
+
+head_scripts:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML

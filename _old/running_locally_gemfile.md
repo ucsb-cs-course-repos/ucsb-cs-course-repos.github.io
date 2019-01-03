@@ -2,7 +2,7 @@
 topic: "Running Locally: Gemfile"
 desc: "Specifying the version of Ruby and Github Pages used to create the site locally and on Travis CI"
 category_prefix: "Running Locally: "
-indent:true
+indent: true
 ---
 
 # Setting up the Gemfile and Gemfile.lock

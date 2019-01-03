@@ -18,9 +18,21 @@ home:
    url: /
    baseurl: /
 
-main_dropdown:
-   title: Resources
-   items:
-     - title: Topics
-       url: /topic_list/
+
+main_extra:
+    - title: Courses
+      url: /courses_list/
+      description: "Courses using this format"
+
+    - title: Topics
+      url: /topics_list/
+      description: "Help Topics"
+
+    - title: Resources
+      url: /resources_list/
+      description: "Resources for Course Site Maintainers"
+
+    - title: "Old Topics"
+      url: /old_topics_list/
+      description: "Old Topics prior to W19 refactoring"
 
