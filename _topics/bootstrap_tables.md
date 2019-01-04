@@ -14,8 +14,10 @@ Bootstrap CSS clases that pertain to tables.  For example:
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">HTML</th>
-      <th scope="col">Result</th>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
     </tr>
   </thead>
   <tbody>
@@ -24,6 +26,18 @@ Bootstrap CSS clases that pertain to tables.  For example:
       <td>Mark</td>
       <td>Otto</td>
       <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
     </tr>
   </tbody>
 </table>
