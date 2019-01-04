@@ -3,7 +3,7 @@ topic: "Bootstrap: Tables"
 desc: "Bootstrap support for formatting HTML tables"
 category_prefix: "Bootstrap: "
 indent: true
-----
+---
 
 The theme includes the CSS classes that are part of [Bootstrap]({{site.bootstrap_main_url}}).
 
