@@ -70,3 +70,5 @@ defaults:
 
 head_scripts:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+
+bootstrap_main_url: https://getbootstrap.com/docs/4.2/getting-started/introduction/
