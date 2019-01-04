@@ -11,10 +11,10 @@ So if you want to format tables using HTML, you can get lots of nice formatting 
 Bootstrap CSS clases that pertain to tables.  For example:
 
 <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">HTML</h5>
+<div class="col-sm-6">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">HTML</h5>
 <div class="card-text" markdown="1">
 ```html
 <table class="table">
@@ -34,12 +34,13 @@ Bootstrap CSS clases that pertain to tables.  For example:
   </tbody>
 </table>
 ```
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
+</div><!-- card-text -->
+</div><!-- card-body -->
+</div><!-- card -->
+</div><!-- col-sm-6 -->
+<div class="col-sm-6">
+<div class="card">
+<div class="card-body">
         <h5 class="card-title">Result</h5>
         <div class="card-text">
 <table class="table">
@@ -57,12 +58,12 @@ Bootstrap CSS clases that pertain to tables.  For example:
       <td>@mdo</td>
     </tr>
   </tbody>
-</table>         
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</table>
+</div><!-- card-text -->
+</div><!-- card-body -->
+</div><!-- card -->
+</div><!-- col-sm-6 -->          
+</div><!-- row -->
 
 # For more information
 * [Bootstrap v4.2 Tables Documentation](https://getbootstrap.com/docs/4.2/content/tables/)
