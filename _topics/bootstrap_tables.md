@@ -10,13 +10,7 @@ The theme includes the CSS classes that are part of [Bootstrap]({{site.bootstrap
 So if you want to format tables using HTML, you can get lots of nice formatting options by simply including the
 Bootstrap CSS clases that pertain to tables.  For example:
 
-<div class="row">
-<div class="col-sm-6">
-<div class="card">
-<div class="card-body">
-<h5 class="card-title">HTML</h5>
-<div class="card-text" markdown="1">
-```html
+{% capture table_example_01 %}
 <table class="table">
   <thead>
     <tr>
@@ -33,6 +27,16 @@ Bootstrap CSS clases that pertain to tables.  For example:
     </tr>
   </tbody>
 </table>
+{% endcapture %}
+
+<div class="row">
+<div class="col-sm-6">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">HTML</h5>
+<div class="card-text" markdown="1">
+```html
+{{ table_example_01 }}
 ```
 </div><!-- card-text -->
 </div><!-- card-body -->
@@ -41,24 +45,9 @@ Bootstrap CSS clases that pertain to tables.  For example:
 <div class="col-sm-6">
 <div class="card">
 <div class="card-body">
-        <h5 class="card-title">Result</h5>
-        <div class="card-text">
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">HTML</th>
-      <th scope="col">Result</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-  </tbody>
-</table>
+<h5 class="card-title">Result</h5>
+<div class="card-text">
+{{ table_example_01 }}
 </div><!-- card-text -->
 </div><!-- card-body -->
 </div><!-- card -->
