@@ -3,6 +3,16 @@ topic: "LaTeX"
 desc: "How to add LaTeX support via MathJAX"
 ---
 
+The course repos support embedded Math notation using [MathJAX](https://www.mathjax.org/) provided you turn this on
+in your `_config.yml` settings.
+
+In addition to understanding how to use use MathJAX, it may also be helpful to understand a bit about how
+Kramdown, the dialect of Markdown we are using handles Math blocks:
+
+* [How Kramdown Handles Math Blocks](https://kramdown.gettalong.org/syntax.html#math-blocks)
+
+# Enabling LaTeX
+
 To enable [LaTeX](https://www.latex-project.org/) support via [MathJAX](https://www.mathjax.org/):
 
 1. You'll need the URL to load MathJAX from a CDN (Content Delivery Network) with the options you want.
