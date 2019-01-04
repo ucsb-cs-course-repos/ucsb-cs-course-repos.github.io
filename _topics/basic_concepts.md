@@ -3,6 +3,10 @@ topic: "Basic Concepts:"
 desc: "Basics concepts for beginners"
 ---
 
+# home pages
+
+The home page of your site is likely is in the file `index.md` in the root of your repo.
+
 # include files
 
 When you see this in a file:
