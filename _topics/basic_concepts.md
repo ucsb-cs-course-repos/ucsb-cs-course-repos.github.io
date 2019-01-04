@@ -34,5 +34,18 @@ This is similar to the concept of "overriding" a method in OOP.
 
 The same concept applies to files in the `_layouts` directory.
 
+# Customizing the navigation bar
+
+The navigation bar is driven by the file
+
+* `_data/navigation.yml`
+
+For the time being, regrettably, this file needs to be kept in sync between the course level repo and the the course instance repos.    Eventually, we hope to implement code in the course level repo that will pull the navigation automatically from the course instance repos, but that hasn't happened yet (as of 2019-01-04).
+
+Here's the structure of the `navigation.yml`
+
+```yml
+
+```
 
 
