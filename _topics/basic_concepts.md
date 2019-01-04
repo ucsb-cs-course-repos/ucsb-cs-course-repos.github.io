@@ -44,8 +44,33 @@ For the time being, regrettably, this file needs to be kept in sync between the 
 
 Here's the structure of the `navigation.yml`
 
+## `main_dropdown`
+
+`main_dropdown` is intended to be a list of links to pages on the course level website.
+If you don't want one of those, you can just leave this entire section out of your `navigation.yml`
+   
+## `offering`   
+
+In a course offering repo, the `offerings` section lists the offerings that will be available.
+
+* The top level `title:` value should identify the offering in *this* repo (the one that the `navigation.yml` file
+lives in) (e.g. 'W19' or 'W19-mirza')
+* The top level `url:` value should typically be `/`
+* The top level `baseurl:` value should be the baseurl of the repo, e.g.  `/w19` or `/w19-mirza` with no trailing slash.
+* The `items` list is a list of these three values for each instance that you want to appear in the menu.   The first
+   item in the list should match the repo (e.g. if you want both `W19` and `S19` in the menu in the `S19` repo, list
+   `S19` first.
+
 ```yml
-
-```
-
-
+offerings:
+   title: W19
+   url: /	
+   baseurl: /w19
+   items:
+      - title: W19
+        url: /
+        baseurl: /w19
+      - title: S19
+        url: /
+        baseurl: /s19
+```        
