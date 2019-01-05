@@ -19,7 +19,6 @@ Here's a rundown of these files:
 <style>
 .table-first-col-wide td:first-of-type { 
   width: 15em; 
-  background-color: #fef;
 }
 
 </style>
