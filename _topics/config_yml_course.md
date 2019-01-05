@@ -5,12 +5,9 @@ category_prefix: "_config_yml: "
 indent: true
 ---
 
-The settings listed below should be present in every `_config.yml` file that for a course level repo such as:
+The settings listed below should be present in every `_config.yml` file for a course level repo, such as those in this table.  
 
-* [ucsb-cs8](https://github.com/ucsb-cs8)
-* [ucsb-cs16](https://github.com/ucsb-cs16)
-* [ucsb-cs111](https://github.com/ucsb-cs111)
-etc.
+You can click the `_config.yml` links for examples of what each `_config.yml` looks like.  Comparing what is the same, and what varies as you read over the documentation below can be helpful in understanding the structure of this file.
 
 
 | Site | Repo | `_config.yml` |
