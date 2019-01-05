@@ -9,7 +9,7 @@ The settings listed below should be present in every `_config.yml` file that for
 
 | Site | Repo | `_config.yml` |
 |------|------|--------------|
-| [ucsb-cs8.github.io/w19-mirza/](https://ucsb-cs8.github.io/w19-mirza/) | [ucsb-cs8/w19-mirza/](https://github.com/ucsb-cs8.github.io/w19-mirza/) | [`_config.yml`]() |
+| [ucsb-cs8.github.io/w19-mirza/](https://ucsb-cs8.github.io/w19-mirza/) | [ucsb-cs8/w19-mirza/](https://github.com/ucsb-cs8/w19-mirza/) | [`_config.yml`]() |
 | [ucsb-cs24.github.io/w19/](https://ucsb-cs24.github.io/w19/) | [ucsb-cs24/w19/](https://github.com/ucsb-cs24/w19-mirza/) | [`_config.yml`]() |
 | [ucsb-cs111.github.io/w19/](https://ucsb-cs111.github.io/w19/) | [ucsb-cs111/w19/](https://github.com/ucsb-cs111/w19/) | [`_config.yml`]() |
 
