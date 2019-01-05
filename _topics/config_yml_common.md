@@ -1,7 +1,7 @@
 ---
-topic: "_config.yml: common"
+topic: "config.yml: common"
 desc: "The central configuration file for the site"
-category_prefix: "_config_yml: "
+category_prefix: "config_yml: "
 indent: true
 ---
 
