@@ -20,6 +20,23 @@ You can click the `_config.yml` links for examples of what each `_config.yml` lo
 | &nbsp;&nbsp; Offering|[ucsb-cs111.github.io/w19/](https://ucsb-cs111.github.io/w19/) | [ucsb-cs111/w19/](https://github.com/ucsb-cs111/w19/) | [`_config.yml`](https://github.com/ucsb-cs111/w19/blob/master/_config.yml) |
 
 
-TODO: FILL THIS IN
+# `plugins:`
+
+This specifies the Jekyll plugins to be used.   Note that when using GitHub Pages to host the site, only a very [limited number of whitelisted Jekyll plugins are supported](https://help.github.com/articles/configuring-jekyll-plugins/).
+
+```
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+```
+
+The `jekyll-remote-theme` plugin is what allows us to centrally maintain many of the files that structure our sites and give them a common set of functionality, while still allowing instructors to customize their sites to their own needs and preferences.
+
+The `jekyll-include-cache` allows the use of `{% raw %}{{% end raw %}% include-cached foo.html % {% raw %}}{% end raw %}` instead of `{% raw %}{{% end raw %}% include foo.html % {% raw %}}{% end raw %}` as a performance optimization
+when including files.    
+
+Note that if the include file contains references to context-specific variables or parameters, you should not use `{% raw %}{{% end raw %}% include-cached foo.html % {% raw %}}{% end raw %}`  
 
 
+remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
+```
