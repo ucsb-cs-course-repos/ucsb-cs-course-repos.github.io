@@ -1,5 +1,5 @@
 ---
-topic: "config.yml"
+topic: "config.yml: "
 desc: "The central configuration file for the site"
 category_prefix: "config_yml: "
 ---
