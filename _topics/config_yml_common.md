@@ -31,13 +31,27 @@ plugins:
   - jekyll-include-cache
 ```
 
-The `jekyll-remote-theme` plugin is what allows us to centrally maintain many of the files that structure our sites and give them a common set of functionality, while still allowing instructors to customize their sites to their own needs and preferences.
+The [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) plugin is what allows us to centrally maintain many of the files that structure our sites and give them a common set of functionality, while still allowing instructors to customize their sites to their own needs and preferences.
 
-The `jekyll-include-cache` allows the use of `{% raw %}{{% end raw %}% include-cached foo.html % {% raw %}}{% end raw %}` instead of `{% raw %}{{% end raw %}% include foo.html % {% raw %}}{% end raw %}` as a performance optimization
+The `jekyll-include-cache` allows the use of `{% raw %}{{% endraw %}% include-cached foo.html % {% raw %}}{% endraw %}` instead of `{% raw %}{{% endraw %}% include foo.html % {% raw %}}{% endraw %}` as a performance optimization
 when including files.    
 
-Note that if the include file contains references to context-specific variables or parameters, you should not use `{% raw %}{{% end raw %}% include-cached foo.html % {% raw %}}{% end raw %}`  
+Note that if the include file contains references to context-specific variables or parameters, you should not use `{% raw %}{{% endraw %}% include-cached foo.html % {% raw %}}{% endraw %}`  
 
+# `remote_theme:`
 
+This specifies the github repo of the remote theme used by the [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) plugin.  It is the name of a [github.com](https://github.com) repo, with the `https://github.com` part being implied and not specified:
+
+```
 remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
 ```
+
+It is possible to specify a particular branch (e.g. the `develop` branch) with this syntax:
+
+```
+remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme@develop
+```
+
+See the [jekyll-remote-theme README.md file](https://github.com/benbalter/jekyll-remote-theme/blob/master/README.md) for more documentation of the syntax for this line.
+
+
