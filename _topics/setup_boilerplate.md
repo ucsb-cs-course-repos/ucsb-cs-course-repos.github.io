@@ -48,12 +48,45 @@ to see it's source code.
 
 # `./update.sh` example:
 
-```
+```sh
 Phillips-Mac-mini:boilerplate pconrad$ ./update.sh ~/github/ucsb-cs64/ucsb-cs64.github.io/
 .gitignore -> /Users/pconrad/github/ucsb-cs64/ucsb-cs64.github.io/.gitignore
 .travis.yml -> /Users/pconrad/github/ucsb-cs64/ucsb-cs64.github.io/.travis.yml
 Gemfile -> /Users/pconrad/github/ucsb-cs64/ucsb-cs64.github.io/Gemfile
 jekyll.sh -> /Users/pconrad/github/ucsb-cs64/ucsb-cs64.github.io/jekyll.sh
 setup.sh -> /Users/pconrad/github/ucsb-cs64/ucsb-cs64.github.io/setup.sh
-Phillips-Mac-mini:boilerplate pconrad$ 
+Phillips-Mac-mini:boilerplate pconrad$ cd ~/github/ucsb-cs64/ucsb-cs64.github.io/
+Phillips-Mac-mini:ucsb-cs64.github.io pconrad$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	.travis.yml
+	Gemfile
+	jekyll.sh
+	setup.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+Phillips-Mac-mini:ucsb-cs64.github.io pconrad$ git add .
+Phillips-Mac-mini:ucsb-cs64.github.io pconrad$ git commit -m "add boilerplate"
+[master (root-commit) 23fcca9] add boilerplate
+ 5 files changed, 54 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .travis.yml
+ create mode 100644 Gemfile
+ create mode 100755 jekyll.sh
+ create mode 100755 setup.sh
+Phillips-Mac-mini:ucsb-cs64.github.io pconrad$ git push origin master
+Counting objects: 7, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.00 KiB | 1.00 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To github.com:ucsb-cs64/ucsb-cs64.github.io.git
+ * [new branch]      master -> master
+Phillips-Mac-mini:ucsb-cs64.github.io pconrad$ 
 ```
