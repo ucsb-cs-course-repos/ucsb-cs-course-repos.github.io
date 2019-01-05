@@ -15,6 +15,7 @@ You can click the `_config.yml` links for examples of what each `_config.yml` lo
 | [ucsb-cs8.github.io](https://ucsb-cs8.github.io) | [ucsb-cs8/ucsb-cs8.github.io](https://github.com/ucsb-cs8/ucsb-cs8.github.io) | [`_config.yml`](https://github.com/ucsb-cs8/ucsb-cs8.github.io/blob/master/_config.yml) |
 | [ucsb-cs24.github.io](https://ucsb-cs24.github.io) | [ucsb-cs24/ucsb-cs24.github.io](https://github.com/ucsb-cs24/ucsb-cs24.github.io) | [`_config.yml`](https://github.com/ucsb-cs24/ucsb-cs24.github.io/blob/master/_config.yml) |
 | [ucsb-cs111.github.io](https://ucsb-cs111.github.io) | [ucsb-cs111/ucsb-cs111.github.io](https://github.com/ucsb-cs111/ucsb-cs111.github.io) | [`_config.yml`](https://github.com/ucsb-cs111/ucsb-cs111.github.io/blob/master/_config.yml) |
+{:.table .table-sm .table-striped .table-bordered}
 
 
 TODO: FILL THIS IN
