@@ -63,6 +63,43 @@ These can also be combined; for example, the table immediately above this senten
 ```
 {:.table .table-sm .table-striped .table-bordered}
 ```
+You can also put the line that adds CSS classes to the table immediately after the Markdown for the table, as shown in the example below.  This doesn't change the formatting on the final website, but it can help the Markdown preview on Github.com look a little nicer.
+
+{% capture table_example_03 %}
+| Heading1 | Heading2 | Heading 3 |
+|----------|----------|-----------|
+| Data1a   | Data2a   | Data3a    |
+| Data1b   | Data2b   | Data3b    |
+| Data1b   | Data2b   | Data3b    |
+{:.table .table-sm .table-striped .table-bordered}
+{% endcapture %}
+
+<div class="row">
+<div class="col-sm-6">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">Markdown</h5>
+<div class="card-text" markdown="1">
+```html
+{{ table_example_03 }}
+```
+</div><!-- card-text -->
+</div><!-- card-body -->
+</div><!-- card -->
+</div><!-- col-sm-6 -->
+<div class="col-sm-6">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">Result</h5>
+<div class="card-text" markdown="1">
+{{ table_example_03 }}
+</div><!-- card-text -->
+</div><!-- card-body -->
+</div><!-- card -->
+</div><!-- col-sm-6 -->          
+</div><!-- row -->
+
+
 
 # Using HTML
 
