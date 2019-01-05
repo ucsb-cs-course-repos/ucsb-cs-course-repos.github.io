@@ -8,15 +8,20 @@ So you want to set up a new course repo in this format.  There are six cases, as
 
 The row in the table is determined by whether you are starting from scratch, or copying materials from a repo that already exists:
 
-* If you are just getting started with this format, the "Starting from scratch" option is the only one you need to consult.
-* If you are offering a course that has used this format before, and you are copying a repo from another instructor, then the first question is whether that repo uses the new w19 and later format, or the old legacy format.
+*  If you are just getting started with this format, the "Starting from scratch" option is the only row you need to consult.
+*  If you are offering a course that has used this format before, and you are copying a repo from another instructor, 
+   then the next question is whether that repo uses the new w19 and later format, or the old legacy format.
    * If the `_config.yml` file of the repo has `jekyll-remote-theme` in it, then it's the new format.
    * Otherwise, it's the old pre-w19 format.
 
 The column is determined by what kind of repo you are setting up:
-* If you are setting up a site for a course that has never used this format before, you'll actually follow the instructions in BOTH columns.
-* If you are setting up a repo that serves as the base of the website, and holds material that is global across all offerings of the course,  you want the first column.
-* If you are setting up a repo for a particular instructor's offering of a course in a particular term, (e.g. `S19` or `S19-mirza`, you want the second column.
+
+*  If you are setting up a site for a course that has never 
+   used this format before, you'll actually follow the instructions in BOTH columns.
+*  If you are setting up a repo that serves as the base of the website, 
+   and holds material that is global across all offerings of the course,  you want the first column.
+*  If you are setting up a repo for a particular instructor's offering 
+   of a course in a particular term, (e.g. `S19` or `S19-mirza`, you want the second column.
 
 
 {%- capture c_from_scratch -%}{{'/topics/setup_course_from_scratch/' | relative_url }}{%- endcapture -%}
