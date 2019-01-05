@@ -21,14 +21,16 @@ You can click the `_config.yml` links for examples of what each `_config.yml` lo
 | &nbsp;&nbsp; Offering|[ucsb-cs111.github.io/w19/](https://ucsb-cs111.github.io/w19/) | [ucsb-cs111/w19/](https://github.com/ucsb-cs111/w19/) | [`_config.yml`](https://github.com/ucsb-cs111/w19/blob/master/_config.yml) |
 {:.table .table-sm .table-striped .table-bordered}
 
-# `plugins:`
+# `plugins:` and `remote_theme:`
 
-This specifies the Jekyll plugins to be used.   Note that when using GitHub Pages to host the site, only a very [limited number of whitelisted Jekyll plugins are supported](https://help.github.com/articles/configuring-jekyll-plugins/).
+`plugins:` is a list of Jekyll plugins to be used.   Note that when using GitHub Pages to host the site, only a very [limited number of whitelisted Jekyll plugins are supported](https://help.github.com/articles/configuring-jekyll-plugins/).
 
 ```
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
+
+remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme  
 ```
 
 The [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) plugin is what allows us to centrally maintain many of the files that structure our sites and give them a common set of functionality, while still allowing instructors to customize their sites to their own needs and preferences.
@@ -38,13 +40,7 @@ when including files.
 
 Note that if the include file contains references to context-specific variables or parameters, you should not use `{% raw %}{{% endraw %}% include-cached foo.html % {% raw %}}{% endraw %}`  
 
-# `remote_theme:`
-
-This specifies the github repo of the remote theme used by the [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) plugin.  It is the name of a [github.com](https://github.com) repo, with the `https://github.com` part being implied and not specified:
-
-```
-remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
-```
+`remote_theme:` specifies the github repo of the remote theme used by the [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) plugin.  It is the name of a [github.com](https://github.com) repo, with the `https://github.com` part being implied and not specified:
 
 It is possible to specify a particular branch (e.g. the `develop` branch) with this syntax:
 
@@ -54,4 +50,17 @@ remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme@develop
 
 See the [jekyll-remote-theme README.md file](https://github.com/benbalter/jekyll-remote-theme/blob/master/README.md) for more documentation of the syntax for this line.
 
+# `kramdown:`, `exclude:`, `#include` and `timezone:`
 
+This block should typically be copied as is.   You may want to change the timezone if you are outside of California.
+
+```
+kramdown:
+  parse_block_html: false
+
+exclude: ['vendor', 'setup.sh', 'jekyll.sh']
+include:
+  - _pages
+
+timezone: America/Los_Angeles
+```
