@@ -36,3 +36,6 @@ main_extra:
       url: /old_topics_list/
       description: "Old Topics prior to W19 refactoring"
 
+     - title: "Support"
+      url: /support/
+      description: "Report a bug, request a feature, ask for help"
