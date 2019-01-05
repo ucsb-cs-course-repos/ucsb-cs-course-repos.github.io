@@ -5,6 +5,8 @@ category_prefix: "Setup: "
 indent: true
 ---
 
+<div class="d-none">http://ucsb-cs-course-repos.github.io/topics/setup_boilerplate/</div>
+
 There are several files that every repo in this format needs, and that are seldom modified.
 
 When they are modified, it is typically to just copy a new set of these files from the repo:
