@@ -24,7 +24,7 @@ category_prefix: "Setup: "
 | Starting from pre-W19 repo  | [instructions]({{ c_from_pre_w19}}) | [instructions]({{ o_from_pre_w19}})  | 
 | Starting from a previous post W19 repo  | [instructions]({{ c_from_prev}})  | [instructions]({{ o_from_prev}})  | 
 
-So you want to set up a new course repo in this format.  There are six cases, as shown in the table below.
+So you want to set up a new course repo in this format.  There are six cases, as shown in the table above.
 
 The row in the table is determined by whether you are starting from scratch, or copying materials from a repo that already exists:
 
