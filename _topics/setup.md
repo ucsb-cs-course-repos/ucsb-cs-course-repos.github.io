@@ -18,7 +18,7 @@ category_prefix: "Setup: "
 
 {%- capture o_from_prev -%}{{'/topics/setup_offering_from_previous/' | relative_url }}{%- endcapture -%}
 
-{:.table}
+{:.table .table-sm .table-striped .table-bordered}
 |    | Course-level-repo <br> e.g. [ucsb-cs24.github.io](https://ucsb-cs24.github.io) | Instance repo <br> e.g. [ucsb-cs24.github.io/w19/](https://ucsb-cs24.github.io/w19/) |
 |---|---|---|
 | Starting from scratch   | [instructions]({{ c_from_scratch}})  | [instructions]({{ o_from_scratch}}) | 
