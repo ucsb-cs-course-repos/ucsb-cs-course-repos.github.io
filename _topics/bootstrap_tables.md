@@ -37,7 +37,7 @@ To get the Bootstrap formatting on Markdown tables, put this on a line by itself
 <div class="card">
 <div class="card-body">
 <h5 class="card-title">Result</h5>
-<div class="card-text">
+<div class="card-text" markdown="1">
 {{ table_example_01 }}
 </div><!-- card-text -->
 </div><!-- card-body -->
@@ -58,7 +58,7 @@ at the [Bootstrap Table Class Documentation](https://getbootstrap.com/docs/4.2/c
 | `.table-borderless` | `{:.table-borderless}` | No borders |
 | `.table-dark` |  `{:.table-dark}`    | Inverted Colors |
 
-These can also be combined, for example:
+These can also be combined; for example, the table immediately above this sentences was formated with:
 
 ```
 {:.table .table-sm .table-striped .table-bordered}
