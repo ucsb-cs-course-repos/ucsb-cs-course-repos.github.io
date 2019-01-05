@@ -24,23 +24,25 @@ cd boilerplate
 
 # Overview of the boilerplate files
 
-Here's a rundown of these files:
-
+Here's a rundown of these boilerplate files.  Click the file name
+to see it's source code.
 
 <style>
 .table-first-col-wide td:first-of-type { 
-  width: 15em; 
+  width: 10em;
+  padding-left: 1em;
 }
 
 </style>
 
+{% assign bpurl="https://github.com/ucsb-cs-course-repos/boilerplate/blob/master" %}
 
 {:.table .table-sm .table-striped .table-bordered .table-first-col-wide}
-| File to copy | Purpose |
+| Filename | Purpose |
 |--------------|---------|
-| `Gemfile`    | This is needed for any Ruby application; it specifies the version of Ruby you are using, and what Ruby gems your application depends on. |
-| `.gitignore`    | This helps keep your repo tidy by telling github which files to ignore when committing to github |
-| `setup.sh`   | This is a shell script that does the `bundle install` step for setting up Ruby to run locally for testing purposes | 
-| `jekyll.sh`   | This is a shell script that does the `bundle exec jekyll serve` step; if you run `setup.sh` once, then you can run this script to test updates to your website locally before pushing to Github. | 
-| `.travis.yml` | Allows you to set up automated testing via <https://travis-ci.org>; this runs tests and help you find and debug configuration errors in your site as it's pushed to Github Pages. | 
+| [`Gemfile`]({{ bpurl }}/Gemfile) | This is needed for any Ruby application; it specifies the version of Ruby you are using, and what Ruby gems your application depends on. |
+| [`.gitignore`]({{bpurl}}/.gitignore)    | This helps keep your repo tidy by telling github which files to ignore when committing to github |
+| [`setup.sh`]({{bpurl}}/.setup.sh)   | This is a shell script that does the `bundle install` step for setting up Ruby to run locally for testing purposes | 
+| [`jekyll.sh`]({{bpurl}}/jekyll.sh)   | This is a shell script that does the `bundle exec jekyll serve` step; if you run `setup.sh` once, then you can run this script to test updates to your website locally before pushing to Github. | 
+| [`.travis.yml`]({{bpurl}}/.travis.yml) | Allows you to set up automated testing via <https://travis-ci.org>; this runs tests and help you find and debug configuration errors in your site as it's pushed to Github Pages. | 
 
