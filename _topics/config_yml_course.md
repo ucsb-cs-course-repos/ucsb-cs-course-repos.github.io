@@ -17,5 +17,32 @@ You can click the `_config.yml` links for examples of what each `_config.yml` lo
 | [ucsb-cs111.github.io](https://ucsb-cs111.github.io) | [ucsb-cs111/ucsb-cs111.github.io](https://github.com/ucsb-cs111/ucsb-cs111.github.io) | [`_config.yml`](https://github.com/ucsb-cs111/ucsb-cs111.github.io/blob/master/_config.yml) |
 {:.table .table-sm .table-striped .table-bordered}
 
+# `url`, `baseurl`, `github_url`
 
-TODO: FILL THIS IN
+Fill in these values, following the pattern shown.
+
+The value of `github_url` is used for the "Edit this page on github" links in the footer of each page.
+
+```
+url: https://ucsb-cs8.github.io # the base hostname & protocol for your site
+baseurl: "/"  # the subpath of your site "/" for main, "/w19" for instance
+github_url: https://github.com/ucsb-cs8/ucsb-cs8.github.io
+```
+
+# `title`, `course`
+
+Fill these in as shown.  
+
+```
+title: "UCSB CS8"
+course: "CS8"
+```
+
+You can use these values in content on web pages by writing, for example:
+* `{% raw %}{{{% endraw %} site.title {% raw %}}}{% endraw %}` anywhere you want `UCSB CS8` to appear.
+* `{% raw %}{{{% endraw %} site.course {% raw %}}}{% endraw %}` anywhere you want `CS8` to appear.
+
+This allows you to more easily copy/paste content (e.g. your syllabus) between and among course websites and have the content
+remain correct.
+
+TODO: CONTINUE DOCUMENTING ...
