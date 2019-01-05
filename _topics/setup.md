@@ -26,7 +26,7 @@ The column is determined by what kind of repo you are setting up:
 {%- capture c_from_prev -%}{{'/topics/setup_course_from_previous/' | relative_url }} {%- endcapture -%}
 {%- capture o_from_prev -%}{{'/topics/setup_offering_from_previous/' | relative_url }} {%- endcapture -%}
 
-|    | Course-level-repo <br> e.g. [ucsb-cs8.github.io](https://ucsb-cs8.github.io) | Instance repo <br> e.g. [ucsb-cs8.github.io/w19/](https://ucsb-cs8.github.io/w19/) |
+|    | Course-level-repo <br> e.g. [ucsb-cs24.github.io](https://ucsb-cs24.github.io) | Instance repo <br> e.g. [ucsb-cs24.github.io/w19/](https://ucsb-cs24.github.io/w19/) |
 |---|---|---|
 | Starting from scratch   | [instructions]({{ c_from_scratch}})  | [instructions]({{ o_from_scratch}}) | 
 | Starting from pre-W19 repo  | [instructions]({{ c_from_pre_w19}}) | [instructions]({{ o_from_pre_w19}})  | 
