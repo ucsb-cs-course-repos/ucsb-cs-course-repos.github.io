@@ -1,8 +1,7 @@
 ---
-topic: "Setup: _config.yml"
+topic: "_config.yml"
 desc: "The central configuration file for the site"
-category_prefix: "Setup: "
-indent: true
+category_prefix: "_config_yml: "
 ---
 
 The file `_config.yml` is the main file that controls the process 
