@@ -18,6 +18,11 @@ category_prefix: "Setup: "
 
 {%- capture o_from_prev -%}{{'/topics/setup_offering_from_previous/' | relative_url }}{%- endcapture -%}
 
+|    | Course-level-repo <br> e.g. [ucsb-cs24.github.io](https://ucsb-cs24.github.io) | Instance repo <br> e.g. [ucsb-cs24.github.io/w19/](https://ucsb-cs24.github.io/w19/) |
+|---|---|---|
+| Starting from scratch   | [instructions]({{ c_from_scratch}})  | [instructions]({{ o_from_scratch}}) | 
+| Starting from pre-W19 repo  | [instructions]({{ c_from_pre_w19}}) | [instructions]({{ o_from_pre_w19}})  | 
+| Starting from a previous post W19 repo  | [instructions]({{ c_from_prev}})  | [instructions]({{ o_from_prev}})  | 
 
 So you want to set up a new course repo in this format.  There are six cases, as shown in the table below.
 
@@ -36,12 +41,6 @@ The column is determined by what kind of repo you are setting up:
 *  If you are setting up a repo that serves as the base of the website, 
    and holds material that is global across all offerings of the course,  you want the first column.
 *  If you are setting up a repo for a particular instructor's offering 
-   of a course in a particular term, (e.g. `S19` or `S19-mirza`, you want the second column.
+   of a course in a particular term, (e.g. `S19` or `S19-mirza`), you want the second column.
 
 
-
-|    | Course-level-repo <br> e.g. [ucsb-cs24.github.io](https://ucsb-cs24.github.io) | Instance repo <br> e.g. [ucsb-cs24.github.io/w19/](https://ucsb-cs24.github.io/w19/) |
-|---|---|---|
-| Starting from scratch   | [instructions]({{ c_from_scratch}})  | [instructions]({{ o_from_scratch}}) | 
-| Starting from pre-W19 repo  | [instructions]({{ c_from_pre_w19}}) | [instructions]({{ o_from_pre_w19}})  | 
-| Starting from a previous post W19 repo  | [instructions]({{ c_from_prev}})  | [instructions]({{ o_from_prev}})  | 
