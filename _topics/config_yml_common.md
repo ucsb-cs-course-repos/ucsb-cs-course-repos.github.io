@@ -9,7 +9,8 @@ The settings listed below should be present in every `_config.yml` file that use
 
 You can click the `_config.yml` links for examples of what each `_config.yml` looks like.  Comparing what is the same, and what varies as you read over the documentation below can be helpful in understanding the structure of this file.
 
-{:.table .table-sm .table-striped .table-bordered}
+
+
 | Level | Site | Repo | `_config.yml` |
 |----|------|------|--------------|
 |Course| [ucsb-cs8.github.io](https://ucsb-cs8.github.io) | [ucsb-cs8/ucsb-cs8.github.io](https://github.com/ucsb-cs8/ucsb-cs8.github.io) | [`_config.yml`](https://github.com/ucsb-cs8/ucsb-cs8.github.io/blob/master/_config.yml) |
