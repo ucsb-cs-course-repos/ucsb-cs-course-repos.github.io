@@ -21,7 +21,7 @@ div.table-first-col-wide td:first-of-type {
 
 </style>
 
-<div class="table-first-col-wide">
+<div class="table-first-col-wide" markdown="1">
 
 | File to copy | Purpose |
 |--------------|---------|
