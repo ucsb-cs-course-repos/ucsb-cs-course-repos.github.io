@@ -10,7 +10,7 @@ indent: true
 For UCSB CS, our naming convention is, for example:
 
 * [ucsb-cs8](https://github.com/ucsb-cs8)
-* [ucsb-cs16](https://github.com/ucsb-cs8)
+* [ucsb-cs16](https://github.com/ucsb-cs16)
 * [ucsb-cs111](https://github.com/ucsb-cs111)
 etc.
 
