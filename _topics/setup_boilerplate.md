@@ -13,7 +13,7 @@ Typically, the only modification needed is to copy a brand new set of these file
 
 * <https://github.com/ucsb-cs-course-repos/boilerplate>
 
-There is a script in that repo that does exactly that called `./update.sh`.  Just do the following,
+There is a script in that repo that does exactly that called [`./update.sh`](https://github.com/ucsb-cs-course-repos/boilerplate/blob/master/update.sh).  Just do the following,
 where `target-directory` is the directory you are updating, e.g. `~/github/ucsb-cs24/ucsb-cs24.github.io`
 
 ```
