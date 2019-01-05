@@ -46,3 +46,14 @@ to see it's source code.
 | [`jekyll.sh`]({{bpurl}}/jekyll.sh)   | This is a shell script that does the `bundle exec jekyll serve` step; if you run `setup.sh` once, then you can run this script to test updates to your website locally before pushing to Github. | 
 | [`.travis.yml`]({{bpurl}}/.travis.yml) | Allows you to set up automated testing via <https://travis-ci.org>; this runs tests and help you find and debug configuration errors in your site as it's pushed to Github Pages. | 
 
+# `./update.sh` example:
+
+```
+Phillips-Mac-mini:boilerplate pconrad$ ./update.sh ~/github/ucsb-cs64/ucsb-cs64.github.io/
+.gitignore -> /Users/pconrad/github/ucsb-cs64/ucsb-cs64.github.io/.gitignore
+.travis.yml -> /Users/pconrad/github/ucsb-cs64/ucsb-cs64.github.io/.travis.yml
+Gemfile -> /Users/pconrad/github/ucsb-cs64/ucsb-cs64.github.io/Gemfile
+jekyll.sh -> /Users/pconrad/github/ucsb-cs64/ucsb-cs64.github.io/jekyll.sh
+setup.sh -> /Users/pconrad/github/ucsb-cs64/ucsb-cs64.github.io/setup.sh
+Phillips-Mac-mini:boilerplate pconrad$ 
+```
