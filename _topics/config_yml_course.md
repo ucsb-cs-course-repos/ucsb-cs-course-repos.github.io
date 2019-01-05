@@ -1,7 +1,7 @@
 ---
-topic: "_config.yml: course"
-desc: "The central configuration file for the site"
-category_prefix: "_config_yml: "
+topic: "config.yml: course"
+desc: "configuring, for example, ucsb-cs8.github.io "
+category_prefix: "config_yml: "
 indent: true
 ---
 
