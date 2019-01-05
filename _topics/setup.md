@@ -7,16 +7,13 @@ category_prefix: "Setup: "
 
 
 {%- capture c_from_scratch -%}{{'/topics/setup_course_from_scratch/' | relative_url }}{%- endcapture -%}
-
 {%- capture o_from_scratch -%}{{'/topics/setup_offering_from_scratch/' | relative_url }}{%- endcapture -%}
-
 {%- capture c_from_pre_w19 -%}{{'/topics/setup_course_from_pre_w19/' | relative_url }}{%- endcapture -%}
-
 {%- capture o_from_pre_w19 -%}{{'/topics/setup_offering_from_pre_w19/' | relative_url }}{%- endcapture -%}
-
 {%- capture c_from_prev -%}{{'/topics/setup_course_from_previous/' | relative_url }}{%- endcapture -%}
-
 {%- capture o_from_prev -%}{{'/topics/setup_offering_from_previous/' | relative_url }}{%- endcapture -%}
+
+So you want to set up a new course repo in this format.  There are six cases, as shown in the table below:
 
 {:.table .table-sm .table-striped .table-bordered}
 |    | Course-level-repo <br> e.g. [ucsb-cs24.github.io](https://ucsb-cs24.github.io) | Instance repo <br> e.g. [ucsb-cs24.github.io/w19/](https://ucsb-cs24.github.io/w19/) |
@@ -24,10 +21,6 @@ category_prefix: "Setup: "
 | Starting from scratch   | [instructions]({{ c_from_scratch}})  | [instructions]({{ o_from_scratch}}) | 
 | Starting from pre-W19 repo  | [instructions]({{ c_from_pre_w19}}) | [instructions]({{ o_from_pre_w19}})  | 
 | Starting from a previous post W19 repo  | [instructions]({{ c_from_prev}})  | [instructions]({{ o_from_prev}})  | 
-
-
-
-So you want to set up a new course repo in this format.  There are six cases, as shown in the table above.
 
 The row in the table is determined by whether you are starting from scratch, or copying materials from a repo that already exists:
 
