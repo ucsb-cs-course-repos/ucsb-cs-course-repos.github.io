@@ -22,9 +22,10 @@ The column is determined by what kind of repo you are setting up:
 {%- capture c_from_scratch -%}{{'/topics/setup_course_from_scratch/' | relative_url }}{%- endcapture -%}
 {%- capture o_from_scratch -%}{{'/topics/setup_offering_from_scratch/' | relative_url }}{%- endcapture -%}
 {%- capture c_from_pre_w19 -%}{{'/topics/setup_course_from_pre_w19/' | relative_url }} {%- endcapture -%}
-{%- capture o_from_pre_w19 -%}({{'/topics/setup_offering_from_pre_w19/' | relative_url }}{%- endcapture -%}
+{%- capture o_from_pre_w19 -%}{{'/topics/setup_offering_from_pre_w19/' | relative_url }}{%- endcapture -%}
 {%- capture c_from_prev -%}{{'/topics/setup_course_from_previous/' | relative_url }} {%- endcapture -%}
 {%- capture o_from_prev -%}{{'/topics/setup_offering_from_previous/' | relative_url }} {%- endcapture -%}
+
 
 |    | Course-level-repo <br> e.g. [ucsb-cs24.github.io](https://ucsb-cs24.github.io) | Instance repo <br> e.g. [ucsb-cs24.github.io/w19/](https://ucsb-cs24.github.io/w19/) |
 |---|---|---|
