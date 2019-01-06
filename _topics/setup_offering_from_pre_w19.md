@@ -5,4 +5,29 @@ category_prefix: "Setup: "
 indent: true
 ---
 
-TBD
+# Step 1: Create an empty offering repo
+
+* Create the new repo with the correct name (e.g. `w19`) under the course organization (e.g. `ucsb-cs64`) 
+* `git clone` it into a directory
+* `cd` into that directory
+
+# Step 2: Add a remote for the old repo, and pull in its contents
+
+For example, from inside the directory for the new repo, add a git *remote* for the offering
+repo you are copying from.  For example:
+
+```
+git remote add F18 git@github.com:ucsb-cs64-f18/ucsb-cs64-f18.github.io.git
+```
+
+Then pull in that repos contents:
+
+```
+git pull F18 master
+```
+
+If you have time to do the next steps now, don't push just yet.  We want to get a working site first.
+
+# Step 3: Copy in the updated boilerplate
+
+Follow the instructions at: 
