@@ -48,13 +48,15 @@ github_url: https://github.com/ucsb-cs8/w19-mirza
 
 
 
-# `title`, `course`
+# `title`, `course`, `qtr`, `quarter`
 
 Fill these in as shown.  
 
 ```
 title: "UCSB CS8"
 course: "CS8"
+qtr: "W19"
+quarter: "Winter 2019"
 ```
 
 You can use these values in content on web pages by writing, for example:
