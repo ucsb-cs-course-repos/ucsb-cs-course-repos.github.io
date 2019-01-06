@@ -18,9 +18,9 @@ etc.
 
 The github repo MUST follow the Github Pages standard naming convention if you want to host on Github pages
 
-* [ucsb-cs8.github.io](https://github.com/ucsb-cs8.github.io)
-* [ucsb-cs16.github.io](https://github.com/ucsb-cs16.github.io)
-* [ucsb-cs111.github.io](https://github.com/ucsb-cs111.github.io)
+* <https://github.com/ucsb-cs8/ucsb-cs8.github.io>
+* <https://github.com/ucsb-cs24/ucsb-cs24.github.io>
+* <https://github.com/ucsb-cs111/ucsb-cs111.github.io>
 etc.
 
 
