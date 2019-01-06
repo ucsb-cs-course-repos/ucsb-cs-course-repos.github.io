@@ -84,4 +84,21 @@ that all the values look reasonable.
 * [`_config.yml` instructions for course repos]({{ '/topics/config_yml_course/' | relative_url}})
 
 
+# Step 7: OPTIONAL: Try running `./setup.sh` and `./jekyll.sh`
+
+This step is optional, but recommended.  Skip it only if you don't have the necessary software
+set up on your computing environment for [RVM]({{ `/topics/rvm/` | relative_url}}
+
+Try running `./setup.sh` and `./jekyll.sh` to test the site locally.
+
+Note that the localhost url will have the offering at the end of it.  The trailiing slash is important.
+
+for example:
+* Correct: <http://127.0.0.1:4000/w19/>  
+* INCORRECT <http://127.0.0.1:4000/w19>
+* INCORRECT <http://127.0.0.1:4000>
+
+Check that the site appears to be operational and that there are no error messages when building the site.
+
+If it looks ok, push your changes to github, and check the site online.
 
