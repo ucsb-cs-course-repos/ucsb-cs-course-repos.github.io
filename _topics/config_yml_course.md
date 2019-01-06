@@ -21,13 +21,16 @@ You can click the `_config.yml` links for examples of what each `_config.yml` lo
 
 Fill in these values, following the pattern shown.
 
-The value of `github_url` is used for the "Edit this page on github" links in the footer of each page.
 
 ```
-url: https://ucsb-cs8.github.io # the base hostname & protocol for your site
-baseurl: "/"  # the subpath of your site "/" for main, "/w19" for instance
+url: https://ucsb-cs8.github.io 
+baseurl: "/"  
 github_url: https://github.com/ucsb-cs8/ucsb-cs8.github.io
 ```
+
+* `url` should be the url corresponding to where the production site will be published
+* `baseurl` should be `"/"` for a course level repo (it is, for example `"/w19"` for an offering repo)
+* `github_url` is used for the "Edit this page on github" links in the footer of each page.
 
 # Step 2: `title`, `course`
 
