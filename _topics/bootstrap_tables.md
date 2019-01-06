@@ -171,3 +171,27 @@ Bootstrap CSS clases that pertain to tables.  For example:
 
 Suppose you have a table where the first column is a bit, cramped, like this one:
 
+ | Value | Explanation |
+   |-------|-------------|
+   | `start_week` | The number used to label the first week of the quarter.  Typically `1` except for Fall Quarters at UCSB that have a `0` week starting on a Thursday |
+   | `start_date` | The date of the Sunday that starts the calendar.  This must be a Sunday, or the calendar will not be generated and an error message will be generated in its place. |
+   | `num_weeks` | Typically 10 for a 10 week UCSB quarter, but may be 6 for a summer session A or B.  Use 11 in Fall when there is a week 0.|
+   | `extra_exam_week` | Typically `true` when you want a final exam week to be added to the calendar. The value `false` is used when there is no final exam for the course, or in Summer Sessions when the final is given during the last week of the course. |
+   | `cal_dates` | A YAML array (list) of objects, each of which is a an extra date to put on the calendar. |
+   {:.table .table-sm .table-striped .table-bordered }
+   
+   A hack you can use is to add a `<style>` element right into your Markdown document near the top, like this, that
+   defines a new style where the first td element in every row is a bit wider:
+   
+   ```
+   ---
+   topic: "Some topic"
+   desc: "Some description"
+   ---
+   
+   <style>
+   
+   </style>
+   
+   
+   ```
