@@ -4,6 +4,12 @@ desc: "Features that generate the calendar automatically"
 category_prefix: "Calendar: "
 ---
 
+<style>
+.table-first-col-wide td:first-of-type {
+   width: 15em; background-color: #eef;   
+}
+</style>
+
 One of the value added features of the
 [course-repo-jekyll-theme](https://github.com/ucsb-cs-course-repos/course-repo-jekyll-theme)
 is the ability to automatically generate a calendar of course
@@ -47,6 +53,8 @@ To get a calendar, you need the following:
    | `num_weeks` | Typically 10 for a 10 week UCSB quarter, but may be 6 for a summer session A or B.  Use 11 in Fall when there is a week 0.|
    | `extra_exam_week` | Typically `true` when you want a final exam week to be added to the calendar. The value `false` is used when there is no final exam for the course, or in Summer Sessions when the final is given during the last week of the course. |
    | `cal_dates` | A YAML array (list) of objects, each of which is a an extra date to put on the calendar. |
+   {:.table .table-sm .table-striped .table-bordered .table-first-col-wide}
+
 
    The objects in the `cal_dates` list have two keys:
 
