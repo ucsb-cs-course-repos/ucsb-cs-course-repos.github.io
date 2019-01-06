@@ -50,6 +50,14 @@ You should make these updates to the `_config.yml`.
    ```
    If it *is* already present, you should add `_pages` to the existing list using one of the acceptable
    YAML syntaxes for lists.
+   
+   An alternative equivalent syntax for this is as follows.  If there is an `exclude` key, it is good style to group these together.
+   
+   ```
+   include:
+   - _pages
+   ```
+   
 3. Follow the instructions from * [`_config.yml` instructions for offering repos]({{ '/topics/config_yml_offering/' | relative_url}})
    specifically for these keys:
    *  `url`, `baseurl`, `github_url`
