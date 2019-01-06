@@ -34,8 +34,46 @@ Follow instructions to [Copy in boilerplate files]({{'/topics/setup_boilerplate/
 They all go in the root directory of the repo.  Do this even if those files are already there;
 you want to get the latest versions.
 
-# Step 4: Make updates to the `_config.yml`
+# Step 4: Make updates to the `_config.yml` that are "for all repos" first.
 
-You should make these updates to the `_config.yml`
+You should make these updates to the `_config.yml`.  
 
-* 
+* [`_config.yml` instructions for all repos]({{ '/topics/config_yml_common/'  | relative_url}})
+
+# Step 5:  Change these things *specific* to moving from pre-w19 repos for course offerings
+
+1. Find the `collections:` item in the `_config.yml`.  
+   For each collection that is using `topic` as the `layout`, change this to `default`.
+2. Look for the `include:` line.  If it not present, add the following line:
+   ```
+   include: [`_pages']
+   ```
+   If it *is* already present, you should add `_pages` to the existing list using one of the acceptable
+   YAML syntaxes for lists.
+3. Follow the instructions from * [`_config.yml` instructions for offering repos]({{ '/topics/config_yml_offering/' | relative_url}})
+   specifically for these keys:
+   *  `url`, `baseurl`, `github_url`
+   
+      For example:
+      ```
+      url: https://ucsb-cs8.github.io 
+      baseurl: "/w19-matni"  
+      github_url: https://github.com/ucsb-cs8/w19-matni
+      ```
+      
+   *  `title`, `course`
+      
+      For example:
+      ```
+      title: "UCSB CS64"
+      course: "CS64"
+      ```
+   
+# Step 6:  Review the general instructions for `_config.yml` for offering repos
+
+Most of the items in these instructions are likely now already taken care of, but just in case, review these and make sure
+that all the values look reasonable.
+
+* [`_config.yml` instructions for offering repos]({{ '/topics/config_yml_offering/' | relative_url}})
+
+
