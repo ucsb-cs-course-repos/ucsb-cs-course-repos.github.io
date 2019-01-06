@@ -6,7 +6,7 @@ category_prefix: "Calendar: "
 
 <style>
 .table-first-col-wide td:first-of-type {
-   width: 15em; background-color: #eef;   
+   width: 15em; 
 }
 </style>
 
