@@ -24,10 +24,29 @@ Fill in these values, following the pattern shown.
 The value of `github_url` is used for the "Edit this page on github" links in the footer of each page.
 
 ```
-url: https://ucsb-cs8.github.io # the base hostname & protocol for your site
-baseurl: "/"  # the subpath of your site "/" for main, "/w19" for instance
-github_url: https://github.com/ucsb-cs8/ucsb-cs8.github.io
+url: https://ucsb-cs64.github.io 
+baseurl: "/w19"  
+github_url: https://github.com/ucsb-cs64/w19
 ```
+
+If there are two or more sites in a given quarter for a certain course, the `baseurl` and `github_url` for those will differ.
+For example:
+
+```
+url: https://ucsb-cs8.github.io 
+baseurl: "/w19-matni"  
+github_url: https://github.com/ucsb-cs8/w19-matni
+```
+
+and
+
+```
+url: https://ucsb-cs8.github.io 
+baseurl: "/w19-mirza"  
+github_url: https://github.com/ucsb-cs8/w19-mirza
+```
+
+
 
 # `title`, `course`
 
