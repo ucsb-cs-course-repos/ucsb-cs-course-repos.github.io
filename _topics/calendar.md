@@ -62,6 +62,7 @@ To get a calendar, you need the following:
    |----|-------------|
    | `label` | The text that you want to appear on that date |
    | `date` | The date on which the text should appear |
+   {:.table .table-sm .table-striped .table-bordered .table-first-col-wide}
 
 
    Here's a complete example:
