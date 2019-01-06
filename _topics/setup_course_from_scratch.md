@@ -38,7 +38,7 @@ following both sets of instructions below.
 
 The order of items in the `_config.yml` file doesn't matter.
 
-* [`_config.yml` instructions for all repos]({{  | relative_url}})
-* [`_config.yml` instructions for course repos]({{  | relative_url}})
+* [`_config.yml` instructions for all repos]({{ '/topics/config_yml_common/'  | relative_url}})
+* [`_config.yml` instructions for course repos]({{ '/topics/config_yml_course/' | relative_url}})
 
 # TODO: Continue from here
