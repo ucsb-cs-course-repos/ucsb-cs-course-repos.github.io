@@ -87,11 +87,11 @@ If you aren't able to run locally, just go ahead and push to Github and debug th
 
 *IMPORTANT*: when working with an offering repo on github pages, you must remember to Enable GitHub Pages on the repo settings, as shown here:
 
-![enable_github_pages_01]( '/images/github_pages_settings_01.png' | relative_url )
+![enable_github_pages_01]( {{'/images/github_pages_settings_01.png' | relative_url }})
 
-![enable_github_pages_02]( '/images/github_pages_settings_01.png' | relative_url )
+![enable_github_pages_02]( {{'/images/github_pages_settings_01.png' | relative_url }})
 
-![enable_github_pages_03]( '/images/github_pages_settings_01.png' | relative_url )
+![enable_github_pages_03]( {{'/images/github_pages_settings_01.png' | relative_url }})
 
 
 Assuming all is well, continue to the next step.   
