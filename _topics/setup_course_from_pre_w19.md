@@ -86,8 +86,9 @@ that all the values look reasonable.
 
 # Step 7: OPTIONAL: Try running `./setup.sh` and `./jekyll.sh`
 
-This step is optional, but recommended.  Skip it only if you don't have the necessary software
-set up on your computing environment for [RVM]({{ `/topics/rvm/` | relative_url}}
+This step is optional, but recommended.  Skip it only if you don't
+have the necessary software set up on your computing environment for
+[RVM]({{ '/topics/rvm/' | relative_url}}
 
 Try running `./setup.sh` and `./jekyll.sh` to test the site locally.
 
