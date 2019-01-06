@@ -85,13 +85,13 @@ are still present in the repo, overriding the defaults from the theme.
 
 If you aren't able to run locally, just go ahead and push to Github and debug there.   The instructions for [Travis CI]({{ `/topics/travis_ci/`| relative_url}}) may be helpful.
 
-*IMPORTANT*: when working with an offering repo on github pages, you must remember to Enable GitHub Pages on the course settings, as shown here:
+*IMPORTANT*: when working with an offering repo on github pages, you must remember to Enable GitHub Pages on the repo settings, as shown here:
 
-![enable_github_pages_01]( '/images/enable_github_pages_01.png' | relative_url )
+![enable_github_pages_01]( '/images/github_pages_settings_01.png' | relative_url )
 
-![enable_github_pages_02]( '/images/enable_github_pages_02.png' | relative_url )
+![enable_github_pages_02]( '/images/github_pages_settings_01.png' | relative_url )
 
-![enable_github_pages_03]( '/images/enable_github_pages_03.png' | relative_url )
+![enable_github_pages_03]( '/images/github_pages_settings_01.png' | relative_url )
 
 
 Assuming all is well, continue to the next step.   
