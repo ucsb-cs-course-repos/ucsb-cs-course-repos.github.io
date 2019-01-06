@@ -181,7 +181,7 @@ Suppose you have a table where the first column is a bit, cramped, like this one
    {:.table .table-sm .table-striped .table-bordered }
    
    A hack you can use is to add a `<style>` element right into your Markdown document near the top, like this, that
-   defines a new style where the first td element in every row is a bit wider:
+   defines a new class where the first td element in every row is a bit wider:
    
    ```
    ---
@@ -190,8 +190,14 @@ Suppose you have a table where the first column is a bit, cramped, like this one
    ---
    
    <style>
-   
+   .table-first-col-wide td:first-of-type {
+      width: 15em; 
+   }
    </style>
+   ```
+  
+   You can then tack that class right onto the table, like this:
    
+   ```
    
    ```
