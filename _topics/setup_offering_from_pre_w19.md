@@ -30,4 +30,12 @@ If you have time to do the next steps now, don't push just yet.  We want to get 
 
 # Step 3: Copy in the updated boilerplate
 
-Follow the instructions at: 
+Follow instructions to [Copy in boilerplate files]({{'/topics/setup_boilerplate/' | relative_url }}).
+They all go in the root directory of the repo.  Do this even if those files are already there;
+you want to get the latest versions.
+
+# Step 4: Make updates to the `_config.yml`
+
+You should make these updates to the `_config.yml`
+
+* 
