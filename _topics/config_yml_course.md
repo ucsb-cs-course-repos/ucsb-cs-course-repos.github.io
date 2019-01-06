@@ -17,7 +17,7 @@ You can click the `_config.yml` links for examples of what each `_config.yml` lo
 | [ucsb-cs111.github.io](https://ucsb-cs111.github.io) | [ucsb-cs111/ucsb-cs111.github.io](https://github.com/ucsb-cs111/ucsb-cs111.github.io) | [`_config.yml`](https://github.com/ucsb-cs111/ucsb-cs111.github.io/blob/master/_config.yml) |
 {:.table .table-sm .table-striped .table-bordered}
 
-# `url`, `baseurl`, `github_url`
+# Step 1: `url`, `baseurl`, `github_url`
 
 Fill in these values, following the pattern shown.
 
@@ -29,7 +29,7 @@ baseurl: "/"  # the subpath of your site "/" for main, "/w19" for instance
 github_url: https://github.com/ucsb-cs8/ucsb-cs8.github.io
 ```
 
-# `title`, `course`
+# Step 2: `title`, `course`
 
 Fill these in as shown.  
 
@@ -45,4 +45,24 @@ You can use these values in content on web pages by writing, for example:
 This allows you to more easily copy/paste content (e.g. your syllabus) between and among course websites and have the content
 remain correct.
 
-TODO: CONTINUE DOCUMENTING ...
+# Step 3: Add `index.md` file
+
+We can now add an `index.md` file in the base of the repo that will serve as the home page.
+
+For now, we'll keep this file simple, and come back at a later stage to populate with content.
+
+The purpose of the simple file is so that we can begin to see the website up and running.
+
+Into `index.md`, put the following.  
+
+```markdown
+---
+permalink: "/"
+---
+
+# {{site.title}} 
+
+```
+
+
+# TODO: CONTINUE DOCUMENTING ...
