@@ -166,3 +166,8 @@ Bootstrap CSS clases that pertain to tables.  For example:
 
 # For more information
 * [Bootstrap v4.2 Tables Documentation](https://getbootstrap.com/docs/4.2/content/tables/)
+
+# Table Hacks
+
+Suppose you have a table where the first column is a bit, cramped, like this one:
+
