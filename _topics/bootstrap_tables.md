@@ -199,5 +199,5 @@ Suppose you have a table where the first column is a bit, cramped, like this one
    You can then tack that class right onto the table, like this:
    
    ```
-   
+   {:.table .table-sm .table-striped .table-bordered .table-first-col-wide}
    ```
