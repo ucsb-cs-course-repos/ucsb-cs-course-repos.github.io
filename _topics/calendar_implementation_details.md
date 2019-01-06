@@ -14,10 +14,10 @@ under the directory `assets`, there are several subdirectories:
 
 | subdirectory | purpose |
 |--------------|---------|
-| 'assets/css'  | CSS files |
-| 'assets/img'  | Image files |
-| 'assets/js'  | JavaScript files |
-| 'assets/pdf'  | PDF files |
+| `assets/css`  | CSS files |
+| `assets/img`  | Image files |
+| `assets/js` | JavaScript files |
+| `assets/pdf`  | PDF files |
 {:.table .table-sm .table-striped .table-bordered}
 
 As you might expect, the CSS rules for the calendar can be found in:
