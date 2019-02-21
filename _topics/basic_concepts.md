@@ -33,12 +33,27 @@ On any page in the repo, you can use variables inside curly braces.
 
 For example, at the top of
 each lab, you will typically have a variable in the front matter called `num` that has a value such as `lab01`, `lab02` etc.
+defined like this:
+
+```
+num: lab02
+```
 
 If you want a student to create a repo inside the course github organization you could write something like this:
 
 ```
-Please create a repo inside {{site.github_org}} with the name {{page.num}}_yourgithubid
+Please create a repo inside {% raw %}{{site.github_org}}{% endraw %} with the name {% raw %}{{page.num}}{% endraw %}_yourgithubid
 ```
+
+The value `site.github_org` shoudl be defined in the `_config.yml` for the site, like this:
+
+```
+github_org: ucsb-cs16-w19
+```
+
+The result would be text like this:
+
+> Please create a repo inside ucsb-cs16-w19 with the name lab02_yourgithubid
 
 # include files
 
