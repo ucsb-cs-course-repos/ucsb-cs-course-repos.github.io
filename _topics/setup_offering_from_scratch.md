@@ -16,6 +16,7 @@ For example:
 | You need this organization | and this course level repo | before you can create this instance level repo | for this offering level web site |
 |-|-|-|
 | [ucsb-cs24](https://github.com/ucsb-cs8) | [ucsb-cs24/ucsb-cs24.github.io](https://github.com/ucsb-cs24/ucsb-cs24.github.io) |  [ucsb-cs24/w19](https://github.com/ucsb-cs24/w19) |  <https://ucsb-cs24.github.io/w19/> | 
+{:.table}
 
 # Step 2: Create Github repo
 
