@@ -16,15 +16,17 @@ For example:
 | You need this organization | and this course level repo | before you can create this instance level repo | for this offering level web site |
 |-|-|-|
 | [ucsb-cs24](https://github.com/ucsb-cs8) | [ucsb-cs24/ucsb-cs24.github.io](https://github.com/ucsb-cs24/ucsb-cs24.github.io) |  [ucsb-cs24/w19](https://github.com/ucsb-cs24/w19) |  <https://ucsb-cs24.github.io/w19/> | 
-{:.table}
+{:.table .table-sm .table-striped .table-bordered}
 
 # Step 2: Create Github repo
 
 The github repo MUST follow the Github Pages standard naming convention if you want to host on Github pages
 
-* <https://github.com/ucsb-cs8/ucsb-cs8.github.io>
-* <https://github.com/ucsb-cs24/ucsb-cs24.github.io>
-* <https://github.com/ucsb-cs111/ucsb-cs111.github.io>
+* <https://github.com/ucsb-cs8/w19>
+* <https://github.com/ucsb-cs24/s19>
+* <https://github.com/ucsb-cs111/s19>
+* <https://github.com/ucsb-int15/s19>
+
 etc.
 
 
@@ -45,3 +47,6 @@ The order of items in the `_config.yml` file doesn't matter.
 
 # TODO: Continue from here
 
+* TODO: Write about creating `index.md`
+* TODO: Write about creating `_lab`, `_hwk`, `_pages`, etc.
+* TODO: Mostly this is following the leader from existing offering level repos, but a guide would be super handy.
