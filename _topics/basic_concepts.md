@@ -7,6 +7,39 @@ desc: "Basics concepts for beginners"
 
 The home page of your site is likely is in the file `index.md` in the root of your repo.
 
+# Front Matter
+
+Each Markdown file has a section with so-called "front matter" which defines value using the YAML format.
+This "front-matter" sits in between two lines of three hyphens each, like this:
+
+```
+---
+layout: lab
+num: lab00
+ready: true
+desc: "Getting Started"
+assigned: 2019-01-10 16:00
+due: 2019-01-18 17:00
+signup_app: https://ucsb-cs-github-linker.herokuapp.com/
+slack_url: https://ucsb-cs48-w19.slack.com
+---
+```
+
+As explained below under "Using variables", the values in the front matter can be used as constants that are inserted into the text of the page.
+
+# Using variables
+
+On any page in the repo, you can use variables inside curly braces.  
+
+For example, at the top of
+each lab, you will typically have a variable in the front matter called `num` that has a value such as `lab01`, `lab02` etc.
+
+If you want a student to create a repo inside the course github organization you could write something like this:
+
+```
+Please create a repo inside {{site.github_org}} with the name {{page.num}}_yourgithubid
+```
+
 # include files
 
 When you see this in a file:
