@@ -42,7 +42,7 @@ num: lab02
 If you want a student to create a repo inside the course github organization you could write something like this:
 
 ```
-Please create a repo inside {% raw %}{{site.github_org}}{% endraw %} with the name {% raw %}{{page.num}}{% endraw %}_yourgithubid
+Please create a repo inside <tt>{% raw %}{{site.github_org}}{% endraw %}</tt> with the name <tt>{% raw %}{{page.num}}{% endraw %}_yourgithubid</tt>
 ```
 
 The value `site.github_org` shoudl be defined in the `_config.yml` for the site, like this:
@@ -53,7 +53,7 @@ github_org: ucsb-cs16-w19
 
 The result would be text like this:
 
-> Please create a repo inside ucsb-cs16-w19 with the name lab02_yourgithubid
+> Please create a repo inside <tt>ucsb-cs16-w19</tt> with the name <tt>lab02_yourgithubid</tt>
 
 # include files
 
