@@ -91,6 +91,7 @@ $ git commit -m "Added initial boilerplate files"
 	* Add to it a new file: `navigation.yml`
 	* Paste the following into that file:
 ```
+{% raw %}
 # the production_url is the url that the parent/child site have in common
 #  e.g. production_url: https://ucsb-cs24.github.io
 #  for main site http://ucsb-cs24.github.io
@@ -120,6 +121,7 @@ offering_links:
   - title: Syllabus
     url: /info/syllabus/
     description: "University and course policies"
+{% endraw %}
 ```
 
 
@@ -127,6 +129,7 @@ offering_links:
 
 * Let's add our basic index page: `index.md`.
 ```
+{% raw %}
 ---
 title: "INT 15: Data Science Tools and Techniques, Spring 2019, Franks and Kharitonova"
 ---
@@ -134,12 +137,14 @@ title: "INT 15: Data Science Tools and Techniques, Spring 2019, Franks and Khari
 # INT 15: Data Science Tools and Techniques, Spring 2019, Franks and Kharitonova
 
 Welcome to INT 15!
+{% endraw %}
 ```
 
 * Let's create our syllabus! Add a directory `_info` and add `syllabus.md` to it (yep, you'll be writing it in Markdown).
 
 For now, let's just add the following stub:
 ```
+{% raw %}
 ---
 title: "Syllabus"
 layout: default
@@ -150,6 +155,7 @@ ready: true
 
 This document and others linked within it should be your PRIMARY source for understanding the expectations of this course. Be sure to read it *carefully*.
 You must contact the instructor for clarification if you receive information from any another source that is in contradiction to what is provided below.
+{% endraw %}
 ```
 
 * Commit them and see that they show up on the website.
