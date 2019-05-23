@@ -5,7 +5,7 @@ permalink: "/courses_list/"
 
 # Course Repos
 
-Courses that are using this format
+Courses that are using this format.  To add courses to this list, see instructions below.
 
 <table class="table table-sm">
 <tr>
@@ -43,4 +43,23 @@ Courses that are using this format
   {% endfor %}
 {% endfor %}
 </table>
+
+# How to add courses to this list
+
+In the repo <https://github.com/ucsb-cs-course-repos/ucsb-cs-course-repos.github.io>, look in the directory `_courses`
+and find the file for the course in question (e.g. `ucsb-cs8.md`).  Edit the file, and add the instance to the "front matter" at the top of the file, following the example YAML syntax below.   
+
+The `sort_order` indicates the key that should be used to sort the collection. You can use this force, for example, `ucsb-cs8` to appear before `ucsb-cs16`, even though in lexicographic ordering, `ucsb-cs16` would appear before `ucsb-cs8`
+
+```
+---
+course: ucsb-cs8
+sort_order: 8
+offerings:
+  - {"title": "w19-matni"}
+  - {"title": "w19-mirza"}	
+  - {"title": "w19-conrad"}	
+  - {"title": "s19-matni"}	
+---
+```
 
