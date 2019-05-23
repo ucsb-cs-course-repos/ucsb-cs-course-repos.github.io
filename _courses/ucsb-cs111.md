@@ -1,5 +1,5 @@
 ---
 course: ucsb-cs111
 sort_order: 111
-offerings: [{"title": "w19"}]
+offerings: [{"title": "w19"},{"title": "s19"}]
 ---
