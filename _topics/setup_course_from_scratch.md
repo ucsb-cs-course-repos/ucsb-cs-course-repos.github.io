@@ -30,6 +30,10 @@ git clone https://github.com/ucsb-cs16/s19.git cs16-s19
 
 * Copy the initial boilerplate files into your course repo that is in the `course_dir` path (change It in the command below). 
 For more information, see the [Basic setup for w19 and later](https://ucsb-cs-course-repos.github.io/topics/basic_setup_w19_and_later)
+
+TODO: Dead link above, fix it.   In the meantime, the boilerplate files are here: <https://github.com/ucsb-cs-course-repos/boilerplate>
+
+
 ```bash
 cd boilerplate
 cp Gemfile .gitignore setup.sh jekyll.sh .travis.yml  <course_dir>
