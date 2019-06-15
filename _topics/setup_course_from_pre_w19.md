@@ -81,7 +81,7 @@ You should make these updates to the `_config.yml`.
 Most of the items in these instructions are likely now already taken care of, but just in case, review these and make sure
 that all the values look reasonable.
 
-* [`_config.yml` instructions for course repos]({{ '/topics/config_yml_course/' | relative_url}})
+* [`_config.yml` instructions for offering repos]({{ '/topics/config_yml_offering/' | relative_url}})
 
 
 # Step 7: OPTIONAL: Try running `./setup.sh` and `./jekyll.sh`
