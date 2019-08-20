@@ -56,8 +56,10 @@ git remote add oldrepo git@github.com:ucsb-cs56/f18.git
 Finally, pull in the files from the old repo along with their history, like this:
 
 ```
-git pull oldrepo master
+git pull --allow-unrelated-histories oldrepo master
 ```
+
+If you started the repo with a README.md, there might be merge conflicts in that file.  If so, they will be trivial to resolve; just edit the README.md and edit the file so that the contents are appropriate to the new quarter.
 
 Now skip to step 6; do NOT perform step 5.
 
@@ -65,12 +67,13 @@ Now skip to step 6; do NOT perform step 5.
 
 NOTE: Only perform step 4 OR step 5 NOT BOTH.
 
-TODO: Write instructions
+Copy the following files from the old repo into the new one.  In this case, we are assuming that f18 is a "sibling" directory of the current directory.
 
-# Step 5b: Commit files to new repo
+```
+cp ../f18/_lectures .
+```
 
-TODO: Write instructions
-
+Then commit these files to the new repo.
 
 # Step 6: Copy in boilerplate files (overwriting old ones)
 
