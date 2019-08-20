@@ -67,15 +67,23 @@ Now skip to step 6; do NOT perform step 5.
 
 NOTE: Only perform step 4 OR step 5 NOT BOTH.
 
-Copy the following files from the old repo into the new one.  In this case, we are assuming that f18 is a "sibling" directory of the current directory.
+Typically, you'll copy the following files from the old repo into the new one.  In this case, we are assuming that f18 is a "sibling" directory of the current directory.  
+
+If any do not exist, don't worry about it.    
 
 ```
 cp ../f18/_config.yml .
+cp ../f18/README.md .
 cp -r ../f18/_data .
 cp -r ../f18/_exam .
 cp -r ../f18/_hwk .
 cp -r ../f18/_info .
 cp -r ../f18/_pages .
+cp -r ../f18/_sass .
+cp -r ../f18/_staff .
+cp -r ../f18/_includes .
+cp -r ../f18/static .
+cp -r ../f18/images .
 ```
 
 Then commit these files to the new repo.
