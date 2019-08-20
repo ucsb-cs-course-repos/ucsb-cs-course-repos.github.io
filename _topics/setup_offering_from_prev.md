@@ -5,6 +5,8 @@ category_prefix: "Setup: "
 indent: true
 ---
 
+<div style="display:none">https://ucsb-cs-course-repos.github.io/topics/setup_offering_from_prev</div>
+
 These instructions apply to the case where:
 * there is already a repo set up in this format for your course for a previous offering,
 (e.g. <https://ucsb-cs56.github.io/s19> 
