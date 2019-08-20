@@ -28,6 +28,8 @@ Inside the course level github organization, e.g. <https://github.com/ucsb-cs56>
 
 If there is more than one offering of that course at your institution during that term, use a naming convention that disambiguates such as `f19-mwf vs. `f19-tr` or `f19-smith` vs. `f19-jones`.
 
+Once you've created the repo, be sure to go in to the Settings for that repo, and set Github Pages to publish from the master branch.
+
 # Step 3: Clone both the old repo and the new repo to your local file system
 
 For example, if you are using `ucsb-cs56/f18` as the basis to create `ucsb-cs56/f19`, then use 
