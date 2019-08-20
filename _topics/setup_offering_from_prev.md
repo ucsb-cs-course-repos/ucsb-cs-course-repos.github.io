@@ -26,25 +26,44 @@ Inside the course level github organization, e.g. <https://github.com/ucsb-cs56>
 
 If there is more than one offering of that course at your institution during that term, use a naming convention that disambiguates such as `f19-mwf vs. `f19-tr` or `f19-smith` vs. `f19-jones`.
 
-# Step 3: Clone repo to local system
+# Step 3: Clone both the old repo and the new repo to your local file system
 
-TODO: Write instructions
+For example, if you are using `ucsb-cs56/f18` as the basis to create `ucsb-cs56/f19`, then use 
+
+```
+git clone git@github.com:ucsb-cs56/f18.git
+git clone git@github.com:ucsb-cs56/f19.git
+```
 
 Now you have a choice between either step 4, which copies the old material along with the github revision history, or step 5 which copies only the files (a fresh start).
 
-# Step 4a: Add remote for old repo 
+# Step 4a: Pull files in from old repo with git history
 
-NOTE: Only perform step 4a/4b OR step 5a/5b, NOT BOTH.
+NOTE: Only perform step 4 OR step 5 NOT BOTH.
 
-TODO: Write instructions
+To add a remote for the old repo, you first cd into the directory for the new repo, e.g.
 
-# Step 4b: Pull in files from old repo
+```
+cd f19
+```
 
-TODO: Write instructions
+Then use this command to add a remote for the old repo:
 
-# Step 5a: Copy files from old repo 
+```
+git remote add oldrepo git@github.com:ucsb-cs56/f18.git
+```
 
-NOTE: Only perform step 4a/4b OR step 5a/5b, NOT BOTH.
+Finally, pull in the files from the old repo along with their history, like this:
+
+```
+git pull oldrepo master
+```
+
+Now skip to step 6; do NOT perform step 5.
+
+# Step 5: Copy files from old repo 
+
+NOTE: Only perform step 4 OR step 5 NOT BOTH.
 
 TODO: Write instructions
 
