@@ -70,7 +70,12 @@ NOTE: Only perform step 4 OR step 5 NOT BOTH.
 Copy the following files from the old repo into the new one.  In this case, we are assuming that f18 is a "sibling" directory of the current directory.
 
 ```
-cp ../f18/_lectures .
+cp ../f18/_config.yml .
+cp -r ../f18/_data .
+cp -r ../f18/_exam .
+cp -r ../f18/_hwk .
+cp -r ../f18/_info .
+cp -r ../f18/_pages .
 ```
 
 Then commit these files to the new repo.
