@@ -28,7 +28,9 @@ Inside the course level github organization, e.g. <https://github.com/ucsb-cs56>
 
 If there is more than one offering of that course at your institution during that term, use a naming convention that disambiguates such as `f19-mwf vs. `f19-tr` or `f19-smith` vs. `f19-jones`.
 
-Once you've created the repo, be sure to go in to the Settings for that repo, and set Github Pages to publish from the master branch.
+## Step 2a: Configure repo for GitHub Pages
+
+Once you've created the repo, be sure to go in to the Settings for that repo, and set Github Pages to publish from the master branch, e.g. at <https://github.com/ucsb-cs56/f19/settings>.  Scroll down to GitHub Pages, and under Source, select Master Branch.  You should not select a theme under the settings page; the theme is automatically set in the `_config.yml` file of the repo.
 
 # Step 3: Clone both the old repo and the new repo to your local file system
 
