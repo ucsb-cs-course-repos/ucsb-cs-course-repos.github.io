@@ -1,41 +1,59 @@
 ---
-topic: "LaTeX in .md files"
-desc: "How to add LaTeX support to a Jekyll based github pages site"
+topic: "LaTeX"
+desc: "How to add LaTeX support via MathJAX"
 ---
 
-The software underlying Github Pages, Jekyll, includes support for math notation expressed in LaTeX syntax.
+The course repos support embedded Math notation using [MathJAX](https://www.mathjax.org/) provided you turn this on
+in your `_config.yml` settings.
 
-LaTeX notation is supported by choosing `kramdown` as the Markdown parser in Jekyll, and by loading a product called
-MathJaX (references for MathJaX are listed below.)
+In addition to understanding how to use use MathJAX, it may also be helpful to understand a bit about how
+Kramdown, the dialect of Markdown we are using handles Math blocks:
 
+* [How Kramdown Handles Math Blocks](https://kramdown.gettalong.org/syntax.html#math-blocks)
 
-# How to enable it
+# Enabling LaTeX
 
+To enable [LaTeX](https://www.latex-project.org/) support via [MathJAX](https://www.mathjax.org/):
 
-1.  Be sure that the following JavaScript file is loaded somewhere in your layouts.  Typically, this goes in `_includes/head.html`
-    ```html
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    ```
-    See: https://jekyllrb.com/docs/extras/
-    
-2.  Be sure that you are using `kramdown` as your markup parser.   This is currently the default, so you probably don't need to specify it,
-    but just in case, this is how you do in `_config.yml`
-    ```
-    markdown: kramdown
-    ```
-    See: https://jekyllrb.com/docs/configuration/
+1. You'll need the URL to load MathJAX from a CDN (Content Delivery Network) with the options you want.
 
+   When this documentation was written on 2019-01-03, this was a reasonable choice of URL:
+   
+   ```
+   https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+   ```
 
-# How to use it
+   You may want to check the [MathJAX](https://www.mathjax.org/) website to see if there is a more
+   recent one before continuing with these instructions.  If so, use that instead.
 
-For examples of putting LaTeX notation in your markdown files, see:
+   The part after `config` in that URL is also something you may want to customize for your purposes.
 
-* https://kramdown.gettalong.org/syntax.html#math-blocks
-* https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
+1. In the `_config.yml` file, search for the string `head_scripts`, and determine whether it is already
+   defined or not.  This key is defined as a list of strings, each of which is the URL of a
+   JavaScript files that should be loaded after all of the standard ones that are part of the
+   Jekyll theme.
 
-# MathJaX references
+2. If `head_scripts` is not already defined, add the following definition, using the URL from the first step.
 
-* https://www.mathjax.org/
-* https://www.w3.org/Math/MJ/Overview.html
-* https://www.checkmyworking.com/2012/01/how-to-get-beautifully-typeset-maths-on-your-blog/
+   ```
+   head_scripts:
+     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+   ```
+
+3. If `head_scripts` is already defined, add the URL to the list of scripts.  For example:
+
+   Change:
+
+   ```
+   head_scripts:
+     - /static/my_custom_script.js
+   ```
+
+   To:
+
+   ```
+   head_scripts:
+     - /static/my_custom_script.js
+     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML     
+   ```
 

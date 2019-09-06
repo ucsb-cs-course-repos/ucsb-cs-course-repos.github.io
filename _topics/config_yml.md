@@ -1,23 +1,17 @@
 ---
-topic: "_config.yml"
-desc: "The most important part of configuring a Jekyll site"
+topic: "config.yml: "
+desc: "The central configuration file for the site"
+category_prefix: "config_yml: "
 ---
 
-The most important part of configuring a Jekyll site is to get the `_config.yml` right.
+The file `_config.yml` is the main file that controls the process 
+by which the Jekyll software generates
+a website from the source files.
 
-This page goes over the `_config.yml` for one of our Github Pages course sites.  We'll start with the `_config.yml`
-for a site such as `ucsb-cs16-f18-mirza.github.io`, and then discuss the one for a site such as `ucsb-cs16.github.io`.
+The configuration for `_config.yml` is divided into three parts,
+each of which has it's own set of documentation:
 
-# The first part
+* [`_config.yml`: common]({{ '/topics/config_yml_common/' | relative_url}}) settings that are common to both course and offering level sites
+* [`_config.yml`: course]({{ '/topics/config_yml_course/' | relative_url }}) settings for course level sites
+* [`_config.yml`: offering]({{ '/topics/config_yml_offering/' | relative_url }}) settings for offering level sites
 
-In the first part, we define these variables, which are then available through the syntax
-`{{site.name}}`, `{{site.course}}`, etc. in any file on the site:
-
-```
-name: "CS16 Fall 2018, Mirza"
-qtr: "F18"
-github_url: https://github.com/ucsb-cs16-f18-mirza/ucsb-cs16-f18-mirza.github.io
-```
-
-The `github_url` is particularly important, since it is what makes the "Edit this Page On Github" link at the
-bottom of each page work properly.

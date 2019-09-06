@@ -2,6 +2,8 @@
 
 Tutorial for using github pages, jekyll, etc. to maintain course materials for UCSB CS courses
 
+Jekyll status on Travis-CI: [![Build Status](https://travis-ci.org/ucsb-cs-course-repos/ucsb-cs-course-repos.github.io.svg?branch=master)](https://travis-ci.org/ucsb-cs-course-repos/ucsb-cs-course-repos.github.io)
+
 
 # Running Jekyll locally
 
