@@ -162,6 +162,55 @@ title: "INT 15: Data Science Tools and Techniques, Spring 2019, Franks and Khari
 Welcome to INT 15!
 ```
 
+Once you see the index page show up, you can customize it with the drop-down menus, which will work with the folders you'll be creating:
+
+```
+---
+title: "INT 15: Data Science Tools and Techniques, Spring 2019, Franks and Kharitonova"
+---
+
+# INT 15: Data Science Tools and Techniques, Spring 2019
+
+## Welcome to INT 15!
+
+{% raw %}{%{% endraw %} include collapse-button.html label="Information" id="info-list" {% raw %}%}{% endraw %}
+<div class="collapse" id="info-list">
+ <div class="card card-body">
+ {% raw %} {% {% endraw %}include info_list.html {% raw %}%}{% endraw %}
+ </div>
+</div>
+
+
+{% raw %}{% {% endraw %}include collapse-button.html label="Lecture Notes and Slides" id="lectures" {% raw %}%}{% endraw %}
+<div class="collapse" id="lectures">
+ <div class="card card-body" markdown="1">
+   {% raw %}{%{% endraw %}include lecnot_table.html {% raw %}%}{% endraw %}
+ </div>
+</div>
+
+
+{% raw %}{% {% endraw %}include collapse-button.html label="Homework" id="hwk" {% raw %}%}{% endraw %}
+<div class="collapse" id="hwk">
+ <div class="card card-body">
+  {% raw %}{%{% endraw %} include hwk_table.html {% raw %}%}{% endraw %}
+ </div>
+</div>
+
+{% raw %}{% {% endraw %}include collapse-button.html label="Lab" id="lab" {% raw %}%}{% endraw %}
+<div class="collapse" id="lab">
+ <div class="card card-body">
+ {% raw %} {% {% endraw %}include lab_table.html {% raw %}%}{% endraw %}
+ </div>
+</div>
+
+{% raw %}{% {% endraw %}include collapse-button.html label="Exams" id="exams" {% raw %}%}{% endraw %}
+<div class="collapse" id="exams">
+ <div class="card card-body">
+  {% raw %}{%{% endraw %}include exam_table.html{% raw %} %}{% endraw %}
+ </div>
+</div>
+```
+
 * Let's create our syllabus! Add a directory `_info` and add `syllabus.md` to it (yes, you'll be writing it in Markdown).
 
 For now, let's just add the following stub:
