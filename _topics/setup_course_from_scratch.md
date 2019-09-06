@@ -6,32 +6,40 @@ indent: true
 ---
 
 
+## Welcome!
+
 Dear instructor,
 
 We are happy that you are considering using these website templates for your course. We've been enjoying a relatively standardized setup and the convenience of hosting our course sites via GitHub pages.
-These templates are being developed and used by the instructors at UCSB, and we welcome other instructors to help us and improve documentation.
+These templates are being developed and used by the instructors at UCSB, and we welcome other instructors to help us and improve documentation. Submit any questions or concerns via the [GitHub Issues](https://github.com/ucsb-cs-course-repos/ucsb-cs-course-repos.github.io/issues).
 
 The templates run using the Jekyll engine, which mainly means that the exact file names and their relative placement are **very important**. 
 
-Documentation for the setup is a work in progress, but here are the rough steps to get you started:
+Documentation for the setup is a work in progress, but below are the rough steps to get you started.
 
-* create the GitHub Organization for the overall course, and then, in that organization, create a repo for the specific instance of that course: 
-	* For example, `ucsb-cs16` is an organization/repo for the main CS 16 course, but the `w19` and `s19` (Winter and Spring 2019) versions are for the specific instances of the course (summer uses the `m` prefix). 
-	* Therefore, the main course repo has the info and resources applicable to the course regardless of the term (e.g., references for how to set up the programming environment, which are used every time the course is taught), whereas the course instances contain due dates, office hours, schedule, etc. that are specific to the quarter/semester the course is taught in.
 
-* Activate GitHub Pages by going into your repo's Settings and under the GitHub Pages option select Source "master branch".
+### Create and set up the GitHub organizations and repos
+
+* create the GitHub Organization for the overall course, and then, in that organization, create a repo for the specific instance/offering of that course: 
+	* For example, `ucsb-cs16` is an organization/repo for the main CS 16 course, but the `w19` and `s19` (Winter and Spring 2019) versions are for the specific offerings of the course (summer uses the `m` prefix). 
+	* Therefore, the main course repo has the info and resources applicable to the course regardless of the term (e.g., references for how to set up the programming environment, which are used every time the course is taught), whereas the course instances/offerings contain due dates, office hours, schedule, etc. that are specific to the quarter/semester the course is taught in.
+
+* Activate GitHub Pages by going into your repo's Settings and under the "GitHub Pages" option select Source "master branch".
 
 * To develop the course locally on your laptop (instead of through the GitHub interface), clone your repo as well as the repo with the boilerplate files:
 ```bash
 git clone https://github.com/ucsb-cs16/s19.git cs16-s19
 ```
-   * Pro tip: as you can see above, I recommend cloning the repo into a directory that's prefixed with the course code, which allows you to differentiate between the different course repos from the same term.
+   * **Pro tip**: as you can see above, I recommend cloning the repo into a directory that's prefixed with the course code, which allows you to differentiate between the different course repos from the same term. Otherwise, if you teach, e.g., cs16 and cs8 in the S19 quarter, you'll end up with two `s19` repos for two different quarters.
 
 
-* Copy the initial boilerplate files into your course repo that is in the `course_dir` path (change It in the command below). 
+### Add the boilerplate files
+
+* Copy the initial boilerplate files into your course repo that is in the `course_dir` path (change the path in the command below). 
 For more information, see the [Basic setup for w19 and later](https://ucsb-cs-course-repos.github.io/topics/basic_setup_w19_and_later)
 
-TODO: Dead link above, fix it.   In the meantime, the boilerplate files are here: <https://github.com/ucsb-cs-course-repos/boilerplate>
+TODO: Dead link above, fix it.   In the meantime, 
+The boilerplate files are here: <https://github.com/ucsb-cs-course-repos/boilerplate>
 
 
 ```bash
@@ -41,7 +49,7 @@ cp Gemfile .gitignore setup.sh jekyll.sh .travis.yml  <course_dir>
 For example,
 `cp Gemfile .gitignore setup.sh jekyll.sh .travis.yml ../int15-s19/`
 
-* Commit the files that you just added (confirm them by running `git status`).
+* Commit the files that you just added (confirm them by first running `git status`).
 
 For example,
 ```bash
@@ -74,7 +82,10 @@ Changes to be committed:
 $ git commit -m "Added initial boilerplate files"
 ```
 
-* Activate Travis CI (https://travis-ci.org/) in order to make sure that you know when your builds are working or failing and why.
+
+### Develop and debug locally and via Travis CI
+
+You can skip this step if you'd rather not have to test the site locally, which means that you'll probably be operating on the live version of the website running from the course repo.
 
 * To be able to test your site locally, before you push it to GitHub, run the `setup.sh` script, which can take a while (it will begin installing the necessary Ruby gems):
 ```bash
@@ -83,19 +94,26 @@ $ git commit -m "Added initial boilerplate files"
 	* This step sometimes results in errors due to the individual laptop setup (e.g., multiple Ruby versions can make it unhappy). Help us by contributing the errors and the solutions. 
 	* Make sure that your paths do not contain spaces.
   * This page might be helpful <https://ucsb-cs-course-repos.github.io/topics/rvm/>
-	* You can skip this step if you'd rather not have to test the site locally, which means that you'll probably be operating on the live version of the website running from the course repo.
 
 
-* Create a `_config.yml` file (has to be at the top level of the site), which will provide the info for your course. The file essentially sets up global variables that can then be accessed from the specific course pages. It allows you to input the information that will be used by the automatically-generated course calendar (e.g., the number of weeks, dates of holidays). See examples from <https://ucsb-cs-course-repos.github.io/topics/config_yml/>. 
-	* Pro tip: you can run global search and replace on the course number and quarter to adapt it to your course. E.g., I used "CS 16 W 19" config as a basis for the "INT 15 S 19" file, so I replaced "cs16" with "int15", "Winter" with "Spring", and "w19" with "s19" (note, in a few places, e.g., in `course`, such replacement changes capitalization).
+* Activate Travis CI [https://travis-ci.org/] in order to make sure that you know when your builds are working or failing and why.
+
+
+### Configure your site via `_config.yml`
+
+* Create a `_config.yml` file (has to be at the top level of the site), which will provide the info about your course. The file essentially sets up global variables that can then be accessed from the specific course pages. It allows you to input the information that will be used by the automatically-generated course calendar (e.g., the number of weeks, dates of holidays). 
+	* See examples from <https://ucsb-cs-course-repos.github.io/topics/config_yml/>. 
+	* Quick hack: you can run global search and replace on the course number and quarter to adapt it to your course. E.g., I used "CS 16 W 19" config as a basis for the "INT 15 S 19" file, so I replaced "cs16" with "int15", "Winter" with "Spring", and "w19" with "s19" (note, in a few places, e.g., in `course`, such replacement changes capitalization).
 	*  `start_date` has to be a Sunday 
+
+### Configure the top navigation menu
 
 * The menu of your site is handled by the file `_data/navigation.yml`. Let's create a simple version, which will allow us to display our syllabus.
 	* Create the `_data` directory
 	* Add to it a new file: `navigation.yml`
 	* Paste the following into that file:
+
 ```
-{% raw %}
 # the production_url is the url that the parent/child site have in common
 #  e.g. production_url: https://ucsb-cs24.github.io
 #  for main site http://ucsb-cs24.github.io
@@ -125,15 +143,16 @@ offering_links:
   - title: Syllabus
     url: /info/syllabus/
     description: "University and course policies"
-{% endraw %}
 ```
 
 
-* Look at the example sites and select the one whose layout you like best. Then copy its `_data/navigation.yml` into your repo and modify to your liking. But for now, ...
+* Look at the example sites and select the one whose layout you like best. Then copy its `_data/navigation.yml` into your repo and modify to your liking. 
 
-* Let's add our basic index page: `index.md`.
+### Add site's pages
+
+* Let's add our basic index page, `index.md` (the only page that lives at the top level, next to `config.yml`), with the following content:
+
 ```
-{% raw %}
 ---
 title: "INT 15: Data Science Tools and Techniques, Spring 2019, Franks and Kharitonova"
 ---
@@ -141,14 +160,13 @@ title: "INT 15: Data Science Tools and Techniques, Spring 2019, Franks and Khari
 # INT 15: Data Science Tools and Techniques, Spring 2019, Franks and Kharitonova
 
 Welcome to INT 15!
-{% endraw %}
 ```
 
-* Let's create our syllabus! Add a directory `_info` and add `syllabus.md` to it (yep, you'll be writing it in Markdown).
+* Let's create our syllabus! Add a directory `_info` and add `syllabus.md` to it (yes, you'll be writing it in Markdown).
 
 For now, let's just add the following stub:
-```
-{% raw %}
+
+```md
 ---
 title: "Syllabus"
 layout: default
@@ -159,7 +177,6 @@ ready: true
 
 This document and others linked within it should be your PRIMARY source for understanding the expectations of this course. Be sure to read it *carefully*.
 You must contact the instructor for clarification if you receive information from any another source that is in contradiction to what is provided below.
-{% endraw %}
 ```
 
 * Commit them and see that they show up on the website.
