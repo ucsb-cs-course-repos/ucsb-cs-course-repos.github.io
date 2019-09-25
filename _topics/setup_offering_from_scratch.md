@@ -130,7 +130,7 @@ You can skip this step if you'd rather not have to test the site locally, which 
   * This page might be helpful <https://ucsb-cs-course-repos.github.io/topics/rvm/>
 
 
-* Activate Travis CI [https://travis-ci.org/] in order to make sure that you know when your builds are working or failing and why.
+* Activate Travis CI <https://travis-ci.org/> in order to make sure that you know when your builds are working or failing and why.
 
 
 
@@ -151,8 +151,7 @@ The order of items in the `_config.yml` file doesn't matter.
 	* Quick hack: you can run global search and replace on the course number and quarter to adapt it to your course. E.g., I used "CS 16 W 19" config as a basis for the "INT 15 S 19" file, so I replaced "cs16" with "int15", "Winter" with "Spring", and "w19" with "s19" (note, in a few places, e.g., in `course`, such replacement changes capitalization).
 	*  `start_date` has to be a Sunday 
   
-  
- # Step 5: Configure the top navigation menu
+# Step 5: Configure the top navigation menu
 
 * The menu of your site is handled by the file `_data/navigation.yml`. Let's create a simple version, which will allow us to display our syllabus.
 	* Create the `_data` directory
