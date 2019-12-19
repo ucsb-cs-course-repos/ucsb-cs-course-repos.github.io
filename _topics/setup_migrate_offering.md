@@ -35,7 +35,7 @@ There will be a course level github organization, e.g. <https://github.com/ucsb-
 
 Inside the course level github organization, e.g. <https://github.com/ucsb-cs56>, create a repo with the name of the term, e.g. `f19`.
 
-If there is more than one offering of that course at your institution during that term, use a naming convention that disambiguates such as `f19-mwf vs. `f19-tr` or `f19-smith` vs. `f19-jones`.
+If there is more than one offering of that course at your institution during that term, use a naming convention that disambiguates such as `f19-mwf` vs. `f19-tr` or `f19-smith` vs. `f19-jones`.
 
 ## Step 2a: Configure repo for GitHub Pages
 
