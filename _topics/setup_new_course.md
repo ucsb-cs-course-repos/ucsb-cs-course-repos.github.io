@@ -17,6 +17,8 @@ The templates run using the Jekyll engine, which mainly means that the exact fil
 
 Documentation for the setup is a work in progress, but below are the rough steps to get you started.
 
+In addition to this page, you may find this page helpful: [Basic Concepts](/topics/basic_concepts/)
+
 # Course Organization, Course Repo, Offering Repo
 
 The first important step is to understand the terminology we
