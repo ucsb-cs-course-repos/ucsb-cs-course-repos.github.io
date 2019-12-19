@@ -37,7 +37,7 @@ Inside the course level github organization, e.g. <https://github.com/ucsb-cs56>
 
 If there is more than one offering of that course at your institution during that term, use a naming convention that disambiguates such as `f19-mwf` vs. `f19-tr` or `f19-smith` vs. `f19-jones`.
 
-## Step 2a: Configure repo for GitHub Pages
+# Step 3: Configure repo for GitHub Pages
 
 Once you've created the repo, be sure to go in to the Settings for that repo, and set Github Pages to publish from the master branch, e.g. at <https://github.com/ucsb-cs56/f19/settings>.  Scroll down to GitHub Pages, and under Source, select Master Branch.  You should not select a theme under the settings page; the theme is automatically set in the `_config.yml` file of the repo.
 
@@ -50,11 +50,24 @@ git clone git@github.com:ucsb-cs56/f18.git
 git clone git@github.com:ucsb-cs56/f19.git
 ```
 
-Now you have a choice between either step 4, which copies the old material along with the github revision history, or step 5 which copies only the files (a fresh start).
+
+
+# Step 4: Populate Repo
+
+Now you have a choice between two options for step 4:
+
+* Step 4, option A: Copy the old material along with the github revision history
+* Step 4, option B: Copies only the files without the github revision history (a fresh start)
+
+The advantage of option A is that you have the revision history.  However, if the previous repo had many large binary 
+such as Powerpoint files or PDF files, you may find that this option makes the repo large, and slow when you clone it.
+You'll be copying all of the history of all the old versions of those files, even if you will never need them.
+
+With Option B you lose the revision history, but you get a clean start in terms of the size of the repo.
 
 # Step 4a: Pull files in from old repo with git history
 
-NOTE: Only perform step 4 OR step 5 NOT BOTH.
+NOTE: Only perform step 4a or step 4b NOT BOTH.
 
 To add a remote for the old repo, you first cd into the directory for the new repo, e.g.
 
@@ -76,11 +89,11 @@ git pull --allow-unrelated-histories oldrepo master
 
 If you started the repo with a README.md, there might be merge conflicts in that file.  If so, they will be trivial to resolve; just edit the README.md and edit the file so that the contents are appropriate to the new quarter.
 
-Now skip to step 6; do NOT perform step 5.
+Now skip to step 5; do NOT perform step 4b.
 
-# Step 5: Copy files from old repo 
+# Step 4b: Copy files from old repo 
 
-NOTE: Only perform step 4 OR step 5 NOT BOTH.
+NOTE: Only perform step 4a OR step 4b NOT BOTH.
 
 Typically, you'll copy the following files from the old repo into the new one.  In this case, we are assuming that f18 is a "sibling" directory of the current directory.  
 
@@ -103,13 +116,13 @@ cp -r ../f18/images .
 
 Then commit these files to the new repo.
 
-# Step 6: Copy in boilerplate files (overwriting old ones)
+# Step 5: Copy in boilerplate files (overwriting old ones)
 
 The following boilerplate files are ones that typically do not change with the course, but ARE periodically updated for newer versions of software packages (to get security updates, etc.).  It is a good idea to copy in fresh copies periodically; at least at the start of a new course.
 
 Follow instructions to [Copy in boilerplate files]({{'/topics/setup_boilerplate/' | relative_url }}).
 They all go in the root directory of the repo.
 
-# Step 7: Configure `_config.yml`
+# Step 6: Configure `_config.yml`
 
-# Step 8: CONTINUE INSTRUCTIONS FROM HERE...
+# Step 7: CONTINUE INSTRUCTIONS FROM HERE...
