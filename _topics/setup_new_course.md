@@ -1,12 +1,12 @@
 ---
-topic: "Setup: Course From Scratch"
+topic: "Setup: New Course"
 desc: "Setting up a new course level repo in this format"
 category_prefix: "Setup: "
 indent: true
 ---
 
 
-## Welcome!
+# Welcome!
 
 Dear instructor,
 
@@ -17,20 +17,109 @@ The templates run using the Jekyll engine, which mainly means that the exact fil
 
 Documentation for the setup is a work in progress, but below are the rough steps to get you started.
 
+# Course Organization, Course Repo, Offering Repo
 
-### Create and set up the GitHub organizations and repos
+The first important step is to understand the terminology we
+are using, and the way the pages are organized.
 
-* create the GitHub Organization for the overall course, and then, in that organization, create a repo for the specific instance/offering of that course: 
-	* For example, `ucsb-cs16` is an organization/repo for the main CS 16 course, but the `w19` and `s19` (Winter and Spring 2019) versions are for the specific offerings of the course (summer uses the `m` prefix). 
-	* Therefore, the main course repo has the info and resources applicable to the course regardless of the term (e.g., references for how to set up the programming environment, which are used every time the course is taught), whereas the course instances/offerings contain due dates, office hours, schedule, etc. that are specific to the quarter/semester the course is taught in.
+* For each course, there is a course level GitHub Organization.
+  A GitHub organization is a container for a collection of repositories
+  (repos) that can be shared among a group of users (in this case, the
+  instructors that teach the course.)
 
-* Activate GitHub Pages by going into your repo's Settings and under the "GitHub Pages" option select Source "master branch".
+  For example:
 
-* To develop the course locally on your laptop (instead of through the GitHub interface), clone your repo as well as the repo with the boilerplate files:
+  | Course   | Organization |
+  |----------|--------------|
+  | UCSB CS8 | <https://github.com/ucsb-cs8> |
+  | UCSB CS16 | <https://github.com/ucsb-cs16> |
+  | UCSB CS24 | <https://github.com/ucsb-cs24> |
+  | UCSB CS111 | <https://github.com/ucsb-cs111> |
+  | UCSB INT5 | <https://github.com/ucsb-int5> |
+  {:.table}
+    
+  etc.
+
+* For each course, there is also a course level repo that controls
+  the course level website.
+
+  The course level repos provide a container for shared material
+  among instructors and offerings of the course.
+
+  Examples:
+
+  | Course   | Site | Repo |
+  |----------|------|-------|
+  | UCSB CS8 | <https://ucsb-cs8.github.io> | [ucsb-cs8.github.io](https://github.com/ucsb-cs8/ucsb-cs8.github.io) |
+  | UCSB CS16 | <https://ucsb-cs16.github.io> | [ucsb-cs16.github.io](https://github.com/ucsb-cs16/ucsb-cs16.github.io) |
+  | UCSB CS24 | <https://ucsb-cs24.github.io> | [ucsb-cs24.github.io](https://github.com/ucsb-cs24/ucsb-cs24.github.io) |
+  | UCSB CS111 | <https://ucsb-cs111.github.io> | [ucsb-cs111.github.io](https://github.com/ucsb-cs111/ucsb-cs111.github.io) |
+  | UCSB INT5 | <https://ucsb-int5.github.io> | [ucsb-int5.github.io](https://github.com/ucsb-int5/ucsb-int5.github.io) |
+  {:.table}
+
+  The material here might include:
+  * tutorials about various topics
+  * textbook supplements
+  * lecture notes or slide collections about *subjects* or *topics*
+     * These are *disconnected*
+       from specific details about a given instructor's offering
+       (e.g. due dates, assignments), etc.
+     * Lecture notes for specific offerings go in the offering repos
+       which we describe next; those might link to the course level
+       lecture notes.
+
+  The material at the offering level repo is a *shared resource* among
+  all of the instructors that teach the course.  Curation of that resource
+  provides an opportunity, and even a "forcing function" if you will, to
+  for instructors to have conversations that help the different offerings
+  of the course to become more aligned over time.
+
+* Finally, there are the offering level repos.   There is one of these for
+  each offering of the course in a given term (quarter or semester) by
+  a given instructor.
+
+  These are named just with the name of the term, e.g. `f19`, `w20`, etc.
+  unless there is more than one offering in that term.  In that case, the
+  two offerings can be differentiated with a suffix; either the instructors
+  name (e.g. `f19-mirza`, `f19-nichols`), or time of day (e.g. `w20-2pm`, `w20-3.30pm`) or day of week (`w20-mw`, `w20-tr`).
+
+  Examples:
+
+  | Course     | Site | Repo |
+  |------------|------|-------|
+  | UCSB CS8 F19| <https://ucsb-cs8.github.io/f19> | [ucsb-cs8/f19](https://github.com/ucsb-cs8/f19) |
+  | UCSB CS8 M19-ElSherif| <https://ucsb-cs8.github.io/m19-elsherif> | [ucsb-cs8/m19-elsherif](https://github.com/ucsb-cs8/m19-elsherif) |
+  | UCSB CS8 M19-Wang| <https://ucsb-cs8.github.io/m19-wang> | [ucsb-cs8/m19-wang](https://github.com/ucsb-cs8/m19-wang) |
+  {:.table}
+
+  The material typically includes everything that is specific to that
+  instructor's offering of the course that should be student facing,
+  and public:
+
+  * homework assignments
+  * programming assignments (labs)
+  * lecture notes
+  * syllabus
+  * etc.
+
+
+
+# Create and set up the GitHub organizations and repos
+
+To create a new course, first create the GitHub Organization for the course.
+
+Then, create the course level repo.  That repo should have the name of the organization, followed by `.github.io`; this is an important naming convention that is *required by GitHub Pages* and is *not arbitrary*.  You must follow it, or GitHub pages will not work properly.
+
+Next, create a repo for the offering.
+
+
+To develop the course locally on your own computer (instead of through the GitHub interface), clone your repo as well as the repo with the boilerplate files:
+
 ```bash
 git clone https://github.com/ucsb-cs16/s19.git cs16-s19
 ```
-   * **Pro tip**: as you can see above, I recommend cloning the repo into a directory that's prefixed with the course code, which allows you to differentiate between the different course repos from the same term. Otherwise, if you teach, e.g., cs16 and cs8 in the S19 quarter, you'll end up with two `s19` repos for two different quarters.
+
+**Pro tip**: as you can see above, I recommend cloning the repo into a directory that's prefixed with the course code, which allows you to differentiate between the different course repos from the same term. Otherwise, if you teach, e.g., cs16 and cs8 in the S19 quarter, you'll end up with two `s19` repos for two different quarters.
 
 
 ### Add the boilerplate files

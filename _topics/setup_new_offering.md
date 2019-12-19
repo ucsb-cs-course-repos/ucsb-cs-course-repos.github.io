@@ -1,20 +1,17 @@
 ---
-topic: "Setup: Offering From Scratch"
-desc: "Setting up a new offering level repo in this format"
+topic: "Setup: New Offering"
+desc: "Creating a first offering of a course"
 category_prefix: "Setup: "
 indent: true
 ---
 
-## Welcome!
+# Welcome!
 
-Dear instructor,
+If you are new to this format, please start with the "welcome"
+section of the page [Setup: New Course](/topics/setup_new_course/).
 
-We are happy that you are considering using these website templates for your course. We've been enjoying a relatively standardized setup and the convenience of hosting our course sites via GitHub pages.
-These templates are being developed and used by the instructors at UCSB, and we welcome other instructors to help us and improve documentation. Submit any questions or concerns via the [GitHub Issues](https://github.com/ucsb-cs-course-repos/ucsb-cs-course-repos.github.io/issues).
-
-The templates run using the Jekyll engine, which mainly means that the exact file names and their relative placement are **very important**. 
-
-Documentation for the setup is a work in progress, but below are the rough steps to get you started.
+You need the course level organization and repo to be setup before you
+can add the first repo for an offering of the course.
 
 
 # Step 1: Course repo
