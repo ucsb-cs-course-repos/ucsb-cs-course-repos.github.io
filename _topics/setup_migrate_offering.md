@@ -1,6 +1,6 @@
 ---
 topic: "Setup: Migrate Offering from previous offering"
-desc: "Setting up a new offering in this format, starting with an existing repo"
+desc: "The most common case: copying from an existing offering in this format (e.g. F19->W20)"
 category_prefix: "Setup: "
 indent: true
 ---
