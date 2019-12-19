@@ -1,11 +1,18 @@
 ---
-topic: "Setup: Offering From Previous"
+topic: "Setup: Migrate Offering from previous offering"
 desc: "Setting up a new offering in this format, starting with an existing repo"
 category_prefix: "Setup: "
 indent: true
 ---
 
 <div style="display:none">https://ucsb-cs-course-repos.github.io/topics/setup_offering_from_prev</div>
+
+# Welcome!
+
+If you are new to this format, please start with the "welcome"
+section of the page [Setup: New Course](/topics/setup_new_course/).
+
+# When do I follow these instructions?
 
 These instructions apply to the case where:
 * there is already a repo set up in this format for your course for a previous offering,
@@ -17,6 +24,8 @@ In this case,
 * The course level organization, e.g. <https://github.com/ucsb-cs56>, is already setup 
 * The course level repo, e.g. <https://github.com/ucsb-cs16/ucsb-cs56.github.io> is already setup
 * The offering level repo for the previous quarter, e.g. <https://github.com/ucsb-cs16/ucsb-cs56.github.io> is already setup
+
+If that's your use case, carry on.
 
 # Step 1: Get yourself added as an "owner" of the course level organization.
 
