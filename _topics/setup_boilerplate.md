@@ -7,7 +7,25 @@ indent: true
 
 <div class="d-none">http://ucsb-cs-course-repos.github.io/topics/setup_boilerplate/</div>
 
-There are several files that every repo in this format needs, and that are seldom modified.
+
+# Welcome!
+
+If you are new to this format, please start with the "welcome"
+section of the page [Setup: New Course](/topics/setup_new_course/)
+before reading this page.
+
+# Boilerplate files
+
+There are several files that every repo in this format needs (including both course level and offering level repos).
+These files typically:
+* do NOT need to be modified by the instructor or customized for each course
+* but they DO need to be updated periodically as new versions of GitHub pages, and the various components
+  on which GitHub pages depends (Ruby, Jekyll, etc) are updated, typically to fix bugs and security
+  vulnerabilities.
+  
+So periodically, you may need to run the script that updates these files.
+
+# How to setup (or update) the boilerplate files
 
 Typically, the only modification needed is to copy a brand new set of these files from here:
 
