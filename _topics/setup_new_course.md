@@ -106,22 +106,15 @@ are using, and the way the pages are organized.
 
 
 
-# Create and set up the GitHub organizations and repos
+# Set up a GitHub organization
 
 To create a new course, first create the GitHub Organization for the course.
 
+# Setting up the Course Level Repo
+
 Then, create the course level repo.  That repo should have the name of the organization, followed by `.github.io`; this is an important naming convention that is *required by GitHub Pages* and is *not arbitrary*.  You must follow it, or GitHub pages will not work properly.
 
-Next, create a repo for the offering.
 
-
-To develop the course locally on your own computer (instead of through the GitHub interface), clone your repo as well as the repo with the boilerplate files:
-
-```bash
-git clone https://github.com/ucsb-cs16/s19.git cs16-s19
-```
-
-**Pro tip**: as you can see above, I recommend cloning the repo into a directory that's prefixed with the course code, which allows you to differentiate between the different course repos from the same term. Otherwise, if you teach, e.g., cs16 and cs8 in the S19 quarter, you'll end up with two `s19` repos for two different quarters.
 
 
 ### Add the boilerplate files
