@@ -1,6 +1,6 @@
 ---
 title: Old Topics
-permalink: "/old_topics_list/"
+permalink: "/old_topics/"
 ---
 
 ## Old Topics

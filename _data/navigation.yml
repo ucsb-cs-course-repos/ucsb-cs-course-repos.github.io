@@ -25,15 +25,15 @@ main_extra:
       description: "Courses using this format"
 
     - title: Topics
-      url: /topics_list/
+      url: /topics/
       description: "Help Topics"
 
     - title: Resources
-      url: /resources_list/
+      url: /resources/
       description: "Resources for Course Site Maintainers"
 
     - title: "Old Topics"
-      url: /old_topics_list/
+      url: /old_topics/
       description: "Old Topics prior to W19 refactoring"
 
     - title: "Support"

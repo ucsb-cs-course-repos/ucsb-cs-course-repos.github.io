@@ -1,6 +1,6 @@
 ---
 title: Topics
-permalink: "/topics_list/"
+permalink: "/topics/"
 ---
 
 # Topics
