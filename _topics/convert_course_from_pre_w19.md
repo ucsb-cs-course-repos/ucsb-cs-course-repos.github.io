@@ -1,9 +1,20 @@
 ---
-topic: "Setup: Course From Pre-W19"
-desc: "Setting up a new course level repo in this format, starting with a pre-W19 repo"
+topic: "Convert: Course From Pre-W19"
+desc: "Converting a pre-W19 repo to a course repo"
 category_prefix: "Setup: "
 indent: true
 ---
+
+The pre-w19 format did not have a distinction between course level and offering level repos; everything was together.
+
+So, to create an course repo for the new format,
+you have to disentangle the parts of the parts of the old repo that
+now go at the offering level from those that belong at the course level.
+
+The first step will be to follow the steps for creating a new
+course level repo from scratch (those are on another page).
+
+Then proceed with the steps below.
 
 # Step 1: The course level repo should already exist, so clone it.
 

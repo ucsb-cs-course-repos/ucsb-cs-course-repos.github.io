@@ -1,9 +1,15 @@
 ---
-topic: "Setup: Offering From Pre-W19"
-desc: "Setting up a new offering level repo in this format, starting with a pre-W19 repo"
-category_prefix: "Setup: "
+topic: "Convert: Offering From Pre-W19"
+desc: "Converting a pre-W19 repo to an offering repo"
+category_prefix: "Convert: "
 indent: true
 ---
+
+The pre-w19 format did not have a distinction between course level and offering level repos; everything was together.
+
+So, to create an offering repo for the new format,
+you have to disentangle the parts of the parts of the old repo that
+now go at the offering level from those that belong at the course level.
 
 # Step 1: Create an empty offering repo
 
