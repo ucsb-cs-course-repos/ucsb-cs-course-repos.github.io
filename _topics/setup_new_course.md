@@ -127,18 +127,8 @@ git clone https://github.com/ucsb-cs16/s19.git cs16-s19
 ### Add the boilerplate files
 
 * Copy the initial boilerplate files into your course repo that is in the `course_dir` path (change the path in the command below). 
-For more information, see the [Basic setup for w19 and later](https://ucsb-cs-course-repos.github.io/topics/basic_setup_w19_and_later)
 
-TODO: Dead link above, fix it.   In the meantime, 
-The boilerplate files are here: <https://github.com/ucsb-cs-course-repos/boilerplate>
-
-
-```bash
-cd boilerplate
-cp Gemfile .gitignore setup.sh jekyll.sh .travis.yml  <course_dir>
-```
-For example,
-`cp Gemfile .gitignore setup.sh jekyll.sh .travis.yml ../int15-s19/`
+  For more information, see the [Setup: Boilerplate](topics/setup_boilerplate/)
 
 * Commit the files that you just added (confirm them by first running `git status`).
 
@@ -174,20 +164,6 @@ $ git commit -m "Added initial boilerplate files"
 ```
 
 
-### Develop and debug locally and via Travis CI
-
-You can skip this step if you'd rather not have to test the site locally, which means that you'll probably be operating on the live version of the website running from the course repo.
-
-* To be able to test your site locally, before you push it to GitHub, run the `setup.sh` script, which can take a while (it will begin installing the necessary Ruby gems):
-```bash
-./setup.sh
-```
-	* This step sometimes results in errors due to the individual laptop setup (e.g., multiple Ruby versions can make it unhappy). Help us by contributing the errors and the solutions. 
-	* Make sure that your paths do not contain spaces.
-  * This page might be helpful <https://ucsb-cs-course-repos.github.io/topics/rvm/>
-
-
-* Activate Travis CI [https://travis-ci.org/] in order to make sure that you know when your builds are working or failing and why.
 
 
 ### Configure your site via `_config.yml`
@@ -371,3 +347,26 @@ The order of items in the `_config.yml` file doesn't matter.
 * [`_config.yml` instructions for course repos]({{ '/topics/config_yml_course/' | relative_url}})
 
 # TODO: Continue from here
+
+
+### Develop and debug locally
+
+You can skip this step if you'd rather not have to test the site locally, which means that you'll probably be operating on the live version of the website running from the course repo.
+
+If you want to be able to test your site locally, you'll first need to install the Ruby Version Manager (`rvm`).
+
+* This page might be helpful <https://ucsb-cs-course-repos.github.io/topics/rvm/>
+* Then, before your push your site to GitHub, run the `setup.sh` script, 
+  which can take a while (it will begin installing the necessary Ruby gems):
+  ```bash
+  ./setup.sh
+  ```
+* This step sometimes results in errors due to the variations in individual laptop setups.
+  * Help us by contributing the errors and the solutions; use can report issues here: 
+    <https://github.com/ucsb-cs-course-repos/ucsb-cs-course-repos.github.io/issues>, or by contacting
+    `phtcon@ucsb.edu`
+  * Make sure that your paths do not contain spaces.
+
+### Develop and debug locally and via Travis CI
+
+* Activate Travis CI [https://travis-ci.org/] in order to make sure that you know when your builds are working or failing and why.
