@@ -37,10 +37,6 @@ Inside the course level github organization, e.g. <https://github.com/ucsb-cs56>
 
 If there is more than one offering of that course at your institution during that term, use a naming convention that disambiguates such as `f19-mwf` vs. `f19-tr` or `f19-smith` vs. `f19-jones`.
 
-# Step 3: Configure repo for GitHub Pages
-
-Once you've created the repo, be sure to go in to the Settings for that repo, and set Github Pages to publish from the master branch, e.g. at <https://github.com/ucsb-cs56/f19/settings>.  Scroll down to GitHub Pages, and under Source, select Master Branch.  You should not select a theme under the settings page; the theme is automatically set in the `_config.yml` file of the repo.
-
 # Step 3: Clone both the old repo and the new repo to your local file system
 
 For example, if you are using `ucsb-cs56/f18` as the basis to create `ucsb-cs56/f19`, then use 
@@ -116,13 +112,19 @@ cp -r ../f18/images .
 
 Then commit these files to the new repo.
 
-# Step 5: Copy in boilerplate files (overwriting old ones)
+
+# Step 5: Configure repo for GitHub Pages
+
+Once you've created the repo, be sure to go in to the Settings for that repo, and set Github Pages to publish from the master branch, e.g. at <https://github.com/ucsb-cs56/f19/settings>.  Scroll down to GitHub Pages, and under Source, select Master Branch.  You should not select a theme under the settings page; the theme is automatically set in the `_config.yml` file of the repo.
+
+
+# Step 6: Copy in boilerplate files (overwriting old ones)
 
 The following boilerplate files are ones that typically do not change with the course, but ARE periodically updated for newer versions of software packages (to get security updates, etc.).  It is a good idea to copy in fresh copies periodically; at least at the start of a new course.
 
 Follow instructions to [Copy in boilerplate files]({{'/topics/setup_boilerplate/' | relative_url }}).
 They all go in the root directory of the repo.
 
-# Step 6: Configure `_config.yml`
+# Step 7: Configure `_config.yml`
 
-# Step 7: CONTINUE INSTRUCTIONS FROM HERE...
+# Step 8: CONTINUE INSTRUCTIONS FROM HERE...
