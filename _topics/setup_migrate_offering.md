@@ -126,6 +126,13 @@ The following boilerplate files are ones that typically do not change with the c
 Follow instructions to [Copy in boilerplate files]({{'/topics/setup_boilerplate/' | relative_url }}).
 They all go in the root directory of the repo.
 
+After copying in the boilerplate files, you may need to do:
+
+```
+git commit -m "update boilerplate"
+git push origin master
+```
+
 # Step 7: Configure `_config.yml`
 
 # Step 8: CONTINUE INSTRUCTIONS FROM HERE...
