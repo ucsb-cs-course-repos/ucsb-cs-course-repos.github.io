@@ -74,6 +74,24 @@ This value is used by the scripts in the repo <https://github.com/ucsb-cs-course
 lecture_days_of_week: MW
 ```
 
+# `start_week`, `start_date`, etc.
+
+The following values are used to configure the calendar:
+
+```
+start_week: 1
+start_date: 2020-01-05
+num_weeks: 10
+extra_exam_week: true
+```
+
+For `start_week`, the usual value should be `1`.  At UCSB, Fall quarter has an extra partial week sometimes called "week 0". To start the calendar with week 0, enter `0` for `start_week`.
+
+For `num_weeks`, enter the number of weeks in the term.  This is typically `10` at UCSB, except for Fall, when it is `11` (when starting with week 0), and summer sessions A and B, which are `6`.
+
+The `extra_exam_week` includes a week for Finals on the calendar.    This is typically `true` for Fall, Winter and Spring, and false in Summer Sessions.
+
+
 TODO: CONTINUE DOCUMENTING ...
 
 TODO: FILL THIS IN
