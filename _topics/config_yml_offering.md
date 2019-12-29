@@ -94,6 +94,25 @@ For `num_weeks`, enter the number of weeks in the term.  This is typically `10` 
 
 The `extra_exam_week` includes a week for Finals on the calendar.    This is typically `true` for Fall, Winter and Spring, and false in Summer Sessions.
 
+# `cal_dates`
+
+The `cal_dates` section is formatted as JSON objects representing dates that will be placed on the calendar.  
+Edit it as appropriate entering the dates for your particular term.
+
+```
+cal_dates: >                                                                 
+  [                                                                          
+    {"label":"F19 official start date", "date":"2019-09-22" },               
+    {"label":"F19 1st day of instruction", "date":"2019-09-26" },            
+    {"label":"Univ Holiday", "date":"2019-11-11" },                          
+    {"label":"Univ Holiday", "date":"2019-11-28" },                          
+    {"label":"Univ Holiday", "date":"2019-11-29" },                          
+    {"label":"F19 instruction ends", "date":"2019-12-06" },                  
+    {"label":"F19 finals start", "date":"2019-12-07" },                      
+    {"label":"F19 finals end", "date":"2019-12-13" },                        
+    {"label":"F19 qtr ends", "date":"2019-12-13" }                           
+  ]    
+```
 
 TODO: CONTINUE DOCUMENTING ...
 
