@@ -16,8 +16,8 @@ section of the page [Setup: New Course](/topics/setup_new_course/).
 
 These instructions apply to the case where:
 * there is already a repo set up in this format for your course for a previous offering,
-(e.g. <https://ucsb-cs56.github.io/s19> 
-* you want to use that offering as a template to set up a website for a new offering (e.g. <https://ucsb-cs56.github.io/f19>
+(e.g. <https://ucsb-cs56.github.io/s19>) 
+* you want to use that offering as a template to set up a website for a new offering (e.g. <https://ucsb-cs56.github.io/f19>)
 
 In this case, 
 
