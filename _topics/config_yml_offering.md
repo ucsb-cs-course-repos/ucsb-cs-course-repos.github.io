@@ -85,7 +85,10 @@ num_weeks: 10
 extra_exam_week: true
 ```
 
-For `start_week`, the usual value should be `1`.  At UCSB, Fall quarter has an extra partial week sometimes called "week 0". To start the calendar with week 0, enter `0` for `start_week`.
+For `start_week`, the usual value should be `1`.  At UCSB, Fall quarter has an extra partial week sometimes called "week 0". To start t
+the calendar with week 0, enter `0` for `start_week`.
+
+For `start_date`, enter the date for the *Sunday that starts the week in which classes start*.  This is a limitation of the software; the `start_date` needs to be a Sunday for it to work properly.
 
 For `num_weeks`, enter the number of weeks in the term.  This is typically `10` at UCSB, except for Fall, when it is `11` (when starting with week 0), and summer sessions A and B, which are `6`.
 
