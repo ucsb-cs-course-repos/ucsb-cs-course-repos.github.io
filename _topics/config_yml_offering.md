@@ -66,6 +66,14 @@ You can use these values in content on web pages by writing, for example:
 This allows you to more easily copy/paste content (e.g. your syllabus) between and among course websites and have the content
 remain correct.
 
+# `lecture_days_of_week`
+
+This value is used by the scripts in the repo <https://github.com/ucsb-cs-course-repos/tools>.  The scripts in that repo are a work in progress.  When complete, they will assist in populating the `_lecture` directory with files that have the correct dates for the lectures for a particular quarter.
+
+```
+lecture_days_of_week: MW
+```
+
 TODO: CONTINUE DOCUMENTING ...
 
 TODO: FILL THIS IN
