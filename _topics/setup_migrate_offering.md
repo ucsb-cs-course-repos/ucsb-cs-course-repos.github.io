@@ -81,6 +81,7 @@ Finally, pull in the files from the old repo along with their history, like this
 
 ```
 git pull --allow-unrelated-histories oldrepo master
+git push origin master
 ```
 
 If you started the repo with a README.md, there might be merge conflicts in that file.  If so, they will be trivial to resolve; just edit the README.md and edit the file so that the contents are appropriate to the new quarter.
