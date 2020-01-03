@@ -5,7 +5,7 @@ category_prefix: "Setup: "
 indent: true
 ---
 
-<div style="display:none">https://ucsb-cs-course-repos.github.io/topics/setup_offering_from_prev</div>
+<div style="display:none">https://ucsb-cs-course-repos.github.io/topics/setup_migrate_offering</div>
 
 # Welcome!
 
