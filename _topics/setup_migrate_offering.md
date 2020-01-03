@@ -23,7 +23,7 @@ In this case,
 
 * The course level organization, e.g. <https://github.com/ucsb-cs56>, is already setup 
 * The course level repo, e.g. <https://github.com/ucsb-cs16/ucsb-cs56.github.io> is already setup
-* The offering level repo for the previous quarter, e.g. <https://github.com/ucsb-cs16/ucsb-cs56.github.io> is already setup
+* The offering level repo for the previous quarter, e.g. <https://github.com/ucsb-cs56/f19> is already setup
 
 If that's your use case, carry on.
 
