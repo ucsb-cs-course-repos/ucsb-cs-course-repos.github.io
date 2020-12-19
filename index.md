@@ -31,4 +31,7 @@ If you are a CS department faculty member or TA that should have
 access to this page, contact Phill Conrad to request an invitation to
 be a collaborator on that repo.
 
+# Other similar projects
 
+* <https://github.com/kazemnejad/jekyll-course-website-template>
+* <http://svmiller.com/blog/2018/08/course-website-jekyll-template/>, <https://github.com/svmiller/course-website>
